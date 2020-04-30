@@ -1,0 +1,254 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Stem";
+  font-style: normal;
+  src: url("../fonts/Stem-Light.woff2") format("woff2"), url("../fonts/Stem-Light.woff") format("woff");
+}
+@font-face {
+  font-weight: normal;
+  font-family: "Stem";
+  font-style: normal;
+  src: url("../fonts/Stem-Regular.woff2") format("woff2"), url("../fonts/Stem-Regular.woff") format("woff");
+}
+@font-face {
+  font-weight: normal;
+  font-family: "Stem";
+  font-style: normal;
+  src: url("../fonts/Stem-Medium.woff2") format("woff2"), url("../fonts/Stem-Medium.woff") format("woff");
+}
+@font-face {
+  font-weight: normal;
+  font-family: "Stem";
+  font-style: normal;
+  src: url("../fonts/Stem-Bold.woff2") format("woff2"), url("../fonts/Stem-Bold.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 27px;
+  font-family: "Stem-Regular", "Arial", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  background-color: #ffffff;
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+button {
+  width: 272px;
+  height: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+  background-color: #1E5DC5;
+  border: none;
+  border-radius: 4px;
+  margin-right: 40px;
+}
+
+.button_two {
+  background-color: #00D2A0;
+}
+
+/* block/logo */
+.logo {
+  min-width: 191px;
+  
+}
+.logo__img {
+  display: block;
+}
+  /* Page-header */
+  /* page-header-moc  временно*/
+.page-header-moc {
+    background: #000000;
+    height: 71px;
+}
+.page-header-moc__wrapper {
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
+/* Start block/intro */
+.intro {
+    padding: 110px 0 111px 0;
+    background-image: url(../img/intro-bg-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+  }
+  
+  .intro__wrapper {
+    max-width: 1262px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .intro__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    color: #ffffff;
+    text-shadow: 0px 4px 34px #001650;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .intro__title span {
+    color: #1E5DC5;
+  }
+  
+  .intro__subtitle {
+    font-size: 22px;
+    line-height: 150%;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  /* End block/intro */
+
+  /* Start block/resume */
+  .resume {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: #ffffff;
+  }
+
+  .resume__wrapper {
+    max-width: 1262px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .resume__title {
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 58px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .resume__text {
+    max-width: 1048px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 170.3%;
+    color: #000000;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+    
+  }   
+  /* End block/resume */
+
+  /* Start block/facts */
+  .facts {
+      padding-top: 86px;
+      background-color: #101010;
+  }
+  .facts__wrapper {
+    max-width: 1262px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .facts__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 57px;
+      
+  }
+  .facts__list li {
+      color: #ffffff;
+  }
+  /* End block/facts */
+.values {
+    padding-top: 100px;
+    background-color: #ffffff;
+}
+
+.values__wrapper {
+    max-width: 1262px;
+    margin: 0 auto;
+
+}
+
+.values__title {
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 58px;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 68px;
+}
+
+.values__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.values__item {
+    padding-top: 108px;
+    background-color: gold;
+    max-width: 406px;
+}
+
+.values__item-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 9px;
+}
+
+.values__item-desc {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    opacity: 0.7;
+    margin: 0;
+}

@@ -141,7 +141,7 @@ h2 span {
   color: #ffffff;
   text-decoration: none;
 }
-
+/* Start block/intro */
 .intro {
   padding: 125px 0 129px 0;
   background-image: url(../img/intro-bg-01.jpg);
@@ -172,6 +172,7 @@ h2 span {
   margin: 0;
   margin-bottom: 30px;
 }
+/* End block/intro */
 
 
 
