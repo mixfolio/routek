@@ -53,6 +53,7 @@
 
     <main class="page-main">
         <h1 class="visually-hidden">Компания Routek</h1>
+        <!-- Start intro-block -->
         <section class="intro">
             <div class="intro__wrapper">
                 <h2 class="intro__title"><span>Все возможности</span><br>3D печати в один клик.</h2>
@@ -94,7 +95,10 @@
                 </ul>    
             </div> 
         </section>
+        <!-- End intro-block -->
 
+
+        <!-- Start workflow-block -->
         <section class="workflow">
             <div class="workflow__wrapper">
                 <h2 class="workflow__title">Как мы работаем</h2>
@@ -120,12 +124,19 @@
                         <h4 class="workflow__item-subtitle">Изготовление ваших деталей</h3>
                         <p class="workflow__item-desc">На нашей платформе вы получаете возможность отслеживать статус изготовления Ваших деталей on-line. Ваши детали производятся нашими проверенными производственными партнерами. В зависимости от ваших пожеланий, мы можем организовать доставку по указанному вами адресу.</p>
                     </li>
-                    
                 </ul>    
             </div> 
-
         </section>
-        <section class="services">
+        <!-- End workflow-block -->
+
+        <!-- Start slogan-block -->
+        <section class="slogan">
+            <h2 class="slogan__title"><span class="color-title">Все горизонты 3D-печати</span> на нашей платформе.</h2>
+        </section>
+        <!-- End slogan-block -->
+
+        <!-- Start services-block 1 -->
+        <section class="services services--padding-top">
             <div class="services__wrapper">
                 <h2 class="services__title">3D-печать для функциональных прототипов и деталей</h2>
                 <ul class="services__list">
@@ -164,7 +175,9 @@
                 </ul>
             </div>
         </section>
+        <!-- End services-block 1 -->
 
+        <!-- Start services-block 2 -->
         <section class="services">
             <div class="services__wrapper">
                 <h2 class="services__title">3D печать для недорогого и быстрого прототипирования</h2>
@@ -205,6 +218,9 @@
                 </ul>
             </div>
         </section>
+        <!-- End services-block 2 -->
+
+        <!-- Start spec-block 2 -->
         <section class="spec">
             <div class="spec__wrapper">
                 <h2 class="spec__title">Аддитивное производство для любой отрасли.</h2>
@@ -239,19 +255,28 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Start advisory-block -->
         <section class="advisory">
-            <h2 class="advisory__title">Необходима консультация наших специалистов?</h2>
-            <form action="" class="advisory__form">
-                <label for="">Имя 
-                    <input type="text" placeholder="Введите имя">
-                </label>
-                <label for="">E-mail
-                    <input type="text" placeholder="Введите e-mail">
-                </label>
-                <label for="">Вопрос 
-                    <textarea name="" id=""  rows="1"></textarea>
-                </label>
-            </form>
+            <div class="advisory__wrapper">
+                <h2 class="advisory__title">Необходима консультация наших специалистов?</h2>
+                <form action="" class="advisory__form">
+                    <div class="advisory__item">
+                        <label class="advisory__label" for="">Имя</label>
+                        <input class="advisory__input" type="text" placeholder="Введите имя" required>
+                    </div>
+                    <div class="advisory__item">
+                        <label class="advisory__label" for="">E-mail</label>
+                        <input class="advisory__input" type="text" placeholder="Введите e-mail" required>
+                    </div>
+                    <div class="advisory__item advisory__item--answ">
+                        <label class="advisory__label" for="">Вопрос</label>
+                        <textarea class="advisory__input" name="" id=""  rows="1"></textarea required>
+                    </div>
+                    <button class="advisory__submit" type="submit">Отправить</button>
+                </form>
+            </div>
+            
         </section>
         <footer class="page-footer">
             <div class="page-footer__wrapper">
