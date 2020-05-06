@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Stem';
+  src: url('../fonts/Stem-Light.woff2') format('woff2'),
+      url('../fonts/Stem-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stem';
+  src: url('../fonts/Stem-Regular.woff2') format('woff2'),
+      url('../fonts/Stem-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stem';
+  src: url('../fonts/Stem-Medium.woff2') format('woff2'),
+      url('../fonts/Stem-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stem';
+  src: url('../fonts/Stem-Bold.woff2') format('woff2'),
+      url('../fonts/Stem-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Mixins
+@mixin light {
+  font-family: "Stem";
+  font-weight: 300;
+}
+
+@mixin regular {
+  font-family: "Stem";
+  font-weight: normal;
+}
+
+@mixin medium {
+  font-family: "Stem";
+  font-weight: 500;
+}
+
+@mixin bold {
+  font-family: "Stem";
+  font-weight: bold;
+}

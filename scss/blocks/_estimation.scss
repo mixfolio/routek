@@ -1,0 +1,61 @@
+.estimation {
+    
+    background-color: $dark-bg;
+    padding-top: 94px;
+    padding-bottom: 170px;
+}
+.estimation__wrapper {
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
+.estimation__title {
+    @include regular;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.estimation__subtitle {
+    @include regular;
+    font-size: 18px;
+    line-height: 170.3%;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.7;
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.estimation__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.estimation__item {
+    width: 23%;
+}
+
+.estimation__desc {
+    @include regular;
+    font-size: 16px;
+    line-height: 170.3%;
+    color: #ffffff;
+    margin: 0;
+}
+
+.estimation__number {
+    display: block;
+    @include bold;
+    font-size: 46px;
+    line-height: 170.3%;
+    color: $prime-color;
+}
+.estimation__number--two {
+    color: $second-color;
+}

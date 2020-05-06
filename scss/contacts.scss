@@ -1,0 +1,17 @@
+// Colors
+@import "colors";
+// Fonts
+@import "fonts";
+// Interface
+@import "interface";
+
+/* Start blocks/hero */
+@import "blocks/hero";
+/* Correct blocks/hero */
+.hero {
+    background-image: url(../img/hero-bg-07.jpg);
+}
+
+
+/* Start blocks/advisory */
+@import "blocks/advisory";

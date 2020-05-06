@@ -1,0 +1,75 @@
+.spec  {
+    background-color: black;
+    padding-top: 73px;
+  
+  &__wrapper {
+    max-width: 1048px;
+    margin: 0 auto;
+  }
+  
+  &__title {
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 45px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 43px;
+  }
+  
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__item {
+    min-width: 335px;
+    margin-top: 30px;
+    padding-top: 51px;
+    padding-bottom: 30px;
+    /* background-color: olive; */
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+    &--avia {
+      background-image: url(../img/spec-ico-01.svg);
+    }
+    &--medicine {
+      background-image: url(../img/spec-ico-02.svg);
+    }
+    &--car {
+      background-image: url(../img/spec-ico-03.svg);
+    }
+    &--electron {
+      background-image: url(../img/spec-ico-04.svg);
+    }
+    &--robot {
+      background-image: url(../img/spec-ico-05.svg);
+    }
+    &--energy {
+      background-image: url(../img/spec-ico-06.svg);
+    }
+    &--machine {
+      background-image: url(../img/spec-ico-07.svg);
+    }
+    &--education {
+      background-image: url(../img/spec-ico-08.svg);
+    }
+    &--goods {
+      background-image: url(../img/spec-ico-09.svg);
+    }
+
+  }
+  
+  &__desc {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+  }
+}

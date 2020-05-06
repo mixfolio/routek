@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Routek Главная</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="page-header">
@@ -22,8 +22,8 @@
                         <li><a href="about.html">О нас</a></li>
                         <li><a href="warranty.html">Гарантия качества</a></li>
                         <li><a href="#">Защита IP</a></li>
-                        <li><a href="#">СМИ о нас</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="smi.html">СМИ о нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </li>
                 <li class="site__list-item">
@@ -53,17 +53,18 @@
 
     <main class="page-main">
         <h1 class="visually-hidden">Компания Routek</h1>
-        <!-- Start intro-block -->
-        <section class="intro">
-            <div class="intro__wrapper">
-                <h2 class="intro__title"><span>Все возможности</span><br>3D печати в один клик.</h2>
-                <p class="intro__subtitle">Наша технология гарантирует безопасность и<br>конфиденциальность загруженных документов</p>
-                <button type="button">Рассчитать заказ</button>
-                <button class="button_two" type="button">Стать партнером</button>
+        <!-- Start hero-block -->
+        <section class="hero">
+            <div class="hero__wrapper wrapper">
+                <h2 class="hero__title"><span class="hero__title-color">Все возможности</span><br>3D печати в один клик<span class="hero__title-color">.</span></h2>
+                <p class="hero__subtitle">Наша технология гарантирует безопасность и<br>конфиденциальность загруженных документов</p>
+                <button class="hero__button button" type="button">Рассчитать заказ</button>
+                <button class="button button--two" type="button">Стать партнером</button>
             </div>
         </section>
+        <!-- End hero-block -->
         <section class="advantages">
-            <div class="advantages__wrapper">
+            <div class="advantages__wrapper wrapper">
                 <h2 class="advantages__title">Преимущества работы с нами</h2>
                 <h4 class="advantages__subtitle">Реализуйте свои производственные задачи быстро и легко</h4>
                 <ul class="advantages__list">
@@ -95,7 +96,7 @@
                 </ul>    
             </div> 
         </section>
-        <!-- End intro-block -->
+        <!-- End hero-block -->
 
 
         <!-- Start workflow-block -->
@@ -131,7 +132,7 @@
 
         <!-- Start slogan-block -->
         <section class="slogan">
-            <h2 class="slogan__title"><span class="color-title">Все горизонты 3D-печати</span> на нашей платформе.</h2>
+            <h2 class="slogan__title"><span class="slogan__title-color">Все горизонты 3D-печати</span> на нашей платформе<span class="slogan__title-color">.</span></h2>
         </section>
         <!-- End slogan-block -->
 
@@ -147,7 +148,7 @@
                         <h3 class="services__item-title">Выборочное лазерное спекание (SLS)</h3>
                         <h4 class="services__item-subtitle">6 дней</h4>
                         <p class="services__item-desc">SLS используется как для изготовления прототипов, так и для мелкосерийного производства функциональных пластиковых деталей с высокими механическими свойствами.</p>
-                        <button type="button">Рассчитать заказ</button>
+                        <button class="services__button button" type="button">Рассчитать заказ</button>
                         <a href="#" class="services__item-link">Подробнее</a>
                     </li>
 
@@ -158,7 +159,7 @@
                         <h3 class="services__item-title">Многоструйное моделирование (MJF)</h3>
                         <h4 class="services__item-subtitle">6 дней</h4>
                         <p class="services__item-desc">Многоструйное моделирование (MJF) от HP можно использовать как для создания прототипов, так и для производства мелкосерийных функциональных пластиковых деталей.</p>
-                        <button type="button">Рассчитать заказ</button>
+                        <button class="services__button button" type="button">Рассчитать заказ</button>
                         <a href="#" class="services__item-link">Подробнее</a>
                     </li>
 
@@ -169,7 +170,7 @@
                         <h3 class="services__item-title">Выборочное лазерное спекание (SLS)</h3>
                         <h4 class="services__item-subtitle">10 дней</h4>
                         <p class="services__item-desc">Метод DMLS позволяет производить высококачественные детали из металла для применения в аэрокосмической, автомобильной и медицинской промышленности</p>
-                        <button type="button">Рассчитать заказ</button>
+                        <button class="services__button button" type="button">Рассчитать заказ</button>
                         <a href="#" class="services__item-link">Подробнее</a>
                     </li>
                 </ul>
@@ -190,7 +191,7 @@
                         <h3 class="services__item-title">Моделирование методом наплавления (FDM)</h3>
                         <h4 class="services__item-subtitle">4 дня</h4>
                         <p class="services__item-desc">FDM - это наиболее широко доступный процесс 3D-печати, в основном используемый для создания недорогих прототипов и тестирования дизайна в очень короткие сроки.</p>
-                        <button type="button">Рассчитать заказ</button>
+                        <button class="services__button button" type="button">Рассчитать заказ</button>
                         <a href="#" class="services__item-link">Подробнее</a>
                     </li>
 
@@ -201,8 +202,10 @@
                         <h3 class="services__item-title">Стереолитография (SLA)</h3>
                         <h4 class="services__item-subtitle">4 дня</h4>
                         <p class="services__item-desc">SLA наиболее подходит для визуальных применений, где требуются литьевые формы, гладкая поверхность и высокий уровень детализации деталей.</p>
-                        <button type="button">Рассчитать заказ</button>
-                        <a href="#" class="services__item-link">Подробнее</a>
+                        <div class="services__wrap">
+                            <button class="services__button button" type="button">Рассчитать заказ</button>
+                            <a href="#" class="services__item-link">Подробнее</a>
+                        </div>
                     </li>
 
                     <li class="services__item">
@@ -212,8 +215,10 @@
                         <h3 class="services__item-title">Струйное нанесение нескольких материалов (Polyjet)</h3>
                         <h4 class="services__item-subtitle">9 дней</h4>
                         <p class="services__item-desc">Polyjet производит детали высочайшей точности размеров с очень гладкой поверхностью, используемые для визуальных прототипов.</p>
-                        <button type="button">Рассчитать заказ</button>
-                        <a href="#" class="services__item-link">Подробнее</a>
+                        <div class="services__wrap">
+                            <button class="services__button button" type="button">Рассчитать заказ</button>
+                            <a href="#" class="services__item-link">Подробнее</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -273,11 +278,12 @@
                         <label class="advisory__label" for="">Вопрос</label>
                         <textarea class="advisory__input" name="" id=""  rows="1"></textarea required>
                     </div>
-                    <button class="advisory__submit" type="submit">Отправить</button>
+                    <button class="button" type="submit">Отправить</button>
                 </form>
-            </div>
-            
+            </div>   
         </section>
+        <!-- End advisory-block -->
+
         <footer class="page-footer">
             <div class="footer__wrapper">
                 <div class="page-footer__contacts">
@@ -293,11 +299,11 @@
                     <b>О нас</b>
                     <ul>
                         <li><a href="about.html">О нас</a></li>
-                        <li><a href="#!">Гарантии качества</a></li>
+                        <li><a href="warranty.html">Гарантии качества</a></li>
                         <li><a href="#">Защита IP</a></li>
                         <li><a href="#">ROI калькулятор</a></li>
-                        <li><a href="#">СМИ о нас</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="smi.html">СМИ о нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </div>
     

@@ -1,0 +1,20 @@
+.slogan {
+    min-height: 326px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #292929 url(../img/slogan-bg-01.jpg) no-repeat;
+    background-position: center 0;
+    background-size: cover;
+
+    &__title {
+        @include medium;
+        font-size: 42px;
+        line-height: 152.9%;
+        text-align: center;
+        color: #ffffff; 
+    }
+    &__title-color {
+        color: $hero-text;
+    }
+}

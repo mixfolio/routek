@@ -1,0 +1,82 @@
+.advantages {
+  padding: 122px 0 133px 0;
+  background-color: #101010;
+  
+  &__wrapper {
+    max-width: 1262px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.6;
+    margin: 0;
+    margin-bottom: 64px;
+    
+  }
+  
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* background-color: gray; */
+  }
+  
+  &__item {
+    flex-basis: 600px;
+    padding-top: 93px;
+    margin-bottom: 32px;
+
+    &-time {
+      background: url(../img/advtg-ico-01.svg) no-repeat 0 0;
+    }
+    &-save {
+      background: url(../img/advtg-ico-02.svg) no-repeat 0 0;
+    }
+    &-price {
+      background: url(../img/advtg-ico-03.svg) no-repeat 0 0;
+    }
+    &-answers {
+      background: url(../img/advtg-ico-04.svg) no-repeat 0 0;
+    }
+    &-service {
+      background: url(../img/advtg-ico-05.svg) no-repeat 0 0;
+    }
+    &-contact {
+      background: url(../img/advtg-ico-06.svg) no-repeat 0 0;
+    }
+  }
+  
+  &__item-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  &__item-desc {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    opacity: 0.7;
+    margin: 0;
+  }
+}
