@@ -8,7 +8,7 @@
   }
   
   &__title {
-    font-weight: normal;
+    @include regular;
     font-size: 35px;
     line-height: 45px;
     color: #ffffff;
@@ -65,7 +65,7 @@
   }
   
   &__desc {
-    font-weight: normal;
+    @include regular;
     font-size: 22px;
     line-height: 28px;
     text-align: center;

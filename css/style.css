@@ -246,6 +246,7 @@ img {
 }
 
 .advantages__title {
+  font-family: "Stem";
   font-weight: normal;
   font-size: 45px;
   line-height: 58px;
@@ -256,6 +257,7 @@ img {
 }
 
 .advantages__subtitle {
+  font-family: "Stem";
   font-weight: normal;
   font-size: 17px;
   line-height: 22px;
@@ -314,6 +316,7 @@ img {
 }
 
 .advantages__item-title {
+  font-family: "Stem";
   font-weight: 500;
   font-size: 28px;
   line-height: 36px;
@@ -323,6 +326,7 @@ img {
 }
 
 .advantages__item-desc {
+  font-family: "Stem";
   font-weight: 300;
   font-size: 16px;
   line-height: 21px;
@@ -338,8 +342,7 @@ img {
 }
 
 .workflow__wrapper {
-  max-width: 1262px;
-  padding: 0 15px;
+  max-width: 1048px;
   margin: 0 auto;
 }
 
@@ -350,6 +353,7 @@ img {
 }
 
 .workflow__title {
+  font-family: "Stem";
   font-weight: normal;
   font-size: 45px;
   line-height: 58px;
@@ -360,6 +364,7 @@ img {
 }
 
 .workflow__subtitle {
+  font-family: "Stem";
   font-weight: normal;
   font-size: 17px;
   line-height: 22px;
@@ -371,8 +376,45 @@ img {
   margin-bottom: 77px;
 }
 
+.workflow__box {
+  width: 67%;
+}
+
+.workflow__box--right {
+  margin-left: auto;
+}
+
+.workflow__item {
+  max-width: 900px;
+  min-height: 200px;
+  margin-bottom: 80px;
+}
+
+.workflow__item:last-child {
+  margin-bottom: 0;
+}
+
+.workflow__item--one {
+  background: url(../../img/workflow-ico-01.svg) no-repeat right top;
+}
+
+.workflow__item--two {
+  margin-left: auto;
+  background: url(../../img/workflow-ico-02.svg) no-repeat left top;
+}
+
+.workflow__item--three {
+  background: url(../../img/workflow-ico-03.svg) no-repeat right top;
+}
+
+.workflow__item--four {
+  margin-left: auto;
+  background: url(../../img/workflow-ico-04.svg) no-repeat left top;
+}
+
 .workflow__item-title {
-  font-weight: 700;
+  font-family: "Stem";
+  font-weight: bold;
   font-size: 31px;
   line-height: 40px;
   color: #1E5DC5;
@@ -380,7 +422,12 @@ img {
   margin-bottom: 18px;
 }
 
+.workflow__item-title--mod {
+  color: #00D2A0;
+}
+
 .workflow__item-subtitle {
+  font-family: "Stem";
   font-weight: 500;
   font-size: 28px;
   line-height: 36px;
@@ -390,6 +437,7 @@ img {
 }
 
 .workflow__item-desc {
+  font-family: "Stem";
   font-weight: 300;
   font-size: 19px;
   line-height: 25px;
@@ -441,6 +489,7 @@ img {
 }
 
 .services .services__title {
+  font-family: "Stem";
   font-weight: normal;
   font-size: 35px;
   line-height: 45px;
@@ -464,7 +513,18 @@ img {
 }
 
 .services .services__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 405px;
+  min-height: 695px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.08);
@@ -472,6 +532,7 @@ img {
 }
 
 .services .services__item-title {
+  font-family: "Stem";
   font-weight: normal;
   font-size: 22px;
   line-height: 28px;
@@ -480,6 +541,7 @@ img {
 }
 
 .services .services__item-subtitle {
+  font-family: "Stem";
   font-weight: normal;
   font-size: 16px;
   line-height: 21px;
@@ -489,27 +551,16 @@ img {
 }
 
 .services__item-desc {
+  font-family: "Stem";
   font-weight: 300;
   font-size: 16px;
   line-height: 21px;
   color: #000000;
-  margin: 0 16px 64px 16px;
+  margin: 0 16px 34px 16px;
 }
 
 .services__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  text-align: center;
 }
 
 .services__item-link {
@@ -523,6 +574,10 @@ img {
   text-decoration: none;
 }
 
+.services__item-link:hover, .services__item-link:focus, .services__item-link:active {
+  color: #217bff;
+}
+
 .spec {
   background-color: black;
   padding-top: 73px;
@@ -534,6 +589,7 @@ img {
 }
 
 .spec__title {
+  font-family: "Stem";
   font-weight: normal;
   font-size: 35px;
   line-height: 45px;
@@ -601,6 +657,7 @@ img {
 }
 
 .spec__desc {
+  font-family: "Stem";
   font-weight: normal;
   font-size: 22px;
   line-height: 28px;

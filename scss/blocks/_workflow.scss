@@ -4,8 +4,7 @@
   background-color: #fff;
 
   &__wrapper {
-    max-width: 1262px;
-    padding: 0 15px;
+    max-width: 1048px;
     margin: 0 auto;
   }
   
@@ -15,7 +14,7 @@
     list-style: none;
   }
   &__title {
-    font-weight: normal;
+    @include regular;
     font-size: 45px;
     line-height: 58px;
     text-align: center;
@@ -25,7 +24,7 @@
   }
   
   &__subtitle {
-    font-weight: normal;
+    @include regular;
     font-size: 17px;
     line-height: 22px;
     text-transform: uppercase;
@@ -35,18 +34,49 @@
     margin: 0;
     margin-bottom: 77px;
   }
+  &__box {
+    width: 67%;
+    &--right {
+      margin-left: auto;
+    }
+  }
+  &__item {
+    max-width: 900px;
+    min-height: 200px;
+    margin-bottom: 80px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &--one {
+    background: url(../../img/workflow-ico-01.svg) no-repeat right top;
+    }
+    &--two {
+      margin-left: auto;
+      background: url(../../img/workflow-ico-02.svg) no-repeat left top;
+    }
+    &--three {
+      background: url(../../img/workflow-ico-03.svg) no-repeat right top;
+    }
+    &--four {
+      margin-left: auto;
+      background: url(../../img/workflow-ico-04.svg) no-repeat left top;
+    }
+  }
   
   &__item-title {
-    font-weight: 700;
+    @include bold;
     font-size: 31px;
     line-height: 40px;
-    color: #1E5DC5;
+    color: $prime-color;
     margin: 0;
     margin-bottom: 18px;
+    &--mod {
+      color: $second-color;
+    }
   }
   
   &__item-subtitle {
-    font-weight: 500;
+    @include medium;
     font-size: 28px;
     line-height: 36px;
     color: #000000;
@@ -55,7 +85,7 @@
   }
   
   &__item-desc {
-    font-weight: 300;
+    @include light;
     font-size: 19px;
     line-height: 25px;
     color: #000000;
