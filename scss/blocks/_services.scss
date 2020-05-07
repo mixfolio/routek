@@ -67,9 +67,14 @@
       align-items: center;
       justify-content: space-between;
   }
-  &__button {
-      
-      background-color: red;
+  &__item-link {
+    display: block;
+    padding: 40px 0 43px 0;
+    @include regular;
+    font-size: 20px;
+    line-height: 26px;
+    color: #A8A8A8;
+    text-decoration: none;
   }
 
 
