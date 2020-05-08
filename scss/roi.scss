@@ -1,0 +1,156 @@
+// Colors
+@import "colors";
+// Fonts
+@import "fonts";
+// Scafold
+@import "scafold";
+// Interface
+@import "interface";
+
+/* Start blocks/hero */
+@import "blocks/hero";
+/* Correct blocks/hero */
+.hero {
+    background-image: url(../img/hero-bg-05.jpg);
+}
+
+.promo {
+    background-color: $dark-bg;
+    min-height: 326px;
+    text-align: center;
+    padding: 71px 30px;
+
+    &__title {
+        @include regular;
+        font-size: 45px;
+        line-height: 58px;
+        color: #ffffff;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    &__text {
+        @include regular;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+        margin: 0;
+    }
+    &__value {
+        display: block;
+        @include medium;
+        font-size: 65px;
+        line-height: 150%;
+        color: $prime-color;
+
+        &-sign {
+            @include regular;
+            font-size: 30px;
+            line-height: 39px;
+        }
+    }
+}
+
+.saving {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #ffffff;
+    &__wrapper {
+        max-width: 1262px;
+        margin: 0 auto;
+    }
+    &__title {
+        @include regular;
+        font-size: 45px;
+        line-height: 58px;
+        text-align: center;
+        color: #000000;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-column-gap: 22px;
+    }
+    &__item {
+        // background: gold;
+        &-title {
+            @include medium;
+            font-size: 22px;
+            line-height: 100%;
+            color: #000000;
+            margin: 0;
+        &-desc {
+            @include light;
+            font-size: 16px;
+            line-height: 170%;
+            margin: 0;
+        }
+        }
+        &-text {
+            @include light;
+            font-size: 18px;
+            line-height: 190%;
+            color: #000000;
+            margin: 0;
+        }
+    }
+    &__bar {
+        position: relative;
+        width: 100%;
+        height: 16px;
+        background-color: #e7e7e7;
+        border-radius: 4px;
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 50%;
+            height: 16px;
+            border-radius: 4px;
+            background-color: $prime-color;
+
+
+        }
+    }
+    &__bold {
+        @include bold;
+        font-size: 18px;
+        line-height: 100%;
+        color: $prime-color;
+        &-mod {
+            color: $second-color;
+        }
+        
+    }
+    &__box {
+        display: grid;
+        grid-template-columns: 192px 2fr;
+        grid-column-gap: 22px;
+        margin-bottom: 30px;
+        &-text {
+            @include regular;
+            font-size: 16px;
+            line-height: 190%;
+            color: #000000;
+            margin: 0;
+            // background: orange;
+        }
+        &-value {
+            display: block;
+            @include medium;
+            font-size: 34px;
+            line-height: 100%;
+            color: $prime-color;
+
+            &-mod {
+                color: $second-color;
+            }
+        }
+    }
+}
+
+@import "blocks/advisory";
+/* Start blocks/footer */
+@import "blocks/footer";
