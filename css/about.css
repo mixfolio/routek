@@ -146,6 +146,125 @@ img {
   position: relative;
 }
 
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 1060px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header__burger__burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    /* transition: all 0.3s ease 0s; */
+  }
+  .header__burger__burger span::before, .header__burger__burger span::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger__burger span::before {
+    top: 0;
+  }
+  .header__burger__burger span::after {
+    bottom: 0;
+  }
+  .header__burger__burger span.active:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger__burger span.active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger__burger span.active span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .main-nav__list {
+    display: none;
+  }
+}
+
+.main-nav__sub-item {
+  display: none;
+  background-color: #212121;
+  width: 200px;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__sub-item a {
+  display: block;
+  padding: 10px;
+}
+
+.block__text {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.drop-btn {
+  padding-left: 24px;
+}
+
+.drop-btn::after,
+.drop-btn::before {
+  position: absolute;
+  top: 9px;
+  content: '';
+  width: 10px;
+  height: 1px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.drop-btn::before {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  left: 0;
+}
+
+.drop-btn::after {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  left: 7px;
+}
+
+.drop-btn.active::before {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.drop-btn.active::after {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
 /* Start blocks/hero */
 .hero {
   display: -webkit-box;
@@ -653,4 +772,3 @@ img {
 .footer-nav__list a:hover, .footer-nav__list a:focus, .footer-nav__list a:active {
   color: #217bff;
 }
-/*# sourceMappingURL=about.css.map */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,35 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
+
 <body>
     <header class="page-header">
         <nav class="navbar">
-            
-            <div class="main-nav">
-                <a href="index.html" class="main-nav__logo logo">
-                    <img class="logo__img" src="img/routek-logo-white.svg" width="191" height="71" alt="Компания Routek">
+
+            <div class="main-nav one">
+                <a href="#" class="main-nav__logo logo">
+                    <img class="logo__img" src="img/routek-logo-white.svg" width="191" height="71"
+                        alt="Компания Routek">
                 </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
-                        <a class="dropbtn" onclick="myFunction()">О нас</a>
-                        <ul class="dropdown-content" id="myDropdown">
+                        <a class="drop-btn">О нас</a>
+                        <ul class="main-nav__sub-item">
                             <li><a href="about.html">О нас</a></li>
                             <li><a href="warranty.html">Гарантия качества</a></li>
                             <li><a href="#">Защита IP</a></li>
-                            <li><a href="#">ROI калькулятор</a></li>
+                            <li><a href="roi.html">ROI калькулятор</a></li>
                             <li><a href="smi.html">СМИ о нас</a></li>
                             <li><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </li>
-                    
+
                     <li class="main-nav__item">
-                        <a class="dropbtn" onclick="myFunction()">Технологии и материалы</a>
-                        <ul class="dropdown-content" id="myDropdown">
+                        <a class="drop-btn">Технологии и материалы</a>
+                        <ul class="main-nav__sub-item">
                             <li><a href="#!">Прямой подвод энергии и материала (DED)</a></li>
                             <li><a href="#!">Струйное нанесение материала (MJ)</a></li>
                             <li><a href="#!">Cинтез на подложке (PBF)</a></li>
@@ -38,26 +44,27 @@
                             <li><a href="#!">Экструзия материала (ME)</a></li>
                             <li><a href="#!">Фотополимеризация в ванне (VP)</a></li>
                             <li><a href="#!">Карта выбора технологий<br>в зависимости от материала</a></li>
-                            <li><a href="#!">Карта выбора технологий в зависисмости<br>от функционального назначения</a></li>
+                            <li><a href="#!">Карта выбора технологий в зависисмости<br>от функционального назначения</a>
+                            </li>
                             <li><a href="#!">Карта выбора технологий<br>в зависимости от внешнего вида</a></li>
-                            
+
                         </ul>
                     </li>
                     <li class="main-nav__item">
-                        <a class="dropbtn" onclick="myFunction()">Сервисы</a>
-                        <ul class="dropdown-content" id="myDropdown">
+                        <a class="drop-btn">Сервисы</a>
+                        <ul class="main-nav__sub-item">
                             <li><a href="#!">Инженерные услуги</a></li>
                             <li><a href="#!">Routek API</a></li>
                             <li><a href="#!">Для преподавателей и студентов</a></li>
-                            
+
                         </ul>
                     </li>
                     <li class="main-nav__item">
                         <a href="#">База знаний</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="dropbtn" onclick="myFunction()">FAQ</a>
-                        <ul class="dropdown-content" id="myDropdown">
+                        <a class="drop-btn">FAQ</a>
+                        <ul class="main-nav__sub-item">
                             <li><a href="#!">Для заказчиков</a></li>
                             <li><a href="#!">Для партнеров</a></li>
                         </ul>
@@ -77,8 +84,10 @@
         <h1 class="visually-hidden">О нас</h1>
         <section class="hero">
             <div class="hero__wrapper">
-                <h2 class="hero__title"><span class="hero__title-color">Вместе открываем</span> новые возможности<br> цифрового производства<span class="hero__title-color">.</span></h2>
-                <p class="hero__subtitle">Routek – это цифровая платформа, обеспечивающая доступ заказчиков к распределенной сети свободных производственных мощностей для оперативного производства деталей.</p>
+                <h2 class="hero__title"><span class="hero__title-color">Вместе открываем</span> новые возможности<br>
+                    цифрового производства<span class="hero__title-color">.</span></h2>
+                <p class="hero__subtitle">Routek – это цифровая платформа, обеспечивающая доступ заказчиков к
+                    распределенной сети свободных производственных мощностей для оперативного производства деталей.</p>
                 <button class="hero__button button" type="button">Рассчитать заказ</button>
                 <button class="button button--two" type="button">Стать партнером</button>
             </div>
@@ -89,12 +98,24 @@
             <div class="description__wrapper">
                 <div class="description__box">
                     <h2 class="description__title">Формируем будущее цифрового производства</h2>
-                    <h4 class="description__subtitle">Сегодня мир стоит на пороге развития экономики нового технологического поколения &mdash; цифровой экономики. Центральное место в цифровой экономике занимает высокотехнологичная промышленность, которая должна отвечать требованиям глобальной конкурентоспособности, эффективности и высокой производительности труда. </h4>
-                    <p class="description__text description__text--margin">Эти задачи можно решить, обеспечивая цифровизацию, автоматизацию и интеллектуализацию промышленности, и осуществляя переход к кибер-физическим системам. 
-                        Таким образом, мы стоим на пороге объединения материального и цифрового миров, что особо актуально и для промышленности. Эти глобальные изменения требуют внедрения принципиально новых решений, бизнес-процессов, а главное новой культуры на всех уровнях промышленного производства.
+                    <h4 class="description__subtitle">Сегодня мир стоит на пороге развития экономики нового
+                        технологического поколения &mdash; цифровой экономики. Центральное место в цифровой экономике
+                        занимает высокотехнологичная промышленность, которая должна отвечать требованиям глобальной
+                        конкурентоспособности, эффективности и высокой производительности труда. </h4>
+                    <p class="description__text description__text--margin">Эти задачи можно решить, обеспечивая
+                        цифровизацию, автоматизацию и интеллектуализацию промышленности, и осуществляя переход к
+                        кибер-физическим системам.
+                        Таким образом, мы стоим на пороге объединения материального и цифрового миров, что особо
+                        актуально и для промышленности. Эти глобальные изменения требуют внедрения принципиально новых
+                        решений, бизнес-процессов, а главное новой культуры на всех уровнях промышленного производства.
                     </p>
-                    <p class="description__text">Мы верим в будущее цифрового производства в России и с помощью Routek формируем его вместе с вами. 
-                        Routek – это цифровая платформа, обеспечивающая доступ заказчиков к распределенной сети свободных производственных мощностей для оперативного производства деталей. Мы даем вам возможность производить изделия и детали, используя свободные производственные мощности наших партнеров. Мы знаем рынок и обладаем достаточной инженерной экспертизой для успешной реализации нашей миссии.
+                    <p class="description__text">Мы верим в будущее цифрового производства в России и с помощью Routek
+                        формируем его вместе с вами.
+                        Routek – это цифровая платформа, обеспечивающая доступ заказчиков к распределенной сети
+                        свободных производственных мощностей для оперативного производства деталей. Мы даем вам
+                        возможность производить изделия и детали, используя свободные производственные мощности наших
+                        партнеров. Мы знаем рынок и обладаем достаточной инженерной экспертизой для успешной реализации
+                        нашей миссии.
                     </p>
                 </div>
             </div>
@@ -103,15 +124,22 @@
 
         <!-- Start slogan-block -->
         <section class="slogan">
-            <h2 class="slogan__title"><span class="slogan__title-color">Если вы хотите изменить мир к лучшему &mdash;<br>вам нужно единое видение, сильные идеи,</span> и, что самое главное,<br>сильная команда, готовая решать самые сложные и неординарные задачи<span class="slogan__title-color">.</span></h2>
+            <h2 class="slogan__title"><span class="slogan__title-color">Если вы хотите изменить мир к лучшему
+                    &mdash;<br>вам нужно единое видение, сильные идеи,</span> и, что самое главное,<br>сильная команда,
+                готовая решать самые сложные и неординарные задачи<span class="slogan__title-color">.</span></h2>
         </section>
         <!-- End slogan-block -->
         <!-- Start resume-block -->
         <section class="resume">
             <div class="resume__wrapper">
                 <h2 class="resume__title">Связанные одной целью</h2>
-                <p class="resume__text">Мы профессионалы и энтузиасты цифрового производства, романтики 3D-печати, любители ERP систем, 3D евангелисты и трансформаторы производственных цепочек... Мы верим в нашу силу и способность изменить наш мир к лучшему вместе с нашими партнёрами! Мы убеждены, что, развивая нашу платформу и создавая новые цифровые решения, мы можем существенно изменить устаревший мир аналогово производства. Если вы разделяете нашу миссию и видите в себе силы и способности решать сложные и интересные задачи – присоединяйтесь к нам!</p>
-                <button class="button" type="button" >Отправить резюме</button>
+                <p class="resume__text">Мы профессионалы и энтузиасты цифрового производства, романтики 3D-печати,
+                    любители ERP систем, 3D евангелисты и трансформаторы производственных цепочек... Мы верим в нашу
+                    силу и способность изменить наш мир к лучшему вместе с нашими партнёрами! Мы убеждены, что, развивая
+                    нашу платформу и создавая новые цифровые решения, мы можем существенно изменить устаревший мир
+                    аналогово производства. Если вы разделяете нашу миссию и видите в себе силы и способности решать
+                    сложные и интересные задачи – присоединяйтесь к нам!</p>
+                <button class="button" type="button">Отправить резюме</button>
             </div>
         </section>
         <!-- End resume-block -->
@@ -121,30 +149,32 @@
                 <h2 class="facts__title">Факты о нас</h2>
                 <ul class="facts__list">
                     <li class="facts__item facts__item--one">
-                        <p class="facts__text"><span class="facts__digit" >8 </span>сотрудников</p>
+                        <p class="facts__text"><span class="facts__digit">8 </span>сотрудников</p>
                     </li>
                     <li class="facts__item facts__item--two">
-                        <p class="facts__text"><span class="facts__digit facts__digit--mod" >35 лет </span>средний возраст</p>
+                        <p class="facts__text"><span class="facts__digit facts__digit--mod">35 лет </span>средний
+                            возраст</p>
                     </li>
                     <li class="facts__item facts__item--three">
-                        <p class="facts__text"><span class="facts__digit" >25% </span>кошек</p>
+                        <p class="facts__text"><span class="facts__digit">25% </span>кошек</p>
                     </li>
                     <li class="facts__item facts__item--four">
-                        <p class="facts__text"><span class="facts__digit facts__digit--mod" >75% </span>собак</p>
+                        <p class="facts__text"><span class="facts__digit facts__digit--mod">75% </span>собак</p>
                     </li>
                     <li class="facts__item facts__item--five">
-                        <p class="facts__text"><span class="facts__digit facts__digit--mod" >15 000 </span>миль на самолете</p>
+                        <p class="facts__text"><span class="facts__digit facts__digit--mod">15 000 </span>миль на
+                            самолете</p>
                     </li>
                     <li class="facts__item facts__item--six">
-                        <p class="facts__text"><span class="facts__digit" >8 000 </span>км на поезде</p>
+                        <p class="facts__text"><span class="facts__digit">8 000 </span>км на поезде</p>
                     </li>
                     <li class="facts__item facts__item--seven">
-                        <p class="facts__text"><span class="facts__digit facts__digit--mod" >1 250 </span>литров кофе</p>
+                        <p class="facts__text"><span class="facts__digit facts__digit--mod">1 250 </span>литров кофе</p>
                     </li>
                     <li class="facts__item facts__item--eight">
-                        <p class="facts__text"><span class="facts__digit" >1 708 </span>литров чая</p>
+                        <p class="facts__text"><span class="facts__digit">1 708 </span>литров чая</p>
                     </li>
-                    
+
                 </ul>
             </div>
         </section>
@@ -154,15 +184,22 @@
                 <ul class="values__list">
                     <li class="values__item values__item--one">
                         <h3 class="values__item-title">Клиентоориентированность</h3>
-                        <p class="values__item-desc">Все наши действия и усилия направлены, прежде всего на обеспечение наивысшего качества обслуживания Наших клиентов. Мы всегда стараемся сдержать свои обещания клиенту и решить все его задачи. Всегда!</p>
+                        <p class="values__item-desc">Все наши действия и усилия направлены, прежде всего на обеспечение
+                            наивысшего качества обслуживания Наших клиентов. Мы всегда стараемся сдержать свои обещания
+                            клиенту и решить все его задачи. Всегда!</p>
                     </li>
                     <li class="values__item values__item--two">
                         <h3 class="values__item-title">Профессионализм</h3>
-                        <p class="values__item-desc">В нашем мире невозможно без профессионализма, а он зависит от знаний и опыта. Профессионализм формирует доверие к нам и позволяет решать самые сложные и амбициозные задачи. Это так.</p>
+                        <p class="values__item-desc">В нашем мире невозможно без профессионализма, а он зависит от
+                            знаний и опыта. Профессионализм формирует доверие к нам и позволяет решать самые сложные и
+                            амбициозные задачи. Это так.</p>
                     </li>
                     <li class="values__item values__item--three">
                         <h3 class="values__item-title">Открытость</h3>
-                        <p class="values__item-desc">В нашем мире невозможно успешно развиваться без открытости. Открытость способствует обмену знаниями и опытом внутри команды, между нашими клиентами и партнерами. Открытость формирует инновации, которые мы реализуем в наших проектах и решениях.</p>
+                        <p class="values__item-desc">В нашем мире невозможно успешно развиваться без открытости.
+                            Открытость способствует обмену знаниями и опытом внутри команды, между нашими клиентами и
+                            партнерами. Открытость формирует инновации, которые мы реализуем в наших проектах и
+                            решениях.</p>
                     </li>
                 </ul>
             </div>
@@ -182,7 +219,7 @@
                     </div>
                     <div class="advisory__item advisory__item--answ">
                         <label class="advisory__label" for="">Вопрос</label>
-                        <textarea class="advisory__input" name="" id=""  rows="1"></textarea required>
+                        <textarea class="advisory__input" name="" id="" rows="1"></textarea required>
                     </div>
                     <button class="button" type="submit">Отправить</button>
                 </form>
@@ -244,22 +281,7 @@
         
 
     </footer>
-    <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(e) {
-          if (!e.target.matches('.dropbtn')) {
-            var myDropdown = document.getElementById("myDropdown");
-              if (myDropdown.classList.contains('show')) {
-                myDropdown.classList.remove('show');
-              }
-          }
-        }
-        </script>        
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
