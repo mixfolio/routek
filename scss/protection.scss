@@ -1,0 +1,91 @@
+// Colors
+@import "colors";
+// Fonts
+@import "fonts";
+// Scafold
+@import "scafold";
+// Interface
+@import "interface";
+
+/* Start blocks/navbar */
+@import "blocks/navbar";
+
+/* Start blocks/hero */
+@import "blocks/hero";
+/* Correct blocks/hero */
+.hero {
+    background-image: url(../img/hero-bg-04.jpg);
+}
+.privacy {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__wrapper {
+        max-width: 1262px;
+        margin: 0 auto;
+    }
+    &__title {
+        @include regular;
+        font-size: 45px;
+        line-height: 58px;
+        color: #000000;
+        margin: 0;
+        margin-bottom: 26px;
+    }
+    &__text {
+        @include regular;
+        font-size: 18px;
+        line-height: 170.3%;
+        color: #000000;
+        margin: 0;
+        margin-bottom: 31px;
+        &:last-child {
+            margin-bottom: 34px;
+        }    
+    }
+    &__link {
+        @include medium;
+        color: $hero-text;
+        text-decoration: underline;
+    }
+    &__server-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.server-block {
+    &__text-box {
+        width: 57%;
+    }
+    &__title {
+        @include medium;
+        font-size: 28px;
+        line-height: 36px;
+        color: #000000;
+        margin: 0;
+        margin-bottom: 18px;
+    }
+    &__text {
+        @include regular;
+        font-size: 18px;
+        line-height: 170.3%;
+        color: #000000;
+        margin: 0;
+        margin-bottom: 18px;
+    }
+    &__picture {
+        img {
+            background: red;
+            border-radius: 8px;
+
+        }
+    }
+}
+
+
+/* Start blocks/advisory */
+@import "blocks/advisory";
+/* Start blocks/footer */
+@import "blocks/footer";
