@@ -1,61 +1,401 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Прямой подвод энергии и материала Directed energy deposition (DED).
-         </title>
+    </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/ded.css">
 </head>
+
 <body>
+    <header class="page-header">
+        <nav class="navbar">
+
+            <div class="main-nav one">
+                <a href="index.html" class="main-nav__logo logo">
+                    <img class="logo__img" src="img/routek-logo-white.svg" width="191" height="71"
+                        alt="Компания Routek">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a class="drop-btn">О нас</a>
+                        <ul class="main-nav__sub-item">
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="warranty.html">Гарантия качества</a></li>
+                            <li><a href="#">Защита IP</a></li>
+                            <li><a href="roi.html">ROI калькулятор</a></li>
+                            <li><a href="smi.html">СМИ о нас</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="main-nav__item">
+                        <a class="drop-btn">Технологии и материалы</a>
+                        <ul class="main-nav__sub-item">
+                            <li><a href="#!">Прямой подвод энергии и материала (DED)</a></li>
+                            <li><a href="#!">Струйное нанесение материала (MJ)</a></li>
+                            <li><a href="#!">Cинтез на подложке (PBF)</a></li>
+                            <li><a href="#!">Струйное нанесение связующего (BJ)</a></li>
+                            <li><a href="#!">Экструзия материала (ME)</a></li>
+                            <li><a href="#!">Фотополимеризация в ванне (VP)</a></li>
+                            <li><a href="#!">Карта выбора технологий<br>в зависимости от материала</a></li>
+                            <li><a href="#!">Карта выбора технологий в зависисмости<br>от функционального назначения</a>
+                            </li>
+                            <li><a href="#!">Карта выбора технологий<br>в зависимости от внешнего вида</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="drop-btn">Сервисы</a>
+                        <ul class="main-nav__sub-item">
+                            <li><a href="#!">Инженерные услуги</a></li>
+                            <li><a href="#!">Routek API</a></li>
+                            <li><a href="#!">Для преподавателей и студентов</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">База знаний</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="drop-btn">FAQ</a>
+                        <ul class="main-nav__sub-item">
+                            <li><a href="#!">Для заказчиков</a></li>
+                            <li><a href="#!">Для партнеров</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Правовая информация</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="user-list__login" href="#">Личный кабинет</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
     <main class="page-main">
-        <section>
+        <section class="hero">
+            <div class="hero__wrapper">
+                <h2 class="hero__title"><span class="hero__title-color">Прямой подвод энергии и материала
+                    </span><br>Directed energy deposition (DED)<span class="hero__title-color">.</span></h2>
+                <p class="hero__subtitle">Мы серьезно относимся к защите <br>Вашей интеллектуальной собственности.</p>
+                <button class="hero__button button" type="button">Рассчитать заказ</button>
+                <button class="button button--two" type="button">Стать партнером</button>
+            </div>
+        </section>
+        <!-- Start kind-tech-block -->
+        <section class="kind-tech">
             <div class="wrapper">
-                <h2>Виды технологии</h2>
-                <ul>
-                    <li>
-                        <h3>Спекание электронным пучком</h3>
-                        <p>Electron beam additive manufacturing, EBAM</p>
+                <h2 class="kind-tech__title title">Виды технологии</h2>
+                <ul class="kind-tech__list">
+                    <li class="kind-tech__item">
+                        <div class="kind-tech__icon">EBAM</div>
+                        <div class="kind-tech__body">
+                            <h3 class="kind-tech__body-title">Спекание электронным пучком</h3>
+                            <p class="kind-tech__body-desc">Electron beam additive manufacturing, EBAM</p>
+                        </div>
                     </li>
-                    <li>
-                        <h3>Прямая обработка металла</h3>
-                        <p>Direct metal tooling, DMT</p>
+                    <li class="kind-tech__item">
+                        <div class="kind-tech__icon">DMT</div>
+                        <div class="kind-tech__body">
+                            <h3 class="kind-tech__body-title">Прямая обработка металла</h3>
+                            <p class="kind-tech__body-desc">Direct metal tooling</p>
+                        </div>
                     </li>
-                    <li>
-                        <h3>Прямое лазерное выращивание</h3>
-                        <p>Direct Laser Deposition, DLD</p>
+                    <li class="kind-tech__item">
+                        <div class="kind-tech__icon">DLD</div>
+                        <div class="kind-tech__body">
+                            <h3 class="kind-tech__body-title">Прямое лазерное выращивание</h3>
+                            <p class="kind-tech__body-desc">Direct Laser Deposition</p>
+                        </div>
                     </li>
-                    <li>
-                        <h3>Электродуговое аддитивное производство</h3>
-                        <p>Arc welding based additive manufacturing, WAAM</p>
+                    <li class="kind-tech__item">
+                        <div class="kind-tech__icon">WAAM</div>
+                        <div class="kind-tech__body">
+                            <h3 class="kind-tech__body-title">Электродуговое аддитивное производство</h3>
+                            <p class="kind-tech__body-desc">Arc welding based additive manufacturing</p>
+                        </div>
                     </li>
-                    <li>
-                        <h3>Холодное нанесение</h3>
-                        <p>Cold spray additive manufacturing, CSAM</p>
+                    <li class="kind-tech__item">
+                        <div class="kind-tech__icon">CSAM</div>
+                        <div class="kind-tech__body">
+                            <h3 class="kind-tech__body-title">Холодное нанесение</h3>
+                            <p class="kind-tech__body-desc">Cold spray additive manufacturing</p>
+                        </div>
                     </li>
-                    <li>
-                        <h3>Прямое нанесение металла</h3>
-                        <p>Direct metal deposition, DMD</p>
+                    <li class="kind-tech__item">
+                        <div class="kind-tech__icon">DMD</div>
+                        <div class="kind-tech__body">
+                            <h3 class="kind-tech__body-title">Прямое нанесение металла</h3>
+                            <p class="kind-tech__body-desc">Direct metal deposition</p>
+                        </div>
                     </li>
-                    <li>
-                        <h3>Лазерное спекание порошков</h3>
-                        <p>Laser engineered net shaping, LENS</p>
+                    <li class="kind-tech__item">
+                        <div class="kind-tech__icon">LENS</div>
+                        <div class="kind-tech__body">
+                            <h3 class="kind-tech__body-title">Лазерное спекание порошков</h3>
+                            <p class="kind-tech__body-desc">Laser engineered net shaping</p>
+                        </div>
                     </li>
-                    <li>
-                        <h3>Лазерное нанесение металла</h3>
-                        <p>Laser metal deposition, LMD</p>
+                    <li class="kind-tech__item">
+                        <div class="kind-tech__icon">LMD</div>
+                        <div class="kind-tech__body">
+                            <h3 class="kind-tech__body-title">Лазерное нанесение металла</h3>
+                            <p class="kind-tech__body-desc">Laser metal deposition</p>
+                        </div>
                     </li>
-                    <li>
-                        <h3>Электронно-лучевое сплавление проволоки</h3>
-                        <p>Electron-beam freeform fabrication, EBF</p>
+                    <li class="kind-tech__item">
+                        <div class="kind-tech__icon">EBF</div>
+                        <div class="kind-tech__body">
+                            <h3 class="kind-tech__body-title">Электронно-лучевое сплавление проволоки</h3>
+                            <p class="kind-tech__body-desc">Electron-beam freeform fabrication</p>
+                        </div>
                     </li>
-                    <li>
-                        <h3>Контролируемое наращивание металла</h3>
-                        <p>Соntrolled metal buildup, CMB</p>
+                    <li class="kind-tech__item">
+                        <div class="kind-tech__icon">CMB</div>
+                        <div class="kind-tech__body">
+                            <h3 class="kind-tech__body-title">Контролируемое наращивание металла</h3>
+                            <p class="kind-tech__body-desc">Соntrolled metal buildup</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
+        <!-- End kind-tech-block -->
+
+        <section class="area-app">
+            <div class="wrapper">
+                <h2 class="area-app__title">Области применения</h2>
+                <ul class="area-app__list">
+                    <li class="area-app__item area-app__item--one">Архитектура</li>
+                    <li class="area-app__item area-app__item--two">Медицина</li>
+                    <li class="area-app__item area-app__item--three">Научные исследования</li>
+                    <li class="area-app__item area-app__item--four">Большие конструкции из металла</li>
+                    <li class="area-app__item area-app__item--five">Ремонт и восстановление деталей</li>
+                    <li class="area-app__item area-app__item--six">Строительство</li>
+                </ul>
+            </div>
+        </section>
+        <section class="tech-param">
+            <div class="wrapper">
+                <h2 class="tech-param__title title">Технические характеристики</h2>
+                <ul class="tech-param__list">
+                    <li class="tech-param__item tech-param__item--one"><span class="tech-param__item-digit">600
+                            см<sup>3</sup>/ч
+                        </span>Скорость печати
+                    </li>
+                    <li class="tech-param__item tech-param__item--two"><span class="tech-param__item-digit">0,2–1,2 мм
+                        </span>Высота слоя
+                    </li>
+                    <li class="tech-param__item tech-param__item--three"><span class="tech-param__item-digit">1 200–1
+                            600
+                            °С
+                        </span>Температура
+                        печати
+                    </li>
+                    <li class="tech-param__item tech-param__item--four"><span class="tech-param__item-digit">± 0,05–0,3
+                            °С/сек </span>Время
+                        охлаждения
+                        материала
+                    </li>
+                </ul>
+                <div class="parameters__list">
+                    <li class="parameters__item">
+                        <h3 class="parameters__title">Используемые материалы</h3>
+                        <p class="parameters__text">Металлы и сплавы в виде порошка и проволоки</p>
+                    </li>
+                </div>
+            </div>
+        </section>
+
+        <section class="select-map">
+            <div class="wrapper">
+                <h2 class="select-map__title">Карта выбора технологий</h2>
+                <ul class="select-map__list">
+                    <li class="select-map__item">
+                        <p class="select-map__text"><span class="select-map__number">01. </span>Карта выбора
+                            технологии в зависимости от материалов
+                        </p>
+                        <a href="#!" class="select-map__link">Подробнее</a>
+                    </li>
+                    <li class="select-map__item">
+                        <p class="select-map__text"><span class="select-map__number second-color">02. </span>Карта
+                            выбора
+                            технологиив зависимости от
+                            функционального назначения изделия
+                        </p>
+                        <a href="#!" class="select-map__link second-color">Подробнее</a>
+                    </li>
+                    <li class="select-map__item">
+                        <p class="select-map__text"><span class="select-map__number">03. </span>Карта выбора
+                            технологии в зависимости от внешнего
+                            вида
+
+                        </p>
+                        <a href="#!" class="select-map__link">Подробнее</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="print-tech">
+            <div class="wrapper">
+                <div class="print-tech__title title">Технология печати</div>
+                <div class="print-tech__box">
+                    <div class="print-tech__pict">
+                        <img src="img/ded-img.jpg" width="620" height="794"
+                            alt="Прямой подвод энергии и материала Directed energy deposition (DED).">
+                    </div>
+                    <ul class="print-tech__list">
+                        <li class="print-tech__item">
+                            <p class="print-tech__text"><span class="print-tech__number">01. </span>Оборудование состоит
+                                из печатной головки, снабжённой энергоёмким источником – лазер, поток электронов,
+                                плазменная дуга – для создания ванны расплава на подложке. В эту ванну подаётся
+                                металлический порошок или проволока.
+                            </p>
+                        </li>
+                        <li class="print-tech__item">
+                            <p class="print-tech__text"><span class="print-tech__number second-color">02.
+                                </span>Печатная головка
+                                размещается на 5-ти осевом промышленном манипуляторе и движется вокруг зафиксированного
+                                изделия (может быть наоборот), подавая материал в заданное на поверхности место,
+                                заполняя тем самым верхнюю часть подложки.
+                            </p>
+                        </li>
+                        <li class="print-tech__item">
+                            <p class="print-tech__text"><span class="print-tech__number">03. </span>Материал добавляется
+                                слой за слоем и твердеет, образуя новое изделие, ремонтируя существующее или придавая
+                                существующему изделию новые свойства.
+                            </p>
+                        </li>
+                        <li class="print-tech__item">
+                            <p class="print-tech__text"><span class="print-tech__number second-color">04.
+                                </span>Благодаря
+                                использованию промышленного манипулятора материал может быть напечатан под любым углом.
+                                Остаточные напряжения и деформации, вызванные термическим воздействием, влияют на
+                                микроструктуру и свойства готового изделия
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="features">
+                    <ul class="features__list">
+                        <h3 class="features__title">Преимущества</h3>
+                        <li class="features__item">Контроль структуры зерна</li>
+                        <li class="features__item">Высокая скорость процесса</li>
+                        <li class="features__item">Ремонт и продление срока эксплуатации рабочих изделий</li>
+                        <li class="features__item">Сложная геометрия изделия</li>
+                        <li class="features__item">Высокие механические характеристики</li>
+                        <li class="features__item">Высокая плотность изделия</li>
+                        <li class="features__item">Комбинирование материалов</li>
+                    </ul>
+                    <ul class="features__list features__list--two">
+                        <h3 class="features__title features__title--two">Недостатки</h3>
+                        <li class="features__item">Грубая поверхность</li>
+                        <li class="features__item">Постобработка</li>
+                        <li class="features__item">Ограниченный выбор материалов</li>
+                        <li class="features__item">Необходимы исследования</li>
+                        <li class="features__item">Низкая точность</li>
+                        <li class="features__item">Высокая плотность изделия</li>
+                        <li class="features__item">Высокие энергозатраты</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Start advisory-block -->
+        <section class="advisory">
+            <div class="advisory__wrapper">
+                <h2 class="advisory__title">Необходима консультация наших специалистов?</h2>
+                <form action="" class="advisory__form">
+                    <div class="advisory__item">
+                        <label class="advisory__label" for="">Имя</label>
+                        <input class="advisory__input" type="text" placeholder="Введите имя" required>
+                    </div>
+                    <div class="advisory__item">
+                        <label class="advisory__label" for="">E-mail</label>
+                        <input class="advisory__input" type="text" placeholder="Введите e-mail" required>
+                    </div>
+                    <div class="advisory__item advisory__item--answ">
+                        <label class="advisory__label" for="">Вопрос</label>
+                        <input class="advisory__input" name="" id="" required>
+                    </div>
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- End advisory-block -->
     </main>
-    
+    <!-- Start footer-block -->
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__contacts">
+                <a href="#" class="page-footer__logo logo">
+                    <img class="logo__img" src="img/routek-logo-white.svg" width="191" height="71"
+                        alt="Компания Routek">
+                </a>
+                <p class="contacts__text">Москва, ул. 1905 года, д.7с1</p>
+                <p class="contacts__text">support@routek.com</p>
+                <p class="contacts__text">+7(903) 714-41-49</p>
+                <p class="contacts__text">&copy; 2020 Routek</p>
+            </div>
+            <div class="footer-nav__box">
+                <b>О нас</b>
+                <ul class="footer-nav__list">
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="warranty.html">Гарантии качества</a></li>
+                    <li><a href="protection.html">Защита IP</a></li>
+                    <li><a href="roi.html">ROI калькулятор</a></li>
+                    <li><a href="smi.html">СМИ о нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-nav__box">
+                <b>Технологии и материалы</b>
+                <ul class="footer-nav__list">
+                    <li><a href="#!">Прямой подвод энергии и материала (DED)</a></li>
+                    <li><a href="#!">Струйное нанесение материала (MJ)</a></li>
+                    <li><a href="#!">Cинтез на подложке (PBF)</a></li>
+                    <li><a href="#!">Струйное нанесение связующего (BJ)</a></li>
+                    <li><a href="#!">Экструзия материала (ME)</a></li>
+                    <li><a href="#!">Фотополимеризация в ванне (VP)</a></li>
+                    <li><a href="#!">Карта выбора технологий<br>в зависимости от материала</a></li>
+                    <li><a href="#!">Карта выбора технологий в зависисмости<br>от функционального назначения</a>
+                    </li>
+                    <li><a href="#!">Карта выбора технологий<br>в зависимости от внешнего вида</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-nav__box">
+                <b>Для пользователей</b>
+                <ul class="footer-nav__list">
+                    <li><a href="#">Личный кабинет</a></li>
+                    <li><a href="#">Связаться с нами по почте</a></li>
+                    <li><a href="#">Позвонить нам</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer-block -->
+
+
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>

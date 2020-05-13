@@ -69,6 +69,16 @@ img {
   overflow: hidden;
 }
 
+.title {
+  position: relative;
+  font-family: "Stem";
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 58px;
+  color: #000000;
+  margin: 0;
+}
+
 .button {
   width: 272px;
   height: 64px;

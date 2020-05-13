@@ -38,3 +38,22 @@ html {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  .title {
+    position: relative;
+    @include regular;
+    font-size: 45px;
+    line-height: 58px;
+    color: #000000;
+    margin: 0;
+    // &::before {
+    //   position: absolute;
+    //   top: 30px;
+    //   left: 0;
+    //   content: "";
+    //   width: 100%;
+    //   border: 2px solid #E8F1FF;
+    //   transform: matrix(-1, 0, 0, 1, 0, 0);
+    //}
+  }
+  
