@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,88 @@
     <link rel="stylesheet" href="css/roi.css">
 
 </head>
+
 <body>
+    <header class="page-header">
+        <nav class="navbar">
+
+            <div class="main-nav one">
+                <a href="index.html" class="main-nav__logo logo">
+                    <img class="logo__img" src="img/routek-logo-white.svg" width="191" height="71"
+                        alt="Компания Routek">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a class="drop-btn">О нас</a>
+                        <ul class="main-nav__sub-item">
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="warranty.html">Гарантия качества</a></li>
+                            <li><a href="protection.html">Защита IP</a></li>
+                            <li><a href="roi.html">ROI калькулятор</a></li>
+                            <li><a href="smi.html">СМИ о нас</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="main-nav__item">
+                        <a class="drop-btn">Технологии и материалы</a>
+                        <ul class="main-nav__sub-item">
+                            <li><a href="ded.html">Прямой подвод энергии и материала (DED)</a></li>
+                            <li><a href="mj.html">Струйное нанесение материала (MJ)</a></li>
+                            <li><a href="pfb.html">Cинтез на подложке (PBF)</a></li>
+                            <li><a href="bj.html">Струйное нанесение связующего (BJ)</a></li>
+                            <li><a href="me.html">Экструзия материала (ME)</a></li>
+                            <li><a href="vp.html">Фотополимеризация в ванне (VP)</a></li>
+                            <li><a href="material.html">Карта выбора технологий<br>в зависимости от материала</a></li>
+                            <li><a href="function.html">Карта выбора технологий в зависисмости<br>от функционального
+                                    назначения</a>
+                            </li>
+                            <li><a href="appearance.html">Карта выбора технологий<br>в зависимости от внешнего вида</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="drop-btn">Сервисы</a>
+                        <ul class="main-nav__sub-item">
+                            <li><a href="engineer.html">Инженерные услуги</a></li>
+                            <li><a href="api.html">Routek API</a></li>
+                            <li><a href="student.html">Для преподавателей и студентов</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="knowbase.html">База знаний</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="drop-btn">FAQ</a>
+                        <ul class="main-nav__sub-item">
+                            <li><a href="client.html">Для заказчиков</a></li>
+                            <li><a href="parthner.html">Для партнеров</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="legal.html">Правовая информация</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="user-list__login" href="#">Личный кабинет</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
     <main class="page-main">
         <!-- Start hero-block -->
         <section class="hero">
             <div class="hero__wrapper wrapper">
-                <h2 class="hero__title"><span class="hero__title-color">ROI </span>калькулятор<span class="hero__title-color">.</span></h2>
-                <p class="hero__subtitle">Рассчитайте, сколько вы можете сэкономить <br>времении и денег работая с нами.</p>
+                <h2 class="hero__title"><span class="hero__title-color">ROI </span>калькулятор<span
+                        class="hero__title-color">.</span></h2>
+                <p class="hero__subtitle">Рассчитайте, сколько вы можете сэкономить <br>времении и денег работая с нами.
+                </p>
                 <button class="hero__button button" type="button">Рассчитать заказ</button>
             </div>
         </section>
@@ -22,7 +98,8 @@
         <!-- Start promo -->
         <section class="promo">
             <h2 class="promo__title">Экономия за год</h2>
-            <p class="promo__text">Общая сумма возможной экономии, которая состоит из суммы 2х показателей <b class="promo__value">890 567 <span class="promo__value-sign">RUB</span></b></p>
+            <p class="promo__text">Общая сумма возможной экономии, которая состоит из суммы 2х показателей <b
+                    class="promo__value">890 567 <span class="promo__value-sign">RUB</span></b></p>
         </section>
         <!-- Start saving -->
         <section class="saving">
@@ -31,10 +108,14 @@
                 <div class="saving__list">
                     <div class="saving__item">
                         <div class="saving__box">
-                            <p class="saving__box-text"><b class="saving__box-value">216 749 </b>часов вашего времени</p>
-                            <p class="saving__box-text"><b class="saving__box-value saving__box-value-mod">480 000 </b>рублей</p>
+                            <p class="saving__box-text"><b class="saving__box-value">216 749 </b>часов вашего времени
+                            </p>
+                            <p class="saving__box-text"><b class="saving__box-value saving__box-value-mod">480 000
+                                </b>рублей</p>
                         </div>
-                        <p class="saving__item-text">Наша платформа позволяет получать цифровые предложения в течении 12 часов. Отраслевой стандарт предполагает возможность ответа заказчиков в течении рабочей недели</p>
+                        <p class="saving__item-text">Наша платформа позволяет получать цифровые предложения в течении 12
+                            часов. Отраслевой стандарт предполагает возможность ответа заказчиков в течении рабочей
+                            недели</p>
                     </div>
                     <div class="saving__item">
                         <h3 class="saving__item-title">Традиционный подход</h3>
@@ -73,15 +154,16 @@
                     </div>
                     <button class="button" type="submit">Отправить</button>
                 </form>
-            </div>   
+            </div>
         </section>
-        <!-- End advisory-block --> 
+        <!-- End advisory-block -->
     </main>
     <footer class="page-footer">
         <div class="page-footer__wrapper">
             <div class="page-footer__contacts">
                 <a href="index.html" class="page-footer__logo logo">
-                    <img class="logo__img" src="img/routek-logo-white.svg" width="191" height="71" alt="Компания Routek">
+                    <img class="logo__img" src="img/routek-logo-white.svg" width="191" height="71"
+                        alt="Компания Routek">
                 </a>
                 <p class="contacts__text">Москва, ул. 1905 года, д.7с1</p>
                 <p class="contacts__text">support@routek.com</p>
@@ -127,10 +209,11 @@
                 </ul>
             </div>
         </div>
-        
-        
+
+
 
     </footer>
-    
+
 </body>
+
 </html>
