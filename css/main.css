@@ -4,18 +4,21 @@
   font-style: normal;
   src: url("../fonts/Stem-Light.woff2") format("woff2"), url("../fonts/Stem-Light.woff") format("woff");
 }
+
 @font-face {
   font-weight: normal;
   font-family: "Stem";
   font-style: normal;
   src: url("../fonts/Stem-Regular.woff2") format("woff2"), url("../fonts/Stem-Regular.woff") format("woff");
 }
+
 @font-face {
   font-weight: normal;
   font-family: "Stem";
   font-style: normal;
   src: url("../fonts/Stem-Medium.woff2") format("woff2"), url("../fonts/Stem-Medium.woff") format("woff");
 }
+
 @font-face {
   font-weight: normal;
   font-family: "Stem";
@@ -43,8 +46,6 @@ body {
   font-weight: normal;
   background-color: #292929;
 }
-
-
 
 img {
   max-width: 100%;
@@ -81,20 +82,22 @@ button {
   background-color: #00D2A0;
 }
 
-  
-
 h2 span {
-    color: #1E5DC5;
+  color: #1E5DC5;
 }
+
 /* block/logo */
+
 .logo {
   min-width: 191px;
-  
 }
+
 .logo__img {
   display: block;
 }
-  /* Page-header */
+
+/* Page-header */
+
 .page-header {
   background-color: #000000;
 }
@@ -113,10 +116,9 @@ h2 span {
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 
-.site__list  {
+.site__list {
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
@@ -132,8 +134,8 @@ h2 span {
 
 .user-list {
   background-color: blue;
-  
 }
+
 .user-list a {
   font-weight: normal;
   font-size: 14px;
@@ -141,10 +143,12 @@ h2 span {
   color: #ffffff;
   text-decoration: none;
 }
+
 /* Start block/intro */
+
 .intro {
   padding: 125px 0 129px 0;
-  background-image: url(../img/intro-bg-01.jpg);
+  background-image: url(../img/hero-bg/index-hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -163,7 +167,6 @@ h2 span {
   text-shadow: 0px 4px 34px #001650;
   margin: 0;
   margin-bottom: 30px;
-
 }
 
 .intro__subtitle {
@@ -172,9 +175,8 @@ h2 span {
   margin: 0;
   margin-bottom: 30px;
 }
+
 /* End block/intro */
-
-
 
 .advantages {
   padding: 122px 0 133px 0;
@@ -184,6 +186,7 @@ h2 span {
   max-width: 1262px;
   margin: 0 auto;
 }
+
 .advantages__title {
   font-weight: normal;
   font-size: 45px;
@@ -192,6 +195,7 @@ h2 span {
   margin: 0;
   margin-bottom: 24px;
 }
+
 .advantages__subtitle {
   font-weight: normal;
   font-size: 17px;
@@ -201,7 +205,6 @@ h2 span {
   opacity: 0.6;
   margin: 0;
   margin-bottom: 64px;
-  
 }
 
 .advantages__list {
@@ -223,18 +226,23 @@ h2 span {
 .advantages__item-time {
   background: url(../img/advtg-ico-01.svg) no-repeat 0 0;
 }
+
 .advantages__item-save {
   background: url(../img/advtg-ico-02.svg) no-repeat 0 0;
 }
+
 .advantages__item-price {
   background: url(../img/advtg-ico-03.svg) no-repeat 0 0;
 }
+
 .advantages__item-answers {
   background: url(../img/advtg-ico-04.svg) no-repeat 0 0;
 }
+
 .advantages__item-service {
   background: url(../img/advtg-ico-05.svg) no-repeat 0 0;
 }
+
 .advantages__item-contact {
   background: url(../img/advtg-ico-06.svg) no-repeat 0 0;
 }
@@ -246,6 +254,7 @@ h2 span {
   margin: 0;
   margin-bottom: 12px;
 }
+
 .advantages__item-desc {
   font-weight: 300;
   font-size: 16px;
@@ -259,6 +268,7 @@ h2 span {
   padding-bottom: 100px;
   background-color: #fff;
 }
+
 .workflow__wrapper {
   max-width: 1262px;
   padding: 0 15px;
@@ -270,6 +280,7 @@ h2 span {
   padding: 0;
   list-style: none;
 }
+
 .workflow__title {
   font-weight: normal;
   font-size: 45px;
@@ -317,7 +328,9 @@ h2 span {
   color: #000000;
   opacity: 0.7;
 }
+
 /* Start blodk/slogan */
+
 .slogan {
   height: 326px;
   display: flex;
@@ -327,33 +340,35 @@ h2 span {
   background-position: center 0;
   background-size: cover;
 }
+
 .slogan__title {
   font-weight: 500;
   font-size: 42px;
   line-height: 152.9%;
   text-align: center;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .color-title {
   color: #1E5DC5;
 }
+
 /* End blodk/slogan */
 
 /* block/services */
+
 .services {
   background-color: #E5E5E5;
   padding-bottom: 100px;
 }
+
 .services--padding-top {
   padding-top: 100px;
 }
 
-
 .services__wrapper {
   max-width: 1262px;
   margin: 0 auto;
-
 }
 
 .services__title {
@@ -363,19 +378,17 @@ h2 span {
   color: #000000;
   margin: 0;
   margin-bottom: 60px;
-
 }
 
 .services__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
   list-style: none;
   margin: 0;
   padding: 0;
-  
 }
+
 .services__item {
   max-width: 405px;
   background-color: #ffffff;
@@ -397,7 +410,7 @@ h2 span {
   line-height: 21px;
   text-transform: uppercase;
   color: #C4C4C4;
-  margin: 0 16px 22px 16px ;
+  margin: 0 16px 22px 16px;
 }
 
 .services__item-desc {
@@ -405,14 +418,16 @@ h2 span {
   font-size: 16px;
   line-height: 21px;
   color: #000000;
-  margin: 0 16px 64px 16px ;
+  margin: 0 16px 64px 16px;
 }
 
 /* block/spec */
-.spec  {
+
+.spec {
   background-color: black;
   padding-top: 73px;
 }
+
 .spec__wrapper {
   max-width: 1048px;
   margin: 0 auto;
@@ -445,30 +460,39 @@ h2 span {
   background-repeat: no-repeat;
   background-position: center 0;
 }
+
 .spec__item--avia {
   background-image: url(../img/spec-ico-01.svg);
 }
+
 .spec__item--medicine {
   background-image: url(../img/spec-ico-02.svg);
 }
+
 .spec__item--car {
   background-image: url(../img/spec-ico-03.svg);
 }
+
 .spec__item--electron {
   background-image: url(../img/spec-ico-04.svg);
 }
+
 .spec__item--robot {
   background-image: url(../img/spec-ico-05.svg);
 }
+
 .spec__item--energy {
   background-image: url(../img/spec-ico-06.svg);
 }
+
 .spec__item--machine {
   background-image: url(../img/spec-ico-07.svg);
 }
+
 .spec__item--education {
   background-image: url(../img/spec-ico-08.svg);
 }
+
 .spec__item--goods {
   background-image: url(../img/spec-ico-09.svg);
 }
@@ -489,6 +513,7 @@ h2 span {
   background-position: center 0;
   background-size: cover;
 }
+
 .advisory__wrapper {
   max-width: 1292px;
   padding: 0 15px;
@@ -503,6 +528,7 @@ h2 span {
   margin: 0;
   margin-bottom: 25px;
 }
+
 .advisory__form {
   display: flex;
   justify-content: space-between;
@@ -512,6 +538,7 @@ h2 span {
 .advisory__item {
   width: 22%;
 }
+
 .advisory__item--answ {
   width: 30%;
 }
@@ -539,7 +566,6 @@ h2 span {
   /* при возможности заменить */
   backdrop-filter: blur(42px);
   padding: 10px 30px;
-  
 }
 
 .advisory__input::placeholder {
@@ -582,16 +608,15 @@ h2 span {
   margin: 0;
   padding: 0;
 }
+
 .page-footer a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   color: #828282;
   text-decoration: none;
-
 }
-.page-footer a:hover,
-.page-footer a:active {
+
+.page-footer a:hover, .page-footer a:active {
   color: #0060FF;
 }
-

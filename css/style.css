@@ -50,6 +50,11 @@ body {
   background-color: #ffffff;
 }
 
+.wrapper {
+  max-width: 1262px;
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -287,7 +292,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   height: 550px;
-  background-image: url(../img/intro-bg-01.jpg);
+  background-image: url(../../img/hero-bg/index-hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -756,6 +761,49 @@ img {
   text-align: center;
   color: #ffffff;
   margin: 0;
+}
+
+.faq {
+  padding: 100px 0;
+}
+
+.faq__title {
+  margin: 0 0 36px 0;
+}
+
+.faq__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq__item {
+  padding: 32px 0 10px 0;
+  border-bottom: 1px solid #E5EAF3;
+}
+
+.faq__subtitle {
+  cursor: pointer;
+  font-family: "Stem";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 110%;
+  color: #1E5DC5;
+  margin: 0 0 22px 0;
+}
+
+.faq__text {
+  display: none;
+  font-family: "Stem";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  margin: 0 0 32px 0;
+}
+
+.faq__link {
+  text-decoration: none;
+  color: #1E5DC5;
 }
 
 .advisory {
