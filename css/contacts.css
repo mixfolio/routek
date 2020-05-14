@@ -368,6 +368,10 @@ img {
   background-image: url(../img/hero-bg/student-hero-bg.jpg);
 }
 
+.hero--legal {
+  background-image: url(../img/hero-bg/legal-hero-bg.jpg);
+}
+
 /* Correct blocks/hero */
 .hero {
   background-image: url(../img/hero-bg-07.jpg);
