@@ -80,7 +80,6 @@ img {
   font-weight: normal;
   font-size: 45px;
   line-height: 58px;
-  color: #000000;
   margin: 0;
 }
 
@@ -90,6 +89,11 @@ img {
 
 .second-color {
   color: #00D2A0;
+}
+
+.dark-bg {
+  background-color: #101010;
+  color: #ffffff;
 }
 
 .button {
@@ -350,6 +354,18 @@ img {
 
 .hero--knowbase {
   background-image: url(../img/hero-bg/knowbase-hero-bg.jpg);
+}
+
+.hero--engineer {
+  background-image: url(../img/hero-bg/engineer-hero-bg.jpg);
+}
+
+.hero--api {
+  background-image: url(../img/hero-bg/api-hero-bg.jpg);
+}
+
+.hero--student {
+  background-image: url(../img/hero-bg/student-hero-bg.jpg);
 }
 
 /* Correct blocks/hero */

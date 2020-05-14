@@ -49,7 +49,6 @@ html {
     @include regular;
     font-size: 45px;
     line-height: 58px;
-    color: #000000;
     margin: 0;
     // &::before {
     //   position: absolute;
@@ -62,9 +61,13 @@ html {
     //}
   }
   
-  .prime-color {
+.prime-color {
     color: $prime-color;
 }
 .second-color {
     color: $second-color;
 } 
+.dark-bg {
+  background-color: $dark-bg;
+  color: #ffffff;
+}

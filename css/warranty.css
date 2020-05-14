@@ -287,6 +287,18 @@
   background-image: url(../img/hero-bg/knowbase-hero-bg.jpg);
 }
 
+.hero--engineer {
+  background-image: url(../img/hero-bg/engineer-hero-bg.jpg);
+}
+
+.hero--api {
+  background-image: url(../img/hero-bg/api-hero-bg.jpg);
+}
+
+.hero--student {
+  background-image: url(../img/hero-bg/student-hero-bg.jpg);
+}
+
 /* Correct blocks/hero */
 .hero {
   background-image: url(../img/intro-bg-03.jpg);

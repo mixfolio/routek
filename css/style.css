@@ -80,7 +80,6 @@ img {
   font-weight: normal;
   font-size: 45px;
   line-height: 58px;
-  color: #000000;
   margin: 0;
 }
 
@@ -90,6 +89,11 @@ img {
 
 .second-color {
   color: #00D2A0;
+}
+
+.dark-bg {
+  background-color: #101010;
+  color: #ffffff;
 }
 
 .button {
@@ -350,6 +354,18 @@ img {
 
 .hero--knowbase {
   background-image: url(../img/hero-bg/knowbase-hero-bg.jpg);
+}
+
+.hero--engineer {
+  background-image: url(../img/hero-bg/engineer-hero-bg.jpg);
+}
+
+.hero--api {
+  background-image: url(../img/hero-bg/api-hero-bg.jpg);
+}
+
+.hero--student {
+  background-image: url(../img/hero-bg/student-hero-bg.jpg);
 }
 
 /* Start blocks/advantages */
@@ -782,6 +798,147 @@ img {
   text-align: center;
   color: #ffffff;
   margin: 0;
+}
+
+.three-col-p {
+  padding: 100px 0;
+}
+
+.three-col-p__title {
+  text-align: center;
+  padding: 0 0 38px 0;
+}
+
+.three-col-p__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.three-col-p__item {
+  padding-top: 106px;
+}
+
+.three-col-p__item-one {
+  background: url(../img/engin-ico-01.svg) no-repeat 0 0;
+}
+
+.three-col-p__item-two {
+  background: url(../img/engin-ico-02.svg) no-repeat 0 0;
+}
+
+.three-col-p__item-three {
+  background: url(../img/engin-ico-03.svg) no-repeat 0 0;
+}
+
+.three-col-p__subtitle {
+  font-family: "Stem";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0 0 9px 0;
+}
+
+.three-col-p__text {
+  font-family: "Stem";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0;
+}
+
+.three-col {
+  padding: 100px 0;
+}
+
+.three-col__title {
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+
+.three-col__title--mod {
+  margin-bottom: 0px;
+}
+
+.three-col__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.three-col__subtitle {
+  font-family: "Stem";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0 0 9px 0;
+}
+
+.three-col__number {
+  display: block;
+  font-family: "Stem";
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 59px;
+  margin-bottom: 10px;
+}
+
+.three-col__desc {
+  font-family: "Stem";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170.3%;
+  margin: 0 0 15px 0;
+}
+
+.three-col__text {
+  font-family: "Stem";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 16px 0;
+}
+
+.three-col__text-two {
+  font-family: "Stem";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170.3%;
+  margin: 0;
+}
+
+.three-col__box {
+  text-align: center;
+}
+
+.three-col__button {
+  width: 388px;
+  margin-bottom: 10px;
+}
+
+.three-col__button-desc {
+  font-family: "Stem";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170.3%;
+  text-transform: uppercase;
+  color: #828282;
+  margin: 0;
+}
+
+.three-col__link {
+  color: #1E5DC5;
+  text-decoration: none;
 }
 
 .faq {
