@@ -24,6 +24,15 @@
         &-three {
             background: url(../img/engin-ico-03.svg) no-repeat 0 0;
         }
+        &-four {
+            background: url(../img/student-ico-01.svg) no-repeat 0 0;
+        }
+        &-five {
+            background: url(../img/student-ico-02.svg) no-repeat 0 0;
+        }
+        &-six {
+            background: url(../img/student-ico-03.svg) no-repeat 0 0;
+        }
     }
     &__subtitle {
         @include medium;

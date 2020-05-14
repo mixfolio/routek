@@ -836,6 +836,18 @@ img {
   background: url(../img/engin-ico-03.svg) no-repeat 0 0;
 }
 
+.three-col-p__item-four {
+  background: url(../img/student-ico-01.svg) no-repeat 0 0;
+}
+
+.three-col-p__item-five {
+  background: url(../img/student-ico-02.svg) no-repeat 0 0;
+}
+
+.three-col-p__item-six {
+  background: url(../img/student-ico-03.svg) no-repeat 0 0;
+}
+
 .three-col-p__subtitle {
   font-family: "Stem";
   font-weight: 500;
