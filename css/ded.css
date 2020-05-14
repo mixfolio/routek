@@ -84,6 +84,14 @@ img {
   margin: 0;
 }
 
+.prime-color {
+  color: #1E5DC5;
+}
+
+.second-color {
+  color: #00D2A0;
+}
+
 .button {
   width: 272px;
   height: 64px;
@@ -338,6 +346,10 @@ img {
 
 .hero--parthner {
   background-image: url(../img/hero-bg/parthner-hero-bg.jpg);
+}
+
+.hero--knowbase {
+  background-image: url(../img/hero-bg/knowbase-hero-bg.jpg);
 }
 
 /* Correct blocks/hero */

@@ -84,6 +84,14 @@ img {
   margin: 0;
 }
 
+.prime-color {
+  color: #1E5DC5;
+}
+
+.second-color {
+  color: #00D2A0;
+}
+
 .button {
   width: 272px;
   height: 64px;
@@ -338,6 +346,10 @@ img {
 
 .hero--parthner {
   background-image: url(../img/hero-bg/parthner-hero-bg.jpg);
+}
+
+.hero--knowbase {
+  background-image: url(../img/hero-bg/knowbase-hero-bg.jpg);
 }
 
 /* Start blocks/advantages */
@@ -813,6 +825,68 @@ img {
 .faq__link {
   text-decoration: none;
   color: #1E5DC5;
+}
+
+.knowbase {
+  padding: 100px 0;
+}
+
+.knowbase__title {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.knowbase__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.knowbase__item {
+  padding: 44px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.06);
+}
+
+.knowbase__number {
+  display: block;
+  font-family: "Stem";
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 40px;
+  margin: 0 0 18px 0;
+}
+
+.knowbase__subtitle {
+  font-family: "Stem";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  margin: 0 0 18px 0;
+}
+
+.knowbase__text {
+  font-family: "Stem";
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 25px;
+  opacity: 0.7;
+  margin: 0 0 18px 0;
+}
+
+.knowbase__link {
+  font-family: "Stem";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-decoration: none;
 }
 
 .advisory {

@@ -43,7 +43,7 @@ html {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-
+ 
   .title {
     position: relative;
     @include regular;
@@ -62,3 +62,9 @@ html {
     //}
   }
   
+  .prime-color {
+    color: $prime-color;
+}
+.second-color {
+    color: $second-color;
+} 
