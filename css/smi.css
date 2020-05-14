@@ -100,6 +100,14 @@
   margin-right: 20px;
 }
 
+.hero--client {
+  background-image: url(../../img/hero-bg/client-hero-bg.jpg);
+}
+
+.hero--parthner {
+  background-image: url(../../img/hero-bg/parthner-hero-bg.jpg);
+}
+
 /* Correct blocks/hero */
 .hero {
   background-image: url(../img/hero-bg-06.jpg);
