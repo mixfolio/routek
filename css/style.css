@@ -293,7 +293,7 @@ img {
           justify-content: center;
   height: 550px;
   background-color: #101633;
-  background-image: url(../../img/hero-bg/index-hero-bg.jpg);
+  background-image: url(../img/hero-bg/index-hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -333,11 +333,11 @@ img {
 }
 
 .hero--client {
-  background-image: url(../../img/hero-bg/client-hero-bg.jpg);
+  background-image: url(../img/hero-bg/client-hero-bg.jpg);
 }
 
 .hero--parthner {
-  background-image: url(../../img/hero-bg/parthner-hero-bg.jpg);
+  background-image: url(../img/hero-bg/parthner-hero-bg.jpg);
 }
 
 /* Start blocks/advantages */
@@ -501,21 +501,21 @@ img {
 }
 
 .workflow__item--one {
-  background: url(../../img/workflow-ico-01.png) no-repeat right top;
+  background: url(../img/workflow-ico-01.svg) no-repeat right top;
 }
 
 .workflow__item--two {
   margin-left: auto;
-  background: url(../../img/workflow-ico-02.png) no-repeat left top;
+  background: url(../img/workflow-ico-02.svg) no-repeat left top;
 }
 
 .workflow__item--three {
-  background: url(../../img/workflow-ico-03.png) no-repeat right top;
+  background: url(../img/workflow-ico-03.svg) no-repeat right top;
 }
 
 .workflow__item--four {
   margin-left: auto;
-  background: url(../../img/workflow-ico-04.png) no-repeat left top;
+  background: url(../img/workflow-ico-04.svg) no-repeat left top;
 }
 
 .workflow__item-title {
