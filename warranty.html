@@ -39,7 +39,7 @@
                         <ul class="main-nav__sub-item">
                             <li><a href="ded.html">Прямой подвод энергии и материала (DED)</a></li>
                             <li><a href="mj.html">Струйное нанесение материала (MJ)</a></li>
-                            <li><a href="pfb.html">Cинтез на подложке (PBF)</a></li>
+                            <li><a href="pbf.html">Cинтез на подложке (PBF)</a></li>
                             <li><a href="bj.html">Струйное нанесение связующего (BJ)</a></li>
                             <li><a href="me.html">Экструзия материала (ME)</a></li>
                             <li><a href="vp.html">Фотополимеризация в ванне (VP)</a></li>
@@ -82,8 +82,10 @@
 
         </nav>
     </header>
+
     <main class="page-main">
-        <section class="hero">
+        <!-- Start hero block -->
+        <section class="hero hero--warranty">
             <div class="hero__wrapper">
                 <h2 class="hero__title"><span class="hero__title-color">Гарантия</span> качества<span
                         class="hero__title-color">.</span></h2>
@@ -93,24 +95,35 @@
                 <button class="button button--two" type="button">Стать партнером</button>
             </div>
         </section>
-        <section class="standard">
-            <div class="standard__wrapper">
-                <ul class="standard__list">
-                    <li class="standard__item standard__item--one">
-                        <p class="standard__text">Стандарты производства <br>3D-печати</p>
+        <!-- End hero block -->
+
+        <section class="icon-text">
+            <div class="wrapper">
+                <ul class="icon-text__list">
+                    <li class="icon-text__item icon-text__item--one">
+                        <p class="icon-text__text">Стандарты производства <br>3D-печати</p>
                     </li>
-                    <li class="standard__item standard__item--two">
-                        <p class="standard__text">Оценка производственного партнера</p>
+                    <li class="icon-text__item icon-text__item--two">
+                        <p class="icon-text__text">Оценка производственного партнера</p>
                     </li>
-                    <li class="standard__item standard__item--three">
-                        <p class="standard__text">Отчеты о качестве и сертификаты</p>
+                    <li class="icon-text__item icon-text__item--three">
+                        <p class="icon-text__text">Отчеты о качестве и сертификаты</p>
                     </li>
-                    <li class="standard__item standard__item--four">
-                        <p class="standard__text">Программа проверки дизайна</p>
+                    <li class="icon-text__item icon-text__item--four">
+                        <p class="icon-text__text">Программа проверки дизайна</p>
                     </li>
                 </ul>
             </div>
         </section>
+        <section class="std-table">
+            <h2 class="std-table__title title">Общие стандарты 3D-печати</h2>
+            <div class="std-table__box">
+
+            </div>
+
+        </section>
+
+        
         <section class="estimation">
             <div class="estimation__wrapper">
                 <h2 class="estimation__title">Оценка производственного партнера</h2>
@@ -137,6 +150,62 @@
                 </ul>
             </div>
         </section>
+
+        <section class="quality">
+            <div class="quality__wrapper">
+                <h2 class="quality__title title">Гарантия качества</h2>
+                <h4 class="quality__desc">Производственные мощности наших партнеров постоянно контролируются нашей командой, <br>что гарантирует качественное выполнение заказов</h4>
+                <div class="quality__box quality__box--one">
+                    <h3 class="quality__subtitle">Стандартный отчет о проверке качества</h3>
+                    <ul class="quality__list">
+                        <li class="quality__item quality__item--one">Критические размеры (габариты, диаметры / места отверстий, толщина и глубина)</li>
+                        <li class="quality__item quality__item--two">Количество частей</li>
+                        <li class="quality__item quality__item--one">Чистота поверхности</li>
+                        <li class="quality__item quality__item--two">Удаление острых краев и заусенцев</li>
+                        <li class="quality__item quality__item--one">Резьбы и допуски</li>
+                    </ul>
+                </div>
+                <button class="quality__button button" type="button">Скачать отчет</button>
+                <div class="quality__box quality__box--two">
+                    <h3 class="quality__subtitle  quality__subtitle--two">Сертификация</h3>
+                    <p class="quality__text">Мы работаем с большим количеством сертифицированных производственных партнеров ISO 9001. Сертификаты ISO можно запросить перед размещением заказа.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="check-app">
+            <div class="wrapper">
+                <h2 class="check-app__title title">Программа проверки дизайна</h2>
+                <div class="check-app__box">
+                    <div class="check-app__body">
+                        <p class="check-app__text">Routek предоставляет Вам возможность воспользоваться Программой проверки дизайна для заказов с минимальной партией 50 шт. или стоимостью более 300 000 RUB c учетом НДС. Наша Программа позволит получить Вам комплект с двумя опытными образцами для их проверки и принятия решения о производстве нужной партии силами Routek.</p>
+                        <h3 class="check-app__subtitle">Преимущества</h3>
+                        <ul class="check-app__list">
+                            <li class="check-app__item check-app__item--one">Гарантия качества: Программа снижает производственные риски, обеспечивая соответствие деталей Вашим требованиям, таким как материал, допуски или качество поверхности.
+                            </li>
+                            <li class="check-app__item check-app__item--two">Изготовление опытных образцов по выгодным ценам: Программа позволяет Вам получить опытные образцы по более выгодным ценам.
+                            </li>
+                            <li class="check-app__item check-app__item--one">Ответственность: опытные образцы и производство партии с заданным количеством деталей производятся одним и тем же производственным партнером.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="check-app__picture">
+                        <img src="img/check-app-img.jpg" width="502" height="414" alt="Программа проверки дизайна">
+                    </div>
+                </div>
+                <a href="#!" class="check-app__button button">Подробнее</a>
+            </div>
+        </section>
+        <section class="solve">
+            <div class="wrapper">
+                <div class="solve__box">
+                    <h3 class="solve__title">Решение проблем с качеством</h3>
+                    <p class="solve__text">Если ваш заказ не соответствует спецификациям, Вы можете сообщить нам об этом в течении 5 рабочих дней. Наша Команда решит Ваши проблемы как можно быстее.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Start advisory-block -->
         <section class="advisory">
             <div class="advisory__wrapper">
@@ -152,18 +221,76 @@
                     </div>
                     <div class="advisory__item advisory__item--answ">
                         <label class="advisory__label" for="">Вопрос</label>
-                        <textarea class="advisory__input" name="" id="" rows="1"></textarea required>
+                        <input class="advisory__input" name="" id="" required>
                     </div>
                     <button class="button" type="submit">Отправить</button>
                 </form>
-            </div>   
+            </div>
         </section>
         <!-- End advisory-block -->
 
     </main>
 
-    
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__contacts">
+                <a href="#" class="page-footer__logo logo">
+                    <img class="logo__img" src="img/routek-logo-white.svg" width="191" height="71"
+                        alt="Компания Routek">
+                </a>
+                <p class="contacts__text">Москва, ул. 1905 года, д.7с1</p>
+                <p class="contacts__text">support@routek.com</p>
+                <p class="contacts__text">+7(903) 714-41-49</p>
+                <p class="contacts__text">&copy; 2020 Routek</p>
+            </div>
+            <div class="footer-nav__box">
+                <b>О нас</b>
+                <ul class="footer-nav__list">
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="warranty.html">Гарантии качества</a></li>
+                    <li><a href="protection.html">Защита IP</a></li>
+                    <li><a href="roi.html">ROI калькулятор</a></li>
+                    <li><a href="smi.html">СМИ о нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-nav__box">
+                <b>Технологии и материалы</b>
+                <ul class="footer-nav__list">
+                    <li><a href="#!">Прямой подвод энергии и материала (DED)</a></li>
+                    <li><a href="#!">Струйное нанесение материала (MJ)</a></li>
+                    <li><a href="#!">Cинтез на подложке (PBF)</a></li>
+                    <li><a href="#!">Струйное нанесение связующего (BJ)</a></li>
+                    <li><a href="#!">Экструзия материала (ME)</a></li>
+                    <li><a href="#!">Фотополимеризация в ванне (VP)</a></li>
+                    <li><a href="#!">Карта выбора технологий<br>в зависимости от материала</a></li>
+                    <li><a href="#!">Карта выбора технологий в зависисмости<br>от функционального назначения</a>
+                    </li>
+                    <li><a href="#!">Карта выбора технологий<br>в зависимости от внешнего вида</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-nav__box">
+                <b>Для пользователей</b>
+                <ul class="footer-nav__list">
+                    <li><a href="#">Личный кабинет</a></li>
+                    <li><a href="#">Связаться с нами по почте</a></li>
+                    <li><a href="#">Позвонить нам</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
-    <script src="js/main.js"></script>  
+    <script src="js/main.js"></script>
 </body>
 </html>
