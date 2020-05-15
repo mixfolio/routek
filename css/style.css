@@ -368,6 +368,18 @@ img {
   background-image: url(../img/hero-bg/vp-hero-bg.jpg);
 }
 
+.hero--material {
+  background-image: url(../img/hero-bg/material-hero-bg.jpg);
+}
+
+.hero--function {
+  background-image: url(../img/hero-bg/function-hero-bg.jpg);
+}
+
+.hero--appearance {
+  background-image: url(../img/hero-bg/appearance-hero-bg.jpg);
+}
+
 .hero--client {
   background-image: url(../img/hero-bg/client-hero-bg.jpg);
 }
@@ -1084,6 +1096,26 @@ img {
   font-size: 18px;
   line-height: 23px;
   text-decoration: none;
+}
+
+.tech-map {
+  padding: 100px 0;
+}
+
+.tech-map__title {
+  text-align: center;
+  margin: 0 0 9px 0;
+}
+
+.tech-map__subtitle {
+  font-family: "Stem";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #878787;
+  margin: 0 0 40px 0;
 }
 
 .advisory {
