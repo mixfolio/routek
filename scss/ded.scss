@@ -101,24 +101,49 @@
         font-size: 28px;
         line-height: 36px;
         text-align: center;
-        &--one {
+        &--arch {
             background: url(../img/area-app-icons/arch-ico.svg) no-repeat center top;
         }
-        &--two {
-            background: url(../img/area-app-icons/medicine-ico.svg) no-repeat center top;
+        &--art {
+            background: url(../img/area-app-icons/art-ico.svg) no-repeat center top;
         }
-        &--three {
-            background: url(../img/area-app-icons/microscope-ico.svg) no-repeat center top;
-        }
-        &--four {
-            background: url(../img/area-app-icons/cog-ico.svg) no-repeat center top;
-        }
-        &--five {
-            background: url(../img/area-app-icons/repair-ico.svg) no-repeat center top;
-        }
-        &--six {
+        &--construction {
             background: url(../img/area-app-icons/construction-ico.svg) no-repeat center top;
         }
+        &--dentistry {
+            background: url(../img/area-app-icons/dentistry-ico.svg) no-repeat center top;
+        }
+        &--design {
+            background: url(../img/area-app-icons/design-ico.svg) no-repeat center top;
+        }
+        &--education {
+            background: url(../img/area-app-icons/education-ico.svg) no-repeat center top;
+        }
+        &--industry {
+            background: url(../img/area-app-icons/industry-ico.svg) no-repeat center top;
+        }
+        &--jewelry {
+            background: url(../img/area-app-icons/jewelry-ico.svg) no-repeat center top;
+        }
+        &--medicine {
+            background: url(../img/area-app-icons/medicine-ico.svg) no-repeat center top;
+        }
+        &--metal-big {
+            background: url(../img/area-app-icons/metal-big-ico.svg) no-repeat center top;
+        }
+        &--prototype {
+            background: url(../img/area-app-icons/prototype-ico.svg) no-repeat center top;
+        }
+        &--repair {
+            background: url(../img/area-app-icons/repair-ico.svg) no-repeat center top;
+        }
+        &--science {
+            background: url(../img/area-app-icons/science-ico.svg) no-repeat center top;
+        }
+        &--telecom {
+            background: url(../img/area-app-icons/telecom-ico.svg) no-repeat center top;
+        }
+        
     }
 
 }
@@ -132,13 +157,15 @@
     }
     &__list {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 22px;
         list-style: none;
         padding: 0;
         margin: 0;
         margin-bottom: 60px;
-        
+        &--ded {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
     &__item {
         padding-top: 89px;
@@ -189,9 +216,14 @@
         justify-content: center;
         padding-left: 110px;
         min-height: 155px;
-        background: url(../img/material-ico.svg) no-repeat left center;
         &:last-child {
             border-bottom: 1px solid #D8D8D8; 
+        }
+        &--mat {
+            background: url(../img/material-ico.svg) no-repeat left center;
+        }
+        &--area {
+            background: url(../img/area-ico.svg) no-repeat left center;
         }
 
     }

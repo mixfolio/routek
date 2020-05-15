@@ -119,6 +119,14 @@ img {
 }
 
 /* Start blocks/navbar */
+.logo {
+  min-width: 191px;
+}
+
+.logo__img {
+  display: block;
+}
+
 .navbar {
   background-color: #000000;
 }
@@ -522,28 +530,60 @@ img {
   text-align: center;
 }
 
-.area-app__item--one {
+.area-app__item--arch {
   background: url(../img/area-app-icons/arch-ico.svg) no-repeat center top;
 }
 
-.area-app__item--two {
+.area-app__item--art {
+  background: url(../img/area-app-icons/art-ico.svg) no-repeat center top;
+}
+
+.area-app__item--construction {
+  background: url(../img/area-app-icons/construction-ico.svg) no-repeat center top;
+}
+
+.area-app__item--dentistry {
+  background: url(../img/area-app-icons/dentistry-ico.svg) no-repeat center top;
+}
+
+.area-app__item--design {
+  background: url(../img/area-app-icons/design-ico.svg) no-repeat center top;
+}
+
+.area-app__item--education {
+  background: url(../img/area-app-icons/education-ico.svg) no-repeat center top;
+}
+
+.area-app__item--industry {
+  background: url(../img/area-app-icons/industry-ico.svg) no-repeat center top;
+}
+
+.area-app__item--jewelry {
+  background: url(../img/area-app-icons/jewelry-ico.svg) no-repeat center top;
+}
+
+.area-app__item--medicine {
   background: url(../img/area-app-icons/medicine-ico.svg) no-repeat center top;
 }
 
-.area-app__item--three {
-  background: url(../img/area-app-icons/microscope-ico.svg) no-repeat center top;
+.area-app__item--metal-big {
+  background: url(../img/area-app-icons/metal-big-ico.svg) no-repeat center top;
 }
 
-.area-app__item--four {
-  background: url(../img/area-app-icons/cog-ico.svg) no-repeat center top;
+.area-app__item--prototype {
+  background: url(../img/area-app-icons/prototype-ico.svg) no-repeat center top;
 }
 
-.area-app__item--five {
+.area-app__item--repair {
   background: url(../img/area-app-icons/repair-ico.svg) no-repeat center top;
 }
 
-.area-app__item--six {
-  background: url(../img/area-app-icons/construction-ico.svg) no-repeat center top;
+.area-app__item--science {
+  background: url(../img/area-app-icons/science-ico.svg) no-repeat center top;
+}
+
+.area-app__item--telecom {
+  background: url(../img/area-app-icons/telecom-ico.svg) no-repeat center top;
 }
 
 .tech-param {
@@ -559,13 +599,18 @@ img {
 .tech-param__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 22px;
   list-style: none;
   padding: 0;
   margin: 0;
   margin-bottom: 60px;
+}
+
+.tech-param__list--ded {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
 
 .tech-param__item {
@@ -627,11 +672,18 @@ img {
           justify-content: center;
   padding-left: 110px;
   min-height: 155px;
-  background: url(../img/material-ico.svg) no-repeat left center;
 }
 
 .parameters__item:last-child {
   border-bottom: 1px solid #D8D8D8;
+}
+
+.parameters__item--mat {
+  background: url(../img/material-ico.svg) no-repeat left center;
+}
+
+.parameters__item--area {
+  background: url(../img/area-ico.svg) no-repeat left center;
 }
 
 .parameters__title {

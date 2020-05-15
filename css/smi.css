@@ -119,6 +119,14 @@ img {
 }
 
 /* Start blocks/navbar */
+.logo {
+  min-width: 191px;
+}
+
+.logo__img {
+  display: block;
+}
+
 .navbar {
   background-color: #000000;
 }
