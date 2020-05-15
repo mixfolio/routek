@@ -554,6 +554,10 @@ img {
   background: url(../img/area-app-icons/education-ico.svg) no-repeat center top;
 }
 
+.area-app__item--fashion {
+  background: url(../img/area-app-icons/fashion-ico.svg) no-repeat center top;
+}
+
 .area-app__item--industry {
   background: url(../img/area-app-icons/industry-ico.svg) no-repeat center top;
 }
@@ -608,7 +612,7 @@ img {
   margin-bottom: 60px;
 }
 
-.tech-param__list--ded {
+.tech-param__list--four {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
 }
@@ -616,7 +620,6 @@ img {
 .tech-param__item {
   padding-top: 89px;
   text-align: center;
-  background-color: gold;
   font-family: "Stem";
   font-weight: normal;
   font-size: 18px;
@@ -639,6 +642,10 @@ img {
 
 .tech-param__item--four {
   background: url(../img/tech-param-icons/snow-ico.svg) no-repeat center top;
+}
+
+.tech-param__item--five {
+  background: url(../img/tech-param-icons/goal-ico.svg) no-repeat center top;
 }
 
 .tech-param__item-digit {
