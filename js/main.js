@@ -9,7 +9,7 @@ $(document).ready(function () {
     $('.drop-btn').on('click', function () {
         if ($('.main-nav').hasClass('one')) {
             $('.drop-btn').not($(this)).removeClass('active');
-            $('.main-nav__sub-item').not($(this).next()).slideUp(300);
+            $('.main-nav__sub-list').not($(this).next()).slideUp(300);
         }
         $(this).toggleClass('active').next().slideToggle(300);
     });
