@@ -182,7 +182,7 @@ img {
 }
 
 .header__burger {
-  display: none;
+  display: block;
 }
 
 @media (max-width: 1060px) {
@@ -192,17 +192,17 @@ img {
     width: 30px;
     height: 20px;
     z-index: 3;
+    background: red;
   }
-  .header__burger__burger span {
+  .header__burger span {
+    background-color: #ffffff;
     position: absolute;
-    background-color: #fff;
     left: 0;
+    top: 9px;
     width: 100%;
     height: 2px;
-    top: 9px;
-    /* transition: all 0.3s ease 0s; */
   }
-  .header__burger__burger span::before, .header__burger__burger span::after {
+  .header__burger::before, .header__burger::after {
     content: '';
     background-color: #fff;
     position: absolute;
@@ -212,23 +212,23 @@ img {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
-  .header__burger__burger span::before {
+  .header__burger::before {
     top: 0;
   }
-  .header__burger__burger span::after {
+  .header__burger::after {
     bottom: 0;
   }
-  .header__burger__burger span.active:before {
+  .header__burger.active:before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     top: 9px;
   }
-  .header__burger__burger span.active::after {
+  .header__burger.active::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     bottom: 9px;
   }
-  .header__burger__burger span.active span {
+  .header__burger.active span {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
@@ -466,8 +466,46 @@ img {
   margin: 0;
 }
 
+.std-table {
+  padding-bottom: 100px;
+}
+
 .std-table__title {
   margin-bottom: 50px;
+}
+
+.std-table__table {
+  border-collapse: collapse;
+}
+
+.std-table__thead {
+  font-family: "Stem";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #939598;
+}
+
+.std-table__tbody {
+  font-family: "Stem";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  background: gold;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.7);
+}
+
+.std-table__tbody tr:nth-child(2n) {
+  background: #F7FBFA;
+}
+
+.std-table__tbody td {
+  padding: 23px 16px;
 }
 
 /* Start blocks/edtimation */
