@@ -47,3 +47,36 @@
         text-decoration: none;
     }
 }
+@media (max-width: 640px) {
+    .knowbase {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .knowbase__title {
+        @include mob-title;
+        margin-bottom: 22px;
+    }
+    .knowbase__list {
+        display: block;
+    }
+    .knowbase__item {
+        padding: 32px 12px;
+        margin-bottom: 16px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .knowbase__number {
+        margin-bottom: 10px;
+    }
+    .knowbase__subtitle {
+        @include mob-subtitle;
+        margin-bottom: 10px;
+    }
+    .knowbase__text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+}

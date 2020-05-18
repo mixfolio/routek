@@ -50,3 +50,14 @@
   font-family: "Stem";
   font-weight: bold;
 }
+// Заголовок для мобил
+@mixin mob-title {
+  font-size: 23px;
+  line-height: 30px;
+}
+// Подзаголовок для мобил
+@mixin mob-subtitle {
+  font-size: 18px;
+  line-height: 23px;
+}
+

@@ -1330,6 +1330,41 @@ img {
   text-decoration: none;
 }
 
+@media (max-width: 640px) {
+  .knowbase {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .knowbase__title {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 22px;
+  }
+  .knowbase__list {
+    display: block;
+  }
+  .knowbase__item {
+    padding: 32px 12px;
+    margin-bottom: 16px;
+  }
+  .knowbase__item:last-child {
+    margin-bottom: 0;
+  }
+  .knowbase__number {
+    margin-bottom: 10px;
+  }
+  .knowbase__subtitle {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 10px;
+  }
+  .knowbase__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+}
+
 .tech-map {
   padding: 100px 0;
 }
