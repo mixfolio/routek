@@ -191,6 +191,8 @@
         margin: 0 0 0 0;
     }
     .header__list a {
+        @include light;
+        font-size: 18px;
         display: block;
         padding: 20px 20px 20px 30px;
         //background: red;

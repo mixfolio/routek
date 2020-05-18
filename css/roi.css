@@ -51,8 +51,9 @@ body {
 }
 
 .wrapper {
-  max-width: 1262px;
+  max-width: 1292px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 img {
@@ -330,6 +331,9 @@ img {
     margin: 0 0 0 0;
   }
   .header__list a {
+    font-family: "Stem";
+    font-weight: 300;
+    font-size: 18px;
     display: block;
     padding: 20px 20px 20px 30px;
     border-bottom: 1px solid #2f2f2f;
@@ -360,6 +364,7 @@ img {
 
 /* Start blocks/hero */
 .hero {
+  margin-top: 71px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,7 +374,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 550px;
+  min-height: 550px;
   background-color: #101633;
   background-image: url(../img/hero-bg/index-hero-bg.jpg);
   background-repeat: no-repeat;
@@ -742,15 +747,15 @@ img {
   color: #ffffff;
 }
 
-.page-footer__wrapper {
+.page-footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1262px;
-  margin: 0 auto;
 }
 
 .page-footer__logo {
@@ -793,4 +798,10 @@ img {
 
 .footer-nav__list a:hover, .footer-nav__list a:focus, .footer-nav__list a:active {
   color: #217bff;
+}
+
+@media (max-width: 560px) {
+  .page-footer__body {
+    display: block;
+  }
 }

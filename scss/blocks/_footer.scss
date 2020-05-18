@@ -3,11 +3,10 @@
     padding-top: 50px;
     padding-bottom: 50px;
     color: #ffffff;
-    &__wrapper {
+    &__body {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        max-width: 1262px;
-        margin: 0 auto;
     }
     &__logo {
         display: block;
@@ -45,6 +44,13 @@
             color: $hero-text;
             
         }
+    }
+    
+}
+
+@media (max-width: 560px) {
+    .page-footer__body {
+        display: block;
     }
     
 }

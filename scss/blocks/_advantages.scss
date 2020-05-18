@@ -1,11 +1,8 @@
 .advantages {
-  padding: 122px 0 133px 0;
+  padding: 100px 0 100px 0;
   background-color: #101010;
   
-  &__wrapper {
-    max-width: 1262px;
-    margin: 0 auto;
-  }
+  
   &__title {
     @include regular;
     font-size: 45px;
@@ -29,19 +26,18 @@
   }
   
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 22px;
+    grid-row-gap: 32px;
     margin: 0;
     padding: 0;
     list-style: none;
-    /* background-color: gray; */
   }
   
   &__item {
-    flex-basis: 600px;
     padding-top: 93px;
-    margin-bottom: 32px;
+    
 
     &-time {
       background: url(../img/advtg-ico-01.svg) no-repeat 0 0;
@@ -79,4 +75,10 @@
     opacity: 0.7;
     margin: 0;
   }
+}
+@media (max-width: 768px) {
+  .advantages__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }

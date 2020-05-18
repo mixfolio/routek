@@ -20,8 +20,9 @@ html {
   }
 
   .wrapper {
-    max-width: 1262px;
+    max-width: 1292px;
     margin: 0 auto;
+    padding: 0 15px;
   }
   
   
@@ -50,15 +51,7 @@ html {
     font-size: 45px;
     line-height: 58px;
     margin: 0;
-    // &::before {
-    //   position: absolute;
-    //   top: 30px;
-    //   left: 0;
-    //   content: "";
-    //   width: 100%;
-    //   border: 2px solid #E8F1FF;
-    //   transform: matrix(-1, 0, 0, 1, 0, 0);
-    //}
+    
   }
   
 .prime-color {

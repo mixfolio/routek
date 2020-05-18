@@ -1,8 +1,9 @@
 .hero {
+    margin-top: 71px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 550px;
+    min-height: 550px;
     background-color: #101633;
     background-image: url(../img/hero-bg/index-hero-bg.jpg);
     background-repeat: no-repeat;
