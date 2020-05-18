@@ -84,7 +84,36 @@
     grid-row-gap: 22px;
     justify-content: center;
   }
-  
+  .services__item {
+    min-height: 100%;
+  }
+}
 
-
+@media (max-width: 640px) {
+  .services {
+    padding: 50px 0;
+  }
+  .services--two {
+    padding-top: 0;
+  }
+  .services__title {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+  .services__item-title {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 16px 12px 6px 12px;
+  }
+  .services__item-subtitle {
+    margin-bottom: 6px;
+  }
+  .services__item-desc {
+    margin-bottom: 16px;
+  }
+  .services__item-link {
+    display: block;
+    padding: 30px 0 30px 0
+  }
 }

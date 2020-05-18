@@ -82,3 +82,23 @@
   }
 
 }
+
+@media (max-width: 640px) {
+  .advantages__title {
+    font-size: 23px;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 6px;
+  }
+  .advantages__subtitle {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+  }
+
+  .advantages__item-title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 16px;
+  }
+}
