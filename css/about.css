@@ -717,6 +717,16 @@ img {
   color: #217bff;
 }
 
+@media (max-width: 640px) {
+  .slogan {
+    min-height: 180px;
+  }
+  .slogan__title {
+    font-size: 22px;
+    line-height: 152.9%;
+  }
+}
+
 /* Correct blocks/slogan */
 .slogan__title {
   font-size: 32px;

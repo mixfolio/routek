@@ -93,3 +93,54 @@
     opacity: 0.7;
   }
 }
+
+@media (max-width: 640px) {
+  .workflow {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .workflow__title {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 6px;
+  }
+  .workflow__subtitle {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 30px;
+  }
+  .workflow__box {
+    width: 100%;
+    
+  }
+  .workflow__item {
+    padding-top: 90px;
+    max-width: 100%;
+    min-height: 200px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-position: center top;
+    background-size: 70px auto;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .workflow__item-title {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .workflow__item-subtitle {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 10px;
+  }
+  
+  .workflow__item-desc {
+    font-size: 16px;
+    line-height: 24px;
+    
+  }
+    
+}

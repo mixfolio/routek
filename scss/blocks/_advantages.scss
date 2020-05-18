@@ -84,6 +84,10 @@
 }
 
 @media (max-width: 640px) {
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .advantages__title {
     font-size: 23px;
     line-height: 30px;
@@ -94,6 +98,7 @@
     font-size: 12px;
     line-height: 15px;
     text-align: left;
+    margin-bottom: 30px;
   }
 
   .advantages__item-title {

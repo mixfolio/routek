@@ -76,12 +76,21 @@
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 640px) {
+  .spec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .spec__list {
     grid-template-columns: 1fr;
   }
   .spec__item {
     max-width: 100%;
+  }
+  .spec__title {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 48px;
   }
 
 }
