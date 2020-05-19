@@ -601,7 +601,10 @@ img {
 }
 
 .roi-calc__button {
-  margin-left: 25%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   background-color: #00D2A0;
 }
 

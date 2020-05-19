@@ -78,7 +78,9 @@
 }
 
 .roi-calc__button {
-    margin-left: 25%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
     background-color: $second-color;   
 }
 // @media (max-width: 1330px) {
