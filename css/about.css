@@ -800,6 +800,7 @@ img {
       grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 32px;
   grid-row-gap: 42px;
+  text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -863,6 +864,16 @@ img {
 
 .facts__digit--mod {
   color: #00D2A0;
+}
+
+@media (max-width: 960px) {
+  .facts__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .facts__item {
+    background-color: red;
+  }
 }
 
 /* End facts */

@@ -17,6 +17,86 @@
     background-image: url(../img/hero-bg-05.jpg);
 }
 
+.roi-calc {
+    position: absolute;
+    top: 134px;
+    right: 5%;
+    max-width: 727px;
+    min-height: 423px;
+    border-radius: 8px;
+    color: #ffffff;
+    background: rgba(14, 5, 44, 0.29);
+    backdrop-filter: blur(104px); // по возможности заменить
+    padding: 59px 53px 56px 53px;
+}
+.roi-calc__title {
+    @include bold;
+    font-size: 22px;
+    line-height: 25px;
+    margin: 0 0 25px 0;
+}
+.roi-calc__desc {
+    @include regular;
+    font-size: 18px;
+    line-height: 25px;
+    color: #B9B9B9;
+    margin: 0 0 27px 0;
+}
+.roi-calc__list {
+    display: flex;
+    margin-bottom: 21px;
+}
+.roi-calc__item {
+    flex: 1 1 auto;
+    margin-right: 22px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.roi-calc__label {
+    display: block;
+    @include bold;
+    font-size: 14px;
+    line-height: 180%;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+}
+.roi-calc__input {
+    padding: 30px 17px;
+    @include bold;
+    font-size: 16px;
+    line-height: 180%;
+    color: #ffffff;
+    width: 100%;
+    height: 64px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    &::placeholder {
+        color: #B9B9B9;
+    }
+}
+
+.roi-calc__button {
+    margin-left: 25%;
+    background-color: $second-color;   
+}
+// @media (max-width: 1330px) {
+//     .roi-calc {
+//         max-width: 406px;
+//     }
+//     .roi-calc__list {
+//         display: block;
+        
+//     }
+//     .roi-calc__item {
+//         margin: 0  0 16px 0;
+//     }
+// }
+
+
+
+
 .promo {
     background-color: $dark-bg;
     min-height: 326px;
