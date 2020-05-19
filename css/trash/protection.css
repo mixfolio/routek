@@ -414,8 +414,20 @@ img {
   margin-right: 20px;
 }
 
+.hero--about {
+  background-image: url(../img/hero-bg/about-hero-bg.jpg);
+}
+
 .hero--warranty {
   background-image: url(../img/hero-bg/warranty-hero-bg.jpg);
+}
+
+.hero--protection {
+  background-image: url(../img/hero-bg/protection-hero-bg.jpg);
+}
+
+.hero--contacts {
+  background-image: url(../img/hero-bg/contacts-hero-bg.jpg);
 }
 
 .hero--ded {
@@ -508,266 +520,92 @@ img {
 
 /* Correct blocks/hero */
 .hero {
-  background-image: url(../img/hero-bg-05.jpg);
+  background-image: url(../img/hero-bg-04.jpg);
 }
 
-.roi-calc {
-  position: absolute;
-  top: 134px;
-  right: 5%;
-  max-width: 727px;
-  min-height: 423px;
-  border-radius: 8px;
-  color: #ffffff;
-  background: rgba(14, 5, 44, 0.29);
-  -webkit-backdrop-filter: blur(104px);
-          backdrop-filter: blur(104px);
-  padding: 59px 53px 56px 53px;
-}
-
-.roi-calc__title {
-  font-family: "Stem";
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 25px;
-  margin: 0 0 25px 0;
-}
-
-.roi-calc__desc {
-  font-family: "Stem";
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  color: #B9B9B9;
-  margin: 0 0 27px 0;
-}
-
-.roi-calc__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 21px;
-}
-
-.roi-calc__item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  margin-right: 22px;
-}
-
-.roi-calc__item:last-child {
-  margin-right: 0;
-}
-
-.roi-calc__label {
-  display: block;
-  font-family: "Stem";
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 180%;
-  text-transform: uppercase;
-  margin: 0 0 12px 0;
-}
-
-.roi-calc__input {
-  padding: 30px 17px;
-  font-family: "Stem";
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 180%;
-  color: #ffffff;
-  width: 100%;
-  height: 64px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-}
-
-.roi-calc__input::-webkit-input-placeholder {
-  color: #B9B9B9;
-}
-
-.roi-calc__input:-ms-input-placeholder {
-  color: #B9B9B9;
-}
-
-.roi-calc__input::-ms-input-placeholder {
-  color: #B9B9B9;
-}
-
-.roi-calc__input::placeholder {
-  color: #B9B9B9;
-}
-
-.roi-calc__button {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  background-color: #00D2A0;
-}
-
-.promo {
-  background-color: #101010;
-  min-height: 326px;
-  text-align: center;
-  padding: 71px 30px;
-}
-
-.promo__title {
-  font-family: "Stem";
-  font-weight: normal;
-  font-size: 45px;
-  line-height: 58px;
-  color: #ffffff;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.promo__text {
-  font-family: "Stem";
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  color: #ffffff;
-  margin: 0;
-}
-
-.promo__value {
-  display: block;
-  font-family: "Stem";
-  font-weight: 500;
-  font-size: 65px;
-  line-height: 150%;
-  color: #1E5DC5;
-}
-
-.promo__value-sign {
-  font-family: "Stem";
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 39px;
-}
-
-.saving {
+.privacy {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #ffffff;
 }
 
-.saving__wrapper {
+.privacy__wrapper {
   max-width: 1262px;
   margin: 0 auto;
 }
 
-.saving__title {
+.privacy__title {
   font-family: "Stem";
   font-weight: normal;
   font-size: 45px;
   line-height: 58px;
-  text-align: center;
   color: #000000;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 }
 
-.saving__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr 1fr;
-      grid-template-columns: 2fr 1fr 1fr;
-  grid-column-gap: 22px;
-}
-
-.saving__item-title {
-  font-family: "Stem";
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 100%;
-  color: #000000;
-  margin: 0;
-}
-
-.saving__item-title-desc {
-  font-family: "Stem";
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 170%;
-  margin: 0;
-}
-
-.saving__item-text {
-  font-family: "Stem";
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 190%;
-  color: #000000;
-  margin: 0;
-}
-
-.saving__bar {
-  position: relative;
-  width: 100%;
-  height: 16px;
-  background-color: #e7e7e7;
-  border-radius: 4px;
-}
-
-.saving__bar::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-  width: 50%;
-  height: 16px;
-  border-radius: 4px;
-  background-color: #1E5DC5;
-}
-
-.saving__bold {
-  font-family: "Stem";
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 100%;
-  color: #1E5DC5;
-}
-
-.saving__bold-mod {
-  color: #00D2A0;
-}
-
-.saving__box {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 192px 2fr;
-      grid-template-columns: 192px 2fr;
-  grid-column-gap: 22px;
-  margin-bottom: 30px;
-}
-
-.saving__box-text {
+.privacy__text {
   font-family: "Stem";
   font-weight: normal;
-  font-size: 16px;
-  line-height: 190%;
+  font-size: 18px;
+  line-height: 170.3%;
   color: #000000;
   margin: 0;
+  margin-bottom: 31px;
 }
 
-.saving__box-value {
-  display: block;
+.privacy__text:last-child {
+  margin-bottom: 34px;
+}
+
+.privacy__link {
   font-family: "Stem";
   font-weight: 500;
-  font-size: 34px;
-  line-height: 100%;
-  color: #1E5DC5;
+  color: #217bff;
+  text-decoration: underline;
 }
 
-.saving__box-value-mod {
-  color: #00D2A0;
+.privacy__server-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+.server-block__text-box {
+  width: 57%;
+}
+
+.server-block__title {
+  font-family: "Stem";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.server-block__text {
+  font-family: "Stem";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170.3%;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.server-block__picture img {
+  background: red;
+  border-radius: 8px;
+}
+
+/* Start blocks/advisory */
 .advisory {
   padding-top: 80px;
   padding-bottom: 80px;

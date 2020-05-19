@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О нас</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -87,7 +87,7 @@
         <h1 class="visually-hidden">О нас</h1>
 
         <!-- Start hero block -->
-        <section class="hero">
+        <section class="hero hero--about">
             <div class="wrapper">
                 <div class="hero__body">
                     <h2 class="hero__title"><span class="hero__title-color">Вместе открываем</span> новые возможности<br>
@@ -134,7 +134,7 @@
 
         <!-- Start slogan-block -->
         <section class="slogan">
-            <h2 class="slogan__title"><span class="slogan__title-color">Если вы хотите изменить мир к лучшему
+            <h2 class="slogan__title slogan__title--about"><span class="slogan__title-color">Если вы хотите изменить мир к лучшему
                     &mdash;<br>вам нужно единое видение, сильные идеи,</span> и, что самое главное,<br>сильная команда,
                 готовая решать самые сложные и неординарные задачи<span class="slogan__title-color">.</span></h2>
         </section>
@@ -216,7 +216,7 @@
         </section>
         <!-- Start advisory-block -->
         <section class="advisory">
-            <div class="advisory__wrapper">
+            <div class="wrapper">
                 <h2 class="advisory__title">Необходима консультация наших специалистов?</h2>
                 <form action="" class="advisory__form">
                     <div class="advisory__item">
@@ -229,11 +229,11 @@
                     </div>
                     <div class="advisory__item advisory__item--answ">
                         <label class="advisory__label" for="">Вопрос</label>
-                        <textarea class="advisory__input" name="" id="" rows="1"></textarea required>
+                        <input class="advisory__input" name="" id="" required>
                     </div>
-                    <button class="button" type="submit">Отправить</button>
+                    <button class="advisory__button button" type="submit">Отправить</button>
                 </form>
-            </div>   
+            </div>
         </section>
         <!-- End advisory-block -->
     </main>

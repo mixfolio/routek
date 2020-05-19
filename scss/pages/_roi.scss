@@ -1,21 +1,3 @@
-/// Colors
-@import "colors";
-// Fonts
-@import "fonts";
-// Scafold
-@import "scaffold";
-// Interface
-@import "interface";
-
-/* Start blocks/header */
-@import "blocks/header";
-
-/* Start blocks/hero */
-@import "blocks/hero";
-/* Correct blocks/hero */
-.hero {
-    background-image: url(../img/hero-bg-05.jpg);
-}
 
 .roi-calc {
     position: absolute;
@@ -235,7 +217,3 @@
         }
     }
 }
-
-@import "blocks/advisory";
-/* Start blocks/footer */
-@import "blocks/footer";

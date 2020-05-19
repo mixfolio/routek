@@ -1,21 +1,4 @@
-// Colors
-@import "colors";
-// Fonts
-@import "fonts";
-// Scafold
-@import "scaffold";
-// Interface
-@import "interface";
 
-/* Start blocks/header */
-@import "blocks/header";
-
-/* Start blocks/hero */
-@import "blocks/hero";
-/* Correct blocks/hero */
-.hero {
-    background-image: url(../img/hero-bg-04.jpg);
-}
 .privacy {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -77,15 +60,8 @@
     }
     &__picture {
         img {
-            background: red;
             border-radius: 8px;
 
         }
     }
 }
-
-
-/* Start blocks/advisory */
-@import "blocks/advisory";
-/* Start blocks/footer */
-@import "blocks/footer";
