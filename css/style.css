@@ -2729,12 +2729,23 @@ img {
   font-family: "Stem";
   font-weight: 500;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 18px;
   text-align: center;
   border-radius: 4px;
   background-color: #1E5DC5;
   color: #ffffff;
-  padding: 11px 6px 12px 6px;
+  padding: 14px 6px 11px 6px;
+}
+
+.kind-tech__icon--aerosol {
+  font-size: 16px;
+  padding-top: 6px;
+}
+
+.kind-tech__icon--quick {
+  font-size: 13px;
+  line-height: 12px;
+  padding-top: 6px;
 }
 
 .kind-tech__body {
