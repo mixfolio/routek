@@ -1,0 +1,26 @@
+.api {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.api__box {
+    display: flex;
+}
+.api__picture {
+    flex: 1 1 513px;
+    margin-right: 22px;
+}
+.api__body {
+    flex: 1 1 727px;
+}
+.api__title {
+    @include medium;
+    font-size: 28px;
+    line-height: 36px;
+    margin: 0 0 22px 0;
+}
+.api__text {
+    @include regular;
+    font-size: 18px;
+    line-height: 31px;
+    margin: 0 0 22px 0;
+}

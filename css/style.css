@@ -1380,6 +1380,47 @@ img {
   margin: 0 0 40px 0;
 }
 
+/* Start pages/api */
+.api {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.api__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.api__picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 513px;
+          flex: 1 1 513px;
+  margin-right: 22px;
+}
+
+.api__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 727px;
+          flex: 1 1 727px;
+}
+
+.api__title {
+  font-family: "Stem";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  margin: 0 0 22px 0;
+}
+
+.api__text {
+  font-family: "Stem";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  margin: 0 0 22px 0;
+}
+
 .advisory {
   padding-top: 80px;
   padding-bottom: 80px;
