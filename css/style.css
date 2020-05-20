@@ -1383,6 +1383,31 @@ img {
   margin: 20px 0;
 }
 
+.knowbase__table {
+  width: 100%;
+  border-collapse: collapse;
+  -webkit-box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  background: #ffffff;
+  margin-bottom: 30px;
+}
+
+.knowbase__table tbody {
+  font-family: "Stem";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.knowbase__table tr:nth-child(2n) {
+  background: #F7FBFA;
+}
+
+.knowbase__table td {
+  padding: 23px 16px;
+}
+
 @media (max-width: 640px) {
   .knowbase {
     padding-top: 50px;
