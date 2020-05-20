@@ -30,10 +30,14 @@
     height: 71px;
     align-items: center;
 }
+.header__menu {
+    flex: 1 1 auto;
+}
 
 .header__logo {
     position: relative;
     z-index: 3;
+    margin-right: 50px;
 }
 
 .header__logo img {
@@ -48,14 +52,10 @@
     position: relative;
     z-index: 2;
     display: flex;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.header__list>li {
-    margin-left: 30px;
-    
 }
 
 .header__list a {
