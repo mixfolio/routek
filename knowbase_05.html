@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Руководства по практическим аспектам применения 3D печати</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container navbar">            
+            <nav class="header__body main-nav one">
+                <a class="header__logo main-nav__logo logo" href="index.html">
+                    <img class="logo__img" src="img/routek-logo-white.svg" width="191" height="71" alt="Компания Routek">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list main-nav__list">
+                        <li class="main-nav__item">
+                            <a class="drop-btn">О нас</a>
+                            <ul class="main-nav__sub-list">
+                                <li><a href="about.html">О нас</a></li>
+                                <li><a href="warranty.html">Гарантия качества</a></li>
+                                <li><a href="protection.html">Защита IP</a></li>
+                                <li><a href="roi.html">ROI калькулятор</a></li>
+                                <li><a href="smi.html">СМИ о нас</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </li>
+    
+                        <li class="main-nav__item">
+                            <a class="drop-btn">Технологии и материалы</a>
+                            <ul class="main-nav__sub-list">
+                                <li><a href="ded.html">Прямой подвод энергии и материала (DED)</a></li>
+                                <li><a href="mj.html">Струйное нанесение материала (MJ)</a></li>
+                                <li><a href="pbf.html">Cинтез на подложке (PBF)</a></li>
+                                <li><a href="bj.html">Струйное нанесение связующего (BJ)</a></li>
+                                <li><a href="me.html">Экструзия материала (ME)</a></li>
+                                <li><a href="vp.html">Фотополимеризация в ванне (VP)</a></li>
+                                <li><a href="material.html">Карта выбора технологий<br>в зависимости от материала</a></li>
+                                <li><a href="function.html">Карта выбора технологий в зависисмости<br>от функционального
+                                        назначения</a>
+                                </li>
+                                <li><a href="appearance.html">Карта выбора технологий<br>в зависимости от внешнего вида</a>
+                                </li>
+    
+                            </ul>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="drop-btn">Сервисы</a>
+                            <ul class="main-nav__sub-list">
+                                <li><a href="engineer.html">Инженерные услуги</a></li>
+                                <li><a href="api.html">Routek API</a></li>
+                                <li><a href="student.html">Для преподавателей и студентов</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="knowbase.html">База знаний</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="drop-btn">FAQ</a>
+                            <ul class="main-nav__sub-list">
+                                <li><a href="client.html">Для заказчиков</a></li>
+                                <li><a href="parthner.html">Для партнеров</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="legal.html">Правовая информация</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="user-list__login" href="#">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="page-main">
+       
+        <!-- Start knowbase-block -->
+        <section class="knowbase">
+            <div class="wrapper">
+                <a href="knowbase.html" class="knowbase__link second-color">Назад</a>
+                <h3 class="knowbase__subtitle"><span class="knowbase__number prime-color">05. </span>Дизайн для 3D-печати. Что нужно учесть?</h3>
+                <p class="knowbase__text">Различные технологии 3D печати имеют свои преимущества и особенности, которые необходимо учитывать при создании моделей для последующего производства. <br>На 3D модель не действуют законы физики, таким образом, нарисовать можно что угодно, но не все можно впоследствии распечатать.</p>
+                <p class="knowbase__text"><b>Выступы</b></p>
+                <p class="knowbase__text">Все 3D принтеры производят изделия слой за слоем. Слои не могут накладываться на воздух. Выступ – это часть, которая частично опирается на уже имеющийся материал, либо не опирающийся вовсе. Для каждой технологии свои ограничения по допустимому углу выступа, для FDM, например, это 45 градусов. Если лимит превышен, то потребуется элемент поддержки, который придется удалять после печати.</p>
+                <figure knowbase__picture>
+                    <img src="img/knowbase/knowbase-img-07.jpg" alt="Элементы поддержки, позволяющие произвести изделие">
+                    <figcaption>Элементы поддержки, позволяющие произвести изделие</figcaption>
+                </figure>
+                <p class="knowbase__text"><b>Толщина стенок</b></p>
+                <p class="knowbase__text">Возможности 3D печати не безграничны, у каждой технологии есть свой предел точности и аккуратности. Это накладывает ограничение на минимальную толщину изделия. Конечно, вы можете смоделировать сверхтонкий элемент, но распечатать его у вас вряд ли выйдет. Для универсального минимума толщины можете запомнить 0.8 мм, начиная с этого размера, печать пройдет успешно с применением любой технологии.</p>
+                <p class="knowbase__text"><b>Искривление</b></p>
+                <p class="knowbase__text">Создавая модель, легко забыть о том, что материал может изменить свой внешний вид под воздействием температур и других физических и химических факторов даже на этапе производства. Большие плоские поверхности особенно подвержены искривлению, но этого можно избежать.  Убедитесь, что ваше оборудование откалибровано, а ваше изделие и работающая поверхность имеют достаточное сцепление. Для снижения рисков старайтесь избегать больших плоских поверхностей и острых углов в вашей модели.</p>
+                <p class="knowbase__text"><b>Детализация</b></p>
+                <p class="knowbase__text">Если для вас важны мелкие детали, то не забывайте, что у каждой технологии есть свои ограничения по минимальному размеру частей изделия. Многое зависит от характеристик используемого оборудования и высоты слоя. Выбор технологии и материала напрямую влияет на стоимость и скорость печати. Вам стоит оценить, насколько вам важны мелкие детали еще на этапе моделирования, и в зависимости от этого выбрать производство с оптимальной для вас точностью.</p>
+                <figure knowbase__picture>
+                    <img src="img/knowbase/knowbase-img-08.jpg" alt="Печать методом SLS. Точность выполнения деталей различна для разных технологий.">
+                    <figcaption>Печать методом SLS. Точность выполнения деталей различна для разных технологий.</figcaption>
+                </figure>
+                <!-- <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Поддерживаемые стенки</td>
+                        <td>Неподдерживаемые стенки</td>
+                        <td>Поддержка и выступы</td>
+                        <td>Рельеф</td>
+                        <td>Horizontal bridges</td>
+                        <td>Отверстия</td>
+                        <td>Подвижные части</td>
+                        <td>Отверстия для сброса отработанного материала </td>
+                        <td>Наименьший элемент</td>
+                        <td>Диаметр штифта</td>
+                        <td>Отклонение</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Стенки, которые соприкасаются с остальным изделием минимум двумя сторонами.</td>
+                        <td>Стенки, которые соприкасаются с остальным изделием менее чем двумя сторонами.</td>
+                        <td>Наибольший возможный угол без элементов поддержки</td>
+                        <td>Элементы модели, которые находятся ниже или выше поверхности</td>
+                        <td>The span a technology can print without the need for support.</td>
+                        <td>Минимальный допустимый диаметр</td>
+                        <td>Минимальный допустимый размер элемента</td>
+                        <td>Отверстия для сброса отработанного материала </td>
+                        <td>Рекомендуемый зазор между двумя подвижными элементами</td>
+                        <td>Наименьший допустимый диаметр штифта</td>
+                        <td>Ожидаемое отклонение из-за свойств технологий</td>
+                    </tr>
+                </table> -->
+                
+                <a href="knowbase.html" class="knowbase__link second-color">Назад</a>
+                    
+                
+            </div>
+        </section>
+
+        <!-- End faq-block -->
+
+
+        
+    </main>
+
+   
+
+
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
