@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Руководства по практическим аспектам применения 3D печати</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container navbar">            
+            <nav class="header__body main-nav one">
+                <a class="header__logo main-nav__logo logo" href="index.html">
+                    <img class="logo__img" src="img/routek-logo-white.svg" width="191" height="71" alt="Компания Routek">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list main-nav__list">
+                        <li class="main-nav__item">
+                            <a class="drop-btn">О нас</a>
+                            <ul class="main-nav__sub-list">
+                                <li><a href="about.html">О нас</a></li>
+                                <li><a href="warranty.html">Гарантия качества</a></li>
+                                <li><a href="protection.html">Защита IP</a></li>
+                                <li><a href="roi.html">ROI калькулятор</a></li>
+                                <li><a href="smi.html">СМИ о нас</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </li>
+    
+                        <li class="main-nav__item">
+                            <a class="drop-btn">Технологии и материалы</a>
+                            <ul class="main-nav__sub-list">
+                                <li><a href="ded.html">Прямой подвод энергии и материала (DED)</a></li>
+                                <li><a href="mj.html">Струйное нанесение материала (MJ)</a></li>
+                                <li><a href="pbf.html">Cинтез на подложке (PBF)</a></li>
+                                <li><a href="bj.html">Струйное нанесение связующего (BJ)</a></li>
+                                <li><a href="me.html">Экструзия материала (ME)</a></li>
+                                <li><a href="vp.html">Фотополимеризация в ванне (VP)</a></li>
+                                <li><a href="material.html">Карта выбора технологий<br>в зависимости от материала</a></li>
+                                <li><a href="function.html">Карта выбора технологий в зависисмости<br>от функционального
+                                        назначения</a>
+                                </li>
+                                <li><a href="appearance.html">Карта выбора технологий<br>в зависимости от внешнего вида</a>
+                                </li>
+    
+                            </ul>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="drop-btn">Сервисы</a>
+                            <ul class="main-nav__sub-list">
+                                <li><a href="engineer.html">Инженерные услуги</a></li>
+                                <li><a href="api.html">Routek API</a></li>
+                                <li><a href="student.html">Для преподавателей и студентов</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="knowbase.html">База знаний</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="drop-btn">FAQ</a>
+                            <ul class="main-nav__sub-list">
+                                <li><a href="client.html">Для заказчиков</a></li>
+                                <li><a href="parthner.html">Для партнеров</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="legal.html">Правовая информация</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="user-list__login" href="#">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="page-main">
+       
+        <!-- Start knowbase-block -->
+        <section class="knowbase">
+            <div class="wrapper">
+                <a href="knowbase.html" class="knowbase__link second-color">Назад</a>
+                <h3 class="knowbase__subtitle"><span class="knowbase__number prime-color">01.</span> Введение в аддитивное производство</h3>
+                <p class="knowbase__text"><b>Основные этапы аддитивного производства.</b></p>
+                <p class="knowbase__text">Аддитивные технологии – обобщённое название группы технологий, основанных на создании физического объекта на основе цифровой модели путём добавления материала, как правило, слой за слоем или синтеза на основу в виде плоской поверхности или осевой заготовки.<br>Аддитивное производство включает в себя несколько основных шагов от разработки 3D модели до получения готового продукта.</p>
+                <p class="knowbase__text"><span>1. 3D модель</span> <br> Создание цифровой модели – первый этап аддитивного производства. Самый популярный способ – создание 3D модели в системах автоматизированного проектирования (CAD). К вашим услугам есть множество бесплатных и профессиональных CAD-программ, которые совместимы с аддитивным производством.  Также вы можете использовать метод обратной разработки – вы можете получить 3D модель путём 3D сканирования уже созданного изделия.</p>
+                <p class="knowbase__text">Стоит учитывать некоторые конструктивные особенности 3D моделирования для последующего аддитивного производства. В основном они касаются ограничений, связанных с мощностью производственного оборудования и могут различаться в зависимости от желаемых материалов и технологий.</p>
+                <div class="knowbase__picture">
+                    <img src="img/knowbase/knowbase-img-01.jpg" alt="">
+                </div>
+                <p class="knowbase__text"><span>2. STL файл</span> <br>Сохранение созданной CAD-модели в STL (stereolithography) файл – один из важнейших этапов аддитивного производства. STL кодирует поверхность объекта, используя многоугольники. При конвертации в STL следует учитывать существующие ограничения для 3D моделей,  в том числе физический размер, водонепроницаемость и допустимое количество многоугольников.</p>
+                <p class="knowbase__text">Когда STL файл создан, он загружается в слайсер - программу, с помощью которой 3D-модель нарезается на ряд 2D-слоев.  Результат работы слайсера — G-код, в котором отражены все параметры печати, которые будут переданы на производственное оборудование. Также в G-коде можно отредактировать нужные параметры в ручном режиме.</p>
+                <p class="knowbase__text"><span>3. Печать</span><br>3D принтеры  зачастую состоят из множества небольших взаимодействующих частей. Качество их взаимодействия и калибровки напрямую влияет на качество 3D печати. На этом же этапе в принтер загружают материал, который зачастую имеет ограниченный срок годности и требует бережного хранения. Некоторые производственные процессы позволяют перерабатывать использованное сырье, но стоит понимать, что повторное использование материала приводит к снижению качества готового продукта.</p>
+                <div class="knowbase__picture">
+                    <img src="img/knowbase/knowbase-img-02.jpg" alt="">
+                </div>
+                <p class="knowbase__text">Большая часть аддитивного оборудования не требует постоянного наблюдения в процессе печати. Производство происходит в автоматическом режиме, за исключением случаев, когда в 3D принтере заканчивается материал или обнаруживается ошибка в программе.</p>
+                <p class="knowbase__text"> <span>4. Извлечение</span> <br>Чтобы достать напечатанный продукт из некоторых 3D принтеров, достаточно просто снять его с производственной платформы. Для других, в основном промышленных, процесс отделение готового продукта от материала и производственной основы также требует особый подход и профессиональных операторов, защитное оборудование и специальные условия.</p>
+                <div class="knowbase__picture">
+                    <img src="img/knowbase/knowbase-img-03.jpg" alt="Извлечение детали из 3D принтера">
+                </div>
+                <p class="knowbase__text"><span>5. Постобработка</span> <br>Постобработка проходит по-разному в зависимости от технологий 3D печати. <br>При использовании SLA необходимо произвести ультрафиолетовую обработку изделия, металлические части стоит закалить в печи, а печать по технологии  FDM позволяет сразу получить готовый продукт. Тем не менее, в большинстве случаев полученные изделия можно дополнительно очистить, отполировать или покрасить для подготовки к эксплуатации.</p>
+                <a href="knowbase.html" class="knowbase__link second-color">Назад</a>
+                    
+                
+            </div>
+        </section>
+
+        <!-- End faq-block -->
+
+
+        
+    </main>
+
+   
+
+
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

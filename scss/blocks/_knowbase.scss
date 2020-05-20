@@ -40,11 +40,24 @@
         opacity: 0.7;
         margin: 0 0 18px 0;
     }
+    &__text b {
+        @include medium;
+        font-size: 19px;
+        line-height: 25px;
+        margin: 0 0 0px 0;
+    }
+    &__text span {
+        @include regular;
+        color: $prime-color;
+    }
     &__link {
         @include medium;
         font-size: 18px;
         line-height: 23px;
         text-decoration: none;
+    }
+    &__picture {
+        margin: 20px 0;
     }
 }
 @media (max-width: 640px) {
