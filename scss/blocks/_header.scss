@@ -128,6 +128,16 @@
 .drop-btn.active::after {
     transform: rotate(40deg);
 }
+.user-list__login {
+    padding-left: 24px;
+    
+}
+.user-list__login::before {
+    content: url(../img/user-menu-ico.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 @media (max-width: 1180px) {
@@ -217,6 +227,9 @@
     }
     .drop-btn::after {
         left: 14px;
+    }
+    .user-list__login::before {
+        display: none;
     }
 }
 
