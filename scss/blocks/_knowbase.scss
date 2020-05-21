@@ -56,9 +56,27 @@
         line-height: 23px;
         text-decoration: none;
     }
+    &__link-back {
+        position: relative;
+        padding-left: 12px;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            padding-left: 20px;
+            transition: all 0.3s ease 0;
+        }
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: url(../img/arrow-left-ico.svg);
+        }
+    }
     &__picture {
         margin: 20px 0;
     }
+
 }
 .knowbase__table {
     width: 100%;

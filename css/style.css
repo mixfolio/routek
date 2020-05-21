@@ -1379,6 +1379,24 @@ img {
   text-decoration: none;
 }
 
+.knowbase__link-back {
+  position: relative;
+  padding-left: 12px;
+}
+
+.knowbase__link-back:hover, .knowbase__link-back:focus, .knowbase__link-back:active {
+  padding-left: 20px;
+  -webkit-transition: all 0.3s ease 0;
+  transition: all 0.3s ease 0;
+}
+
+.knowbase__link-back::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: url(../img/arrow-left-ico.svg);
+}
+
 .knowbase__picture {
   margin: 20px 0;
 }
