@@ -3606,6 +3606,45 @@ img {
   color: #217bff;
 }
 
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.social-icons__facebook svg:hover,
+.social-icons__facebook svg:focus,
+.social-icons__facebook svg:active {
+  fill: #3c5a96;
+}
+
+.social-icons__telegram svg:hover,
+.social-icons__telegram svg:focus,
+.social-icons__telegram svg:active {
+  fill: #30a5e0;
+}
+
+.social-icons__youtube svg:hover,
+.social-icons__youtube svg:focus,
+.social-icons__youtube svg:active {
+  fill: #fc0d1b;
+}
+
+.social-icons__linkedin svg:hover,
+.social-icons__linkedin svg:focus,
+.social-icons__linkedin svg:active {
+  fill: #1178b3;
+}
+
 @media (max-width: 560px) {
   .page-footer__body {
     display: block;

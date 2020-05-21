@@ -47,6 +47,34 @@
     }
     
 }
+.social-icons {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 0 ;
+    padding: 0;
+    &__facebook svg:hover,
+    &__facebook svg:focus,
+    &__facebook svg:active {
+        fill: #3c5a96;
+    }
+    &__telegram svg:hover,
+    &__telegram svg:focus,
+    &__telegram svg:active {
+        fill: #30a5e0;
+    }
+    &__youtube svg:hover,
+    &__youtube svg:focus,
+    &__youtube svg:active {
+        fill: #fc0d1b;
+    }
+    &__linkedin svg:hover,
+    &__linkedin svg:focus,
+    &__linkedin svg:active {
+        fill: #1178b3;
+    }
+}
 
 @media (max-width: 560px) {
     .page-footer__body {
