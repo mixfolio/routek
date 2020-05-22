@@ -3579,31 +3579,58 @@ img {
   margin-bottom: 16px;
 }
 
-.footer-nav__box b {
+.page-footer p > a {
+  color: #828282;
+}
+
+.footer-nav__list b {
+  display: block;
   font-family: "Stem";
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
+  margin: 0 0 16px 0;
   color: #828282;
 }
 
-.footer-nav__list {
+.footer-nav__list,
+.footer-nav__sub-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.footer-nav__list a {
-  font-family: "Stem";
-  font-weight: 300;
+.footer-nav__list li,
+.footer-nav__sub-list li {
   font-size: 14px;
   line-height: 17px;
+  margin-bottom: 16px;
+}
+
+.footer-nav__list li :last-child,
+.footer-nav__sub-list li :last-child {
+  margin-bottom: 0;
+}
+
+.footer-nav__list a,
+.footer-nav__sub-list a {
+  font-family: "Stem";
+  font-weight: 300;
   color: #828282;
   text-decoration: none;
 }
 
-.footer-nav__list a:hover, .footer-nav__list a:focus, .footer-nav__list a:active {
+.footer-nav__list a:hover, .footer-nav__list a:focus, .footer-nav__list a:active,
+.footer-nav__sub-list a:hover,
+.footer-nav__sub-list a:focus,
+.footer-nav__sub-list a:active {
   color: #217bff;
+}
+
+.footer-nav__list a span,
+.footer-nav__sub-list a span {
+  font-family: "Stem";
+  font-weight: bold;
 }
 
 .social-icons {
@@ -3619,6 +3646,10 @@ img {
           align-items: center;
   margin: 20px 0 0 0;
   padding: 0;
+}
+
+.social-icons li {
+  margin: 0;
 }
 
 .social-icons__facebook svg:hover,

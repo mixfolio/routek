@@ -20,33 +20,53 @@
         margin: 0;
         margin-bottom: 16px;
     }
+    p>a {
+        color: #828282;
+    }
 }
-.footer-nav__box b {
+
+.footer-nav__list b {
+    display: block;
     @include bold;
     font-size: 14px;
     line-height: 17px;
+    margin: 0 0 16px 0;
     color: #828282;
-
 }
-.footer-nav__list {
+
+
+
+.footer-nav__list,
+.footer-nav__sub-list {
     list-style: none;
     margin: 0;
     padding: 0;
-    a {
-        @include light;
+    li {
         font-size: 14px;
         line-height: 17px;
+        margin-bottom: 16px;
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        @include light;
         color: #828282;
         text-decoration: none;
+        //transition: color .3s ease-in-out;
         &:hover,
         &:focus,
         &:active {
             color: $hero-text;
-            
+        }
+        span {
+            @include bold;
         }
     }
     
 }
+
+
 .social-icons {
     display: flex;
     list-style: none;
@@ -54,6 +74,9 @@
     align-items: center;
     margin: 20px 0 0 0 ;
     padding: 0;
+    li {
+        margin: 0;
+    }
     &__facebook svg:hover,
     &__facebook svg:focus,
     &__facebook svg:active {
