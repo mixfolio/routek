@@ -1,10 +1,11 @@
+// Burger menu
 $(document).ready(function () {
     $('.header__burger').on('click', function () {
         $('.header__burger,.header__menu').toggleClass('active');
         $('.body').toggleClass('lock');
     });
 });
-
+// Header sub-menu spoiler
 $(document).ready(function () {
     $('.drop-btn').on('click', function () {
         if ($('.main-nav').hasClass('one')) {
@@ -23,5 +24,11 @@ $(document).ready(function () {
         }
         $(this).toggleClass('active').next().slideToggle(200);
     });
+});
+// Roi page skillbar 
+$('.saving__bar').each(function(){
+    $(this).find('.saving__bar-bar').animate({
+        width:$(this).attr('data-percent')
+    }, 4000);
 
 });

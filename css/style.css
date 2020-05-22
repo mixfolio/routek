@@ -2477,15 +2477,18 @@ img {
   border-radius: 4px;
 }
 
-.saving__bar::after {
+.saving__bar-bar {
   position: absolute;
   top: 0;
   left: 0;
-  content: '';
-  width: 50%;
+  width: 0;
   height: 16px;
   border-radius: 4px;
   background-color: #1E5DC5;
+}
+
+.saving__bar-bar--mod {
+  background-color: #00D2A0;
 }
 
 .saving__bold {
