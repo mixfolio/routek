@@ -10,7 +10,7 @@
     }
     &__logo {
         display: block;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
     }
     p {
         @include light;
@@ -25,7 +25,7 @@
     }
 }
 
-.footer-nav__list b {
+.footer-nav__list span {
     display: block;
     @include bold;
     font-size: 14px;

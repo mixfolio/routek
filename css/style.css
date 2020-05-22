@@ -3566,7 +3566,7 @@ img {
 
 .page-footer__logo {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .page-footer p {
@@ -3583,7 +3583,7 @@ img {
   color: #828282;
 }
 
-.footer-nav__list b {
+.footer-nav__list span {
   display: block;
   font-family: "Stem";
   font-weight: bold;
