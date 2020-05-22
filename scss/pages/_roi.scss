@@ -121,10 +121,6 @@
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #ffffff;
-    &__wrapper {
-        max-width: 1262px;
-        margin: 0 auto;
-    }
     &__title {
         @include regular;
         font-size: 45px;
