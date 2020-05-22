@@ -3557,8 +3557,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3631,6 +3631,10 @@ img {
 .footer-nav__sub-list a span {
   font-family: "Stem";
   font-weight: bold;
+}
+
+.footer-nav__list {
+  margin-left: 2%;
 }
 
 .social-icons {
