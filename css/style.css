@@ -935,6 +935,9 @@ img {
 }
 
 .services__item-desc {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   font-family: "Stem";
   font-weight: 300;
   font-size: 16px;
@@ -943,8 +946,11 @@ img {
   margin: 0 16px 34px 16px;
 }
 
-.services__wrap {
-  text-align: center;
+.services__button {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .services__item-link {
@@ -954,6 +960,7 @@ img {
   font-weight: normal;
   font-size: 20px;
   line-height: 26px;
+  text-align: center;
   color: #A8A8A8;
   text-decoration: none;
 }
