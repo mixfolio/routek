@@ -85,6 +85,15 @@
     border-radius: 10px;
     background: #ffffff; 
     margin-bottom: 30px;
+    th {
+        @include medium;
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-align: left;
+        color: #939598;
+        padding: 10px 16px 0 16px;
+    }
     tbody {
     @include regular;
     font-size: 18px;
@@ -97,6 +106,8 @@
     padding: 23px 16px; 
     }       
 }
+
+
 
 
 @media (max-width: 640px) {

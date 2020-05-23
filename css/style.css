@@ -1411,6 +1411,17 @@ img {
   margin-bottom: 30px;
 }
 
+.knowbase__table th {
+  font-family: "Stem";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #939598;
+  padding: 10px 16px 0 16px;
+}
+
 .knowbase__table tbody {
   font-family: "Stem";
   font-weight: normal;
