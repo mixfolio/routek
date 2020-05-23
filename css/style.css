@@ -3669,40 +3669,18 @@ img {
   margin: 0;
 }
 
-.social-icons__facebook svg:hover,
-.social-icons__facebook svg:focus,
-.social-icons__facebook svg:active {
-  fill: #3c5a96;
-}
-
-.social-icons__telegram svg:hover,
-.social-icons__telegram svg:focus,
-.social-icons__telegram svg:active {
-  fill: #30a5e0;
-}
-
-.social-icons__youtube svg:hover,
-.social-icons__youtube svg:focus,
-.social-icons__youtube svg:active {
-  fill: #fc0d1b;
-}
-
-.social-icons__linkedin svg:hover,
-.social-icons__linkedin svg:focus,
-.social-icons__linkedin svg:active {
-  fill: #1178b3;
-}
-
 .social__link {
   display: inline-block;
   width: 34px;
   height: 34px;
   border-radius: 24%;
+  -webkit-transition: all 0.3s ease 0;
+  transition: all 0.3s ease 0;
   border: 1px solid #828282;
 }
 
 .social__link--facebook {
-  background: url(../../img/facebook-ico-3.svg) no-repeat center;
+  background: url(../img/facebook-ico-3.svg) no-repeat center;
   background-size: 30px auto;
 }
 
@@ -3713,7 +3691,7 @@ img {
 }
 
 .social__link--telegram {
-  background: url(../../img/telegram-ico-3.svg) no-repeat center;
+  background: url(../img/telegram-ico-3.svg) no-repeat center;
   background-size: 30px auto;
 }
 
@@ -3724,7 +3702,7 @@ img {
 }
 
 .social__link--youtube {
-  background: url(../../img/youtube-ico-3.svg) no-repeat center;
+  background: url(../img/youtube-ico-3.svg) no-repeat center;
   background-size: 30px auto;
 }
 
@@ -3735,7 +3713,7 @@ img {
 }
 
 .social__link--linkedin {
-  background: url(../../img/linkedin-ico-3.svg) no-repeat center;
+  background: url(../img/linkedin-ico-3.svg) no-repeat center;
   background-size: 30px auto;
 }
 
