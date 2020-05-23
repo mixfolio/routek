@@ -2385,7 +2385,7 @@ img {
   line-height: 58px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .promo__text {
@@ -2430,6 +2430,10 @@ img {
   margin-bottom: 40px;
 }
 
+.saving__title--mod {
+  padding-top: 140px;
+}
+
 .saving__list {
   display: -ms-grid;
   display: grid;
@@ -2444,15 +2448,15 @@ img {
   font-size: 22px;
   line-height: 100%;
   color: #000000;
-  margin: 0;
+  margin: 15px;
 }
 
-.saving__item-title-desc {
+.saving__item-desc {
   font-family: "Stem";
   font-weight: 300;
   font-size: 16px;
   line-height: 170%;
-  margin: 0;
+  margin: 12px;
 }
 
 .saving__item-text {

@@ -93,7 +93,7 @@
         line-height: 58px;
         color: #ffffff;
         margin: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
     &__text {
         @include regular;
@@ -129,6 +129,9 @@
         color: #000000;
         margin: 0;
         margin-bottom: 40px;
+        &--mod {
+            padding-top: 140px;
+        }
     }
     &__list {
         display: grid;
@@ -142,13 +145,13 @@
             font-size: 22px;
             line-height: 100%;
             color: #000000;
-            margin: 0;
+            margin: 15px;
+        }
         &-desc {
             @include light;
             font-size: 16px;
             line-height: 170%;
-            margin: 0;
-        }
+            margin: 12px;
         }
         &-text {
             @include light;
