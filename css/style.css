@@ -2877,7 +2877,7 @@ img {
   margin: 0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 735px) {
   .kind-tech {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -3004,6 +3004,17 @@ img {
   background: url(../img/area-app-icons/telecom-ico.svg) no-repeat center top;
 }
 
+@media (max-width: 960px) {
+  .area-app__item {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+  .area-app__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 640px) {
   .area-app {
     padding-top: 50px;
@@ -3016,14 +3027,6 @@ img {
   }
   .area-app__list {
     display: block;
-  }
-  .area-app__item {
-    font-size: 22px;
-    line-height: 28px;
-    margin-bottom: 40px;
-  }
-  .area-app__item:last-child {
-    margin-bottom: 0;
   }
 }
 
@@ -3667,9 +3670,12 @@ img {
 }
 
 .social-icons {
+  max-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -3739,7 +3745,7 @@ img {
   background-color: #1178b3;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .page-footer__body {
     display: block;
   }

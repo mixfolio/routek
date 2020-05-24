@@ -68,7 +68,9 @@
 }
 
 .social-icons {
+    max-width: 200px;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: space-between;
     align-items: center;
@@ -132,9 +134,10 @@
 }
 
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
     .page-footer__body {
         display: block;
     }
+   
     
 }
