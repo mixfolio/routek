@@ -18,7 +18,7 @@
         @include regular;
         font-size: 18px;
         line-height: 170.3%;
-        color: #000000;
+        color: rgba(0,0,0, 0.7);
         margin: 0;
         margin-bottom: 31px;
         &:last-child {
@@ -30,17 +30,32 @@
         color: $hero-text;
         text-decoration: underline;
     }
-    &__server-block {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    
+}
+@media (max-width: 640px) {
+    .privacy {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .privacy__title {
+        @include mob-title;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .privacy__text {
+        @include plain-text;
+        text-align: center;
     }
 
 }
 
 .server-block {
+    display: flex;
+
     &__text-box {
-        width: 57%;
+        flex: 1 1 50%;
+        order: 1;
+
     }
     &__title {
         @include medium;
@@ -54,14 +69,41 @@
         @include regular;
         font-size: 18px;
         line-height: 170.3%;
-        color: #000000;
+        color: rgba(0,0,0, 0.7);
         margin: 0;
         margin-bottom: 18px;
+        &:last-child {
+            margin: 0;
+        }
     }
     &__picture {
+        flex: 1 1 50%;
+        order: 2;
         img {
             border-radius: 8px;
 
+
         }
     }
+}
+@media (max-width: 640px) {
+    .server-block {
+        display: block;
+    }
+    .server-block__text-box {
+        width: 100%;
+    }
+    .server-block__title {
+        @include mob-title;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    .server-block__text {
+        @include plain-text;
+        text-align: center;
+    }
+    .server-block__picture {
+        width: 100%;
+    }
+    
 }

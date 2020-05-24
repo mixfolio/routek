@@ -2183,6 +2183,11 @@ img {
     line-height: 30px;
     text-align: left;
   }
+  .estimation__subtitle {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .quality {
@@ -2517,7 +2522,7 @@ img {
   font-weight: normal;
   font-size: 18px;
   line-height: 170.3%;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.7);
   margin: 0;
   margin-bottom: 31px;
 }
@@ -2533,20 +2538,37 @@ img {
   text-decoration: underline;
 }
 
-.privacy__server-block {
+@media (max-width: 640px) {
+  .privacy {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .privacy__title {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .privacy__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.server-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .server-block__text-box {
-  width: 57%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .server-block__title {
@@ -2564,13 +2586,49 @@ img {
   font-weight: normal;
   font-size: 18px;
   line-height: 170.3%;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.7);
   margin: 0;
   margin-bottom: 18px;
 }
 
+.server-block__text:last-child {
+  margin: 0;
+}
+
+.server-block__picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
 .server-block__picture img {
   border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+  .server-block {
+    display: block;
+  }
+  .server-block__text-box {
+    width: 100%;
+  }
+  .server-block__title {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .server-block__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .server-block__picture {
+    width: 100%;
+  }
 }
 
 /* Start pages/roi */
