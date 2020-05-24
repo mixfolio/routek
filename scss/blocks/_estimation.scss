@@ -4,10 +4,6 @@
     padding-top: 94px;
     padding-bottom: 170px;
 }
-.estimation__wrapper {
-    max-width: 1262px;
-    margin: 0 auto;
-}
 
 .estimation__title {
     @include regular;
@@ -32,13 +28,16 @@
 
 .estimation__list {
     display: flex;
-    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 .estimation__item {
-    width: 23%;
+    flex: 0 1 25%;
+    margin-right: 22px;
+    &:last-child {
+        margin: 0;
+    }
 }
 
 .estimation__desc {
@@ -58,4 +57,24 @@
 }
 .estimation__number--two {
     color: $second-color;
+}
+@media (max-width: 960px) {
+    .estimation {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .estimation__list {
+        flex-wrap: wrap;
+    }
+    .estimation__item {
+        flex: 1 0 250px;
+    }
+}
+
+@media (max-width: 640px) {
+    .estimation__title {
+        @include mob-title;
+        text-align: left;
+
+    }
 }

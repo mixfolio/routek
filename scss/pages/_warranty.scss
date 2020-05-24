@@ -1,15 +1,16 @@
 
 .icon-text {
-    padding: 100px 0; //временно
+    padding: 100px 0;
     &__list {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 22px;
+        display: flex;
+        flex-wrap: wrap;
+
         list-style: none;
         margin: 0;
         padding: 0;
     }
     &__item {
+        flex: 0 1 25%;
         padding-top: 97px;
         &--one {
             background: url(../img/warr-ico-01.svg) no-repeat center top;
@@ -33,6 +34,27 @@
         margin: 0;
     }
 }
+@media (max-width: 960px) {
+    .icon-text {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .icon-text__item {
+        flex: 0 0 50%;
+        margin-bottom: 30px;
+        
+    }
+}
+@media (max-width: 520px) {
+    .icon-text__list {
+        display: block;
+    }
+    .icon-text__text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
 .std-table {
     padding-bottom: 100px;
 
@@ -94,6 +116,30 @@
     transform: translate(-50%, 0);
 }
     
+
+@media (max-width: 1200px) {
+    .std-table__table {
+        max-width: 100%;
+    }
+    .std-table__picture {
+        display: none;
+    }
+}
+@media (max-width: 640px) {
+    .std-table__title {
+        @include mob-title;
+    }
+    .std-table__table {
+    }
+    .std-table__thead {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .std-table__tbody {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
 
 
 
@@ -178,8 +224,60 @@
         opacity: 0.7;
         margin: 0;
     }
+    
 
 }
+
+@media (max-width: 640px) {
+    .quality {
+        padding-top: 50px;
+    }
+    .quality__title {
+        @include mob-title;
+        margin-bottom: 30px;
+    }
+    .quality__desc {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    .quality__box {
+        padding: 162px 0 0 0 ;
+        background-position: 50% 0;
+        &--one {
+            background-size: 166px auto;
+        }
+        &--two {
+            padding-top: 185px;
+            background-size: 160px auto; 
+        }
+    }
+    .quality__subtitle {
+        @include mob-subtitle;
+        margin-bottom: 12px;
+    }
+    .quality__list {
+        margin-bottom: 30px;
+    }
+    .quality__item {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .quality__button {
+        margin-bottom: 30px;
+    }
+    .quality__subtitle--two {
+        text-align: center;
+    }
+    .quality__text {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+    
+}
+
+
 .check-app {
     padding: 100px 0;
     &__title {
@@ -241,6 +339,44 @@
         margin: 0 auto;
     }
 }
+@media (max-width: 960px) {
+    .check-app__box {
+        display: block;
+    }
+    .check-app__picture {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .check-app {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .check-app__title {
+        @include mob-title;
+        text-align: center;
+        margin-bottom: 11px;
+    }
+    .check-app__box {
+        margin-bottom: 0px;
+    }
+    .check-app__text {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+    .check-app__subtitle {
+        @include mob-subtitle;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .check-app__item {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
 
 .solve {
     padding-bottom: 100px;
@@ -259,5 +395,22 @@
         line-height: 21px;
         opacity: 0.7;
         margin: 0;
+    }
+}
+@media (max-width: 640px) {
+    .solve {
+        padding-bottom: 50px;
+    }
+    .solve__box {
+        padding: 163px 0 0 0;
+        background-size: 135px auto;
+        background-position: 50% 0;
+    }
+    .solve__title {
+        @include mob-title;
+        text-align: center;
+    }
+    .solve__text {
+        text-align: center;
     }
 }
