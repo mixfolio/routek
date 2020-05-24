@@ -458,7 +458,7 @@
         display: block;
         margin-bottom: 0;
     }
-    .print-tech__list {}
+    //.print-tech__list {}
 }
 .second-color {
     color: $second-color;
@@ -481,17 +481,24 @@
             background: url(../img/featiures-minus-ico.svg) no-repeat 0 0;
         }
     }
-    &__list {
-        list-style: none;
+    &__card {
         background: #F8FAFF;
         border-radius: 12px;
-        padding: 49px 80px 50px 85px;
-        margin: 0;
+        padding: 49px 0 50px 0;
         &--two {
             background: #F7FDFB;
         }
+
+    }
+    &__list {
+        max-width: 326px;
+        list-style: none;
+        padding: 0 15px;
+        margin: 0 auto;
+        
     }
     &__item {
+        
         @include regular;
         font-size: 18px;
         line-height: 23px;
@@ -506,8 +513,8 @@
         display: block;
         padding-bottom: 0;
     }
-    .features__list {
+    .features__card {
         padding: 40px 0 50px 0 ;
     }
-    .features__item:last-child {}
+    //.features__item:last-child {}
 }
