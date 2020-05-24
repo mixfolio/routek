@@ -2692,7 +2692,7 @@ img {
 }
 
 .roi-calc__input {
-  padding: 30px 17px;
+  padding: 17px 30px;
   font-family: "Stem";
   font-weight: bold;
   font-size: 16px;
@@ -2727,6 +2727,51 @@ img {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   background-color: #00D2A0;
+}
+
+@media (max-width: 640px) {
+  .roi-calc {
+    padding: 50px 0 50px 0;
+    position: static;
+    max-width: none;
+    min-height: 0;
+    border-radius: 0;
+    color: #000000;
+    background-color: #ffffff;
+    -webkit-backdrop-filter: 0;
+            backdrop-filter: 0;
+  }
+  .roi-calc__wrapper {
+    max-width: 1292px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .roi-calc__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 7px;
+  }
+  .roi-calc__desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .roi-calc__list {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .roi-calc__item {
+    margin: 0 0 14px 0;
+  }
+  .roi-calc__item:last-child {
+    margin: 0;
+  }
+  .roi-calc__label {
+    margin: 0;
+    color: #1E5DC5;
+  }
+  .roi-calc__input {
+    background-color: #F0F4FA;
+  }
 }
 
 .promo {
@@ -2769,6 +2814,30 @@ img {
   font-weight: normal;
   font-size: 30px;
   line-height: 39px;
+}
+
+@media (max-width: 640px) {
+  .promo {
+    min-height: 0;
+    padding: 70px 15px 70px 15px;
+  }
+  .promo__title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .promo__value {
+    font-size: 45px;
+    line-height: 58px;
+  }
+  .promo__value-sign {
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+  }
+  .promo__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .saving {
@@ -2889,6 +2958,26 @@ img {
 
 .saving__box-value-mod {
   color: #00D2A0;
+}
+
+@media (max-width: 840px) {
+  .saving {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .saving__title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .saving__list {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .saving__box {
+    display: block;
+  }
 }
 
 /* Start pages/smi */

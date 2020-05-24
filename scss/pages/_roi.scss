@@ -44,7 +44,7 @@
     margin: 0 0 12px 0;
 }
 .roi-calc__input {
-    padding: 30px 17px;
+    padding: 17px 30px;
     @include bold;
     font-size: 16px;
     line-height: 180%;
@@ -65,19 +65,50 @@
     transform: translate(-50%, 0);
     background-color: $second-color;   
 }
-// @media (max-width: 1330px) {
-//     .roi-calc {
-//         max-width: 406px;
-//     }
-//     .roi-calc__list {
-//         display: block;
-        
-//     }
-//     .roi-calc__item {
-//         margin: 0  0 16px 0;
-//     }
-// }
 
+@media (max-width: 640px) {
+    
+    .roi-calc {
+        padding: 50px 0 50px 0;
+        position: static;
+        max-width: none;
+        min-height: 0;
+        border-radius: 0;
+        color: #000000;
+        background-color: #ffffff;
+        backdrop-filter: 0;
+    }
+    .roi-calc__wrapper {
+        max-width: 1292px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .roi-calc__title {
+        @include mob-subtitle;
+        margin-bottom: 7px;
+    }
+    .roi-calc__desc {
+        @include plain-text;
+    }
+    .roi-calc__list {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .roi-calc__item {
+        margin: 0 0 14px 0;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    .roi-calc__label {
+        margin: 0;
+        color: $prime-color;
+    }
+    .roi-calc__input {
+        background-color: #F0F4FA;;
+    }
+}
 
 
 
@@ -114,6 +145,28 @@
             font-size: 30px;
             line-height: 39px;
         }
+    }
+}
+@media (max-width: 640px) {
+    .promo {
+        min-height: 0;
+        padding: 70px 15px 70px 15px;
+
+    }
+    .promo__title {
+        @include mob-title;
+    }
+    .promo__value {
+        font-size: 45px;
+        line-height: 58px;
+    }
+    .promo__value-sign {
+        font-size: 20px;
+        line-height: 26px;
+        color: #ffffff;
+    }
+    .promo__text {
+        @include plain-text;
     }
 }
 
@@ -214,5 +267,22 @@
                 color: $second-color;
             }
         }
+    }
+}
+@media (max-width: 840px) {
+    .saving {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .saving__title {
+        @include mob-title;
+    }
+    .saving__list {
+        display: block
+    }
+}
+@media (max-width: 640px) {
+    .saving__box {
+        display: block;
     }
 }
