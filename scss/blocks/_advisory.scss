@@ -59,14 +59,21 @@
     }
     
 }
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
+  .advisory__title {
+    text-align: center;
+  }
   .advisory__form {
     display: block;
     text-align: center;
   }
+  .advisory__form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
   .advisory__item {
     margin: 0 0 16px 0;
-    max-width: 60%;
+    max-width: 100%;
     &--answ {
       margin-bottom: 40px;
     }
@@ -90,11 +97,7 @@
     text-align: center;
     margin-bottom: 16px;
   }
-  .advisory__item {
-    max-width: 100%;
-    
-    }
-
+ 
   
   
 }

@@ -66,7 +66,7 @@
     background-color: $second-color;   
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1340px) {
     
     .roi-calc {
         padding: 50px 0 50px 0;
@@ -79,7 +79,7 @@
         backdrop-filter: 0;
     }
     .roi-calc__wrapper {
-        max-width: 1292px;
+        max-width: 600px;
         margin: 0 auto;
         padding: 0 15px;
     }
@@ -183,7 +183,7 @@
         margin: 0;
         margin-bottom: 40px;
         &--mod {
-            padding-top: 140px;
+            padding-top: 100px;
         }
     }
     &__list {
