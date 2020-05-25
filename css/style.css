@@ -590,30 +590,32 @@ img {
 
 .advantages__item {
   padding-top: 93px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .advantages__item-time {
-  background: url(../img/advantages-icons/advtg-ico-01.svg) no-repeat 0 0;
-}
-
-.advantages__item-save {
-  background: url(../img/advantages-icons/advtg-ico-02.svg) no-repeat 0 0;
-}
-
-.advantages__item-price {
-  background: url(../img/advantages-icons/advtg-ico-03.svg) no-repeat 0 0;
+  background-image: url(../img/advantages-icons/advtg-ico-01.svg);
 }
 
 .advantages__item-answers {
-  background: url(../img/advantages-icons/advtg-ico-04.svg) no-repeat 0 0;
+  background-image: url(../img/advantages-icons/advtg-ico-02.svg);
+}
+
+.advantages__item-save {
+  background-image: url(../img/advantages-icons/advtg-ico-03.svg);
 }
 
 .advantages__item-service {
-  background: url(../img/advantages-icons/advtg-ico-05.svg) no-repeat 0 0;
+  background-image: url(../img/advantages-icons/advtg-ico-04.svg);
+}
+
+.advantages__item-price {
+  background-image: url(../img/advantages-icons/advtg-ico-05.svg);
 }
 
 .advantages__item-contact {
-  background: url(../img/advantages-icons/advtg-ico-06.svg) no-repeat 0 0;
+  background-image: url(../img/advantages-icons/advtg-ico-06.svg);
 }
 
 .advantages__item-title {
@@ -638,8 +640,47 @@ img {
 
 @media (max-width: 768px) {
   .advantages__list {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantages__item {
+    margin-bottom: 30px;
+  }
+  .advantages__item-time {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .advantages__item-answers {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .advantages__item-service {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .advantages__item-save {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .advantages__item-price {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .advantages__item-contact {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+    margin-bottom: 0;
   }
 }
 
