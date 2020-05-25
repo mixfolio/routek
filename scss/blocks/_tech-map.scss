@@ -16,3 +16,29 @@
         margin: 0 0 40px 0;
     }
 }
+@media (max-width: 640px) {
+    .tech-map {
+        padding: 0;
+    }
+    .tech-map__title,
+    .tech-map__subtitle {
+        display: none;
+    }
+    .tech-map__picture {
+        
+    }
+    .tech-map__picture--mat {
+        height: 420px;
+        overflow: hidden;
+        overflow-x: scroll;
+        padding: 15px 0;
+    }
+    .tech-map__picture img {
+        max-width: none;
+        height: 100%;
+        width: auto;
+        // height: 537px;
+        // width: 1262px;
+        
+    }
+}
