@@ -9,8 +9,9 @@
         padding: 0;
     }
     &__item {
-        padding: 32px 0 10px 0;
         border-bottom: 1px solid #E5EAF3;
+        
+
     }
     &__subtitle {
         cursor: pointer;
@@ -18,7 +19,8 @@
         font-size: 22px;
         line-height: 110%;
         color: $prime-color;
-        margin: 0 0 22px 0;
+        padding: 32px 0;
+        margin: 0;
     }
     &__text {
         display: none;
@@ -30,5 +32,26 @@
     &__link {
         text-decoration: none;
         color: $prime-color;
+        
+    }
+}
+@media (max-width: 640px) {
+    .faq {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .faq__title {
+        @include mob-title;
+        margin-bottom: 0;
+    }
+    .faq__subtitle {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 22px 0;
+    }
+    .faq__text {
+        font-size: 16px;
+        line-height: 18px;
+        margin: 0 0 22px 0;
     }
 }

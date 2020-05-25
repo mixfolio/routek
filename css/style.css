@@ -1362,7 +1362,6 @@ img {
 }
 
 .faq__item {
-  padding: 32px 0 10px 0;
   border-bottom: 1px solid #E5EAF3;
 }
 
@@ -1373,7 +1372,8 @@ img {
   font-size: 22px;
   line-height: 110%;
   color: #1E5DC5;
-  margin: 0 0 22px 0;
+  padding: 32px 0;
+  margin: 0;
 }
 
 .faq__text {
@@ -1388,6 +1388,28 @@ img {
 .faq__link {
   text-decoration: none;
   color: #1E5DC5;
+}
+
+@media (max-width: 640px) {
+  .faq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .faq__title {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+  .faq__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 22px 0;
+  }
+  .faq__text {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 0 22px 0;
+  }
 }
 
 .knowbase {
