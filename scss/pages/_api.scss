@@ -24,3 +24,23 @@
     line-height: 31px;
     margin: 0 0 22px 0;
 }
+@media (max-width: 960px) {
+    .api__box {
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width: 640px) {
+    .api {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .api__title {
+        @include mob-title;
+        margin-bottom: 9px;
+    }
+    .api__text {
+        @include plain-text;
+    }
+
+}

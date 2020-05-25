@@ -83,7 +83,7 @@
         text-align: center;
     }
 }
-
+//three-col block
 .three-col {
     padding: 100px 0;
     &__title {
@@ -94,18 +94,13 @@
         }
     }
     &__list {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 22px;
 
         list-style: none;
         margin: 0;
         padding: 0;
-    }
-    &__item {
-        flex: 0 1 33,333%;
-        margin-right: 22px;
-        &:last-child {
-            margin-right: 0;
-        }
     }
     &__subtitle {
         @include medium;
@@ -171,7 +166,6 @@
         display: block;
     }
     .three-col__item {
-        margin-right: 0;
         margin-bottom: 30px;
         &:last-child {
             margin-bottom: 0;
