@@ -3158,7 +3158,7 @@ img {
 }
 
 .contact-us__input {
-  padding: 30px 17px;
+  padding: 17px 30px;
   font-family: "Stem";
   font-weight: normal;
   font-size: 16px;
@@ -3191,6 +3191,38 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+}
+
+@media (max-width: 960px) {
+  .contact-us__body {
+    display: block;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .contact-us__button {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-us__title {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 17px;
+  }
+  .contact-us__map {
+    margin-bottom: 30px;
+  }
+  .contact-us__wrap {
+    display: block;
+  }
+  .contact-us__item--wrap {
+    margin-right: 0;
+  }
 }
 
 .contacts__title {
@@ -3240,6 +3272,26 @@ img {
   position: absolute;
   top: -5px;
   left: 0;
+}
+
+@media (max-width: 640px) {
+  .contacts__title {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .contacts__wrap {
+    display: block;
+  }
+  .contact__text {
+    margin-bottom: 30px;
+  }
+  .contacts__text--marker {
+    margin-right: 0;
+  }
+  .contacts__text--phone {
+    margin-bottom: 0;
+  }
 }
 
 /* Start pages/tech  DED MJ PBF BJ ME VP   */
