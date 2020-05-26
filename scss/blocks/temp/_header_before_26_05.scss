@@ -1,7 +1,7 @@
 .container {
-    max-width: 1262px;
+    max-width: 1292px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .header {
@@ -30,10 +30,14 @@
     height: 71px;
     align-items: center;
 }
+.header__menu {
+    flex: 1 1 auto;
+}
 
 .header__logo {
     position: relative;
     z-index: 3;
+    margin-right: 50px;
 }
 
 .header__logo img {
@@ -48,43 +52,49 @@
     position: relative;
     z-index: 2;
     display: flex;
+    justify-content: space-between;
     list-style: none;
-}
-
-.header__list>li {
-    margin-left: 20px;
-    
+    margin: 0;
+    padding: 0;
 }
 
 .header__list a {
     text-decoration: none;
+    @include regular;
+    font-size: 14px;
+    line-height: 17px;
     color: #ffffff;
     cursor: pointer;
     &:hover,
-    &:focus {
-        color: red;
-    }
+    &:focus
     &:active {
-        color: blue;
+        color: $hero-text;
     }
 }
+.main-nav__item>a {
+    display: block;
+    width: auto;
+    
+}
+
 .main-nav__item {
     position: relative;
 }
 .main-nav__sub-list {
     display: none;
-    background-color: #212121;
+    
     width: 240px;
     position: absolute;
-    top: 49px;
+    top: 44px;
     left: 0;
     list-style: none;
     margin: 0;
     padding: 0;
     a {
         display: block;
-        padding: 10px;
-        background-color: #3f3f3f;
+        padding: 10px 20px;
+        background-color: #1e1e1e;
+        border-bottom: 1px solid #2f2f2f;
         
     }
 }
@@ -117,6 +127,16 @@
 }
 .drop-btn.active::after {
     transform: rotate(40deg);
+}
+.user-list__login {
+    padding-left: 24px;
+    
+}
+.user-list__login::before {
+    content: url(../img/user-menu-ico.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -170,7 +190,7 @@
         top: 0;
         width: 100%;
         //height: 100%;
-        background-color: grey;
+        background-color: #1e1e1e;
         padding: 70px 0px 0px 0px;
         display: none;
     }
@@ -181,10 +201,12 @@
         margin: 0 0 0 0;
     }
     .header__list a {
+        @include light;
+        font-size: 18px;
         display: block;
         padding: 20px 20px 20px 30px;
         //background: red;
-        border-bottom: 1px solid #4f4f4f;
+        border-bottom: 1px solid #2f2f2f;
     }
     .main-nav__sub-list {
         width: auto;
@@ -193,7 +215,7 @@
     }
 
     .main-nav__sub-list a {
-        background-color: #3f3f3f;
+        background-color: #252525;
         padding-left: 50px;
     }
     .drop-btn::after,
@@ -205,6 +227,9 @@
     }
     .drop-btn::after {
         left: 14px;
+    }
+    .user-list__login::before {
+        display: none;
     }
 }
 

@@ -1,3 +1,4 @@
+// Header 26/05/2020
 .container {
     max-width: 1292px;
     margin: 0 auto;
@@ -5,7 +6,7 @@
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -24,7 +25,7 @@
 }
 
 .header__body {
-    position: relative;
+    //position: relative;
     display: flex;
     justify-content: space-between;
     height: 71px;
@@ -99,35 +100,15 @@
     }
 }
 
-.drop-btn {
-    padding-left: 24px;
-}
-.drop-btn::after,
-.drop-btn::before {
-    position: absolute;
-    top: 9px;
-    content: '';
-    width: 10px;
-    height: 1px;
-    background-color: #ffffff;
-    transition: all 0.3s ease 0s;
+ .drop-btn::after {
+     content: url(../img/arrow-down-ico.svg);
+     margin: 0 0 0 10px; 
+ }
 
-}
+ .drop-btn.active::after {
+    content: url(../img/arrow-up-ico.svg);   
+ }
 
-.drop-btn::before {
-    transform: rotate(40deg);
-    left: 0;
-}
-.drop-btn::after {
-    transform: rotate(-40deg);
-    left: 7px;
-}
-.drop-btn.active::before {
-    transform: rotate(-40deg);
-}
-.drop-btn.active::after {
-    transform: rotate(40deg);
-}
 .user-list__login {
     padding-left: 24px;
     
@@ -138,61 +119,54 @@
     top: 0;
     left: 0;
 }
+.main-nav__item-social {
+    display: none;
+}
 
 
 @media (max-width: 1180px) {
+    .header {
+        position: absolute;
+    }
+    .header__body {
+        height: 60px;
+    }
+    .header__logo {
+        position: relative;
+        z-index: 3;
+        //margin: 0 auto;
+    }
+    
+    .header__logo img {
+        display: block;
+        max-width: none;
+        width: auto;
+        height: 60px;
+    }
 
     .header__burger {
         position: relative;
         z-index: 3;
         display: block;
-        width: 30px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
+        background: url(../img/burger-ico.svg) no-repeat 0 0;
     }
-    .header__burger span {
-        background-color: #ffffff;
-        position: absolute;
-        left: 0;
-        top: 9px;
-        width: 100%;
-        height: 2px;
-        transition: all 0.3s ease 0;
-    }
-    .header__burger::before, .header__burger::after {
-        content: '';
-        background-color: #ffffff;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        transition: all 0.3s ease 0;
-    }
-    .header__burger::before {
-        top: 0;
-    }
-    .header__burger::after {
-        bottom: 0;
-    }
-    .header__burger.active span {
-        transform: scale(0);
-    }
-    .header__burger.active::before {
-        transform: rotate(45deg);
-        top: 9px;
-    }
-    .header__burger.active::after {
-        transform: rotate(-45deg);
-        bottom: 9px;
+    
+    .header__burger.active {
+        background: url(../img/close-ico.svg) no-repeat 0 0;
     }
     .header__menu {
         position: absolute;
-        left: 0;
+        left: 0px;
         top: 0;
         width: 100%;
-        //height: 100%;
-        background-color: #1e1e1e;
-        padding: 70px 0px 0px 0px;
+        min-height: 100vh;
+
+        background-color: #000000;
+        padding: 70px 12px 100px 12px;
         display: none;
+        
     }
     .header__list {
         display: block;
@@ -204,9 +178,9 @@
         @include light;
         font-size: 18px;
         display: block;
-        padding: 20px 20px 20px 30px;
-        //background: red;
-        border-bottom: 1px solid #2f2f2f;
+        padding: 26px 0 25px 0;
+        //background: #000000;
+        border-bottom: 1px solid #151515;
     }
     .main-nav__sub-list {
         width: auto;
@@ -215,22 +189,14 @@
     }
 
     .main-nav__sub-list a {
-        background-color: #252525;
-        padding-left: 50px;
+        background-color: #000000;
+        padding-left: 30px;
     }
-    .drop-btn::after,
-    .drop-btn::before {
-        top: 28px;
-    }
-    .drop-btn::before {
-        left: 7px;
-    }
-    .drop-btn::after {
-        left: 14px;
-    }
+    
     .user-list__login::before {
         display: none;
     }
+    
 }
 
 .active {

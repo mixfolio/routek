@@ -7,14 +7,10 @@
 // Interface
 @import "interface";
 
-// Grids
-//@import "grids";
 
-/* Start blocks/navbar */
+
+/* Start blocks/header */
 @import "blocks/header";
-
-
-
 
 /* Start blocks/hero */
 @import "blocks/hero";
@@ -30,8 +26,9 @@
 @import "blocks/services";
 
 @import "blocks/spec";
-// 
+
 @import "blocks/three-col";
+
 @import "blocks/faq";
 
 @import "blocks/knowbase";

@@ -109,10 +109,15 @@
 .hero--legal {
     background-image: url(../img/hero-bg/legal-hero-bg.jpg);
 }
+@media (max-width: 1180px) {
+    .hero {
+        margin-top: 60px;
+    }
+}
+
 @media (max-width: 640px){ 
     .hero {
         min-height: 514px;
-        margin-top: 60px;
     }
     .hero__wrapper {
         padding: 0 16px;

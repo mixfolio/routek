@@ -78,6 +78,7 @@
     padding: 0;
     li {
         margin: 0;
+        flex: 0 0 34px;
     }
     
 }
@@ -85,52 +86,46 @@
     display: inline-block;
     width: 34px;
     height: 34px;
-    //margin: 0 1rem 0 0;
-    // vertical-align: middle;
-    // font-size: 22px;
-    // line-height: 44px;
-    // text-align: center;
-    // color: #fff;
     border-radius: 24%;
     transition: all 0.3s ease 0;
     border: 1px solid #828282;
-
-}
-.social__link--facebook {
-    background: url(../img/facebook-ico-3.svg) no-repeat center;
+    background-position: 0 0;
+    background-repeat: no-repeat;
     background-size: 30px auto;
 }
-.social__link--facebook:hover,
-.social__link--facebook:focus,
-.social__link--facebook:active {
-    background-color: #3c5a96;
+
+.social__link--facebook {
+    background-image: url(../img/facebook-ico-3.svg);
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #3c5a96;
+    }
 }
 .social__link--telegram {
-    background: url(../img/telegram-ico-3.svg) no-repeat center;
-    background-size: 30px auto;
-}
-.social__link--telegram:hover,
-.social__link--telegram:focus,
-.social__link--telegram:active {
-    background-color: #30a5e0;
+    background-image: url(../img/telegram-ico-3.svg);
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #30a5e0;
+    }
 }
 .social__link--youtube {
-    background: url(../img/youtube-ico-3.svg) no-repeat center;
-    background-size: 30px auto;
+    background-image: url(../img/youtube-ico-3.svg);
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #fc0d1b;
+    }
 }
-.social__link--youtube:hover,
-.social__link--youtube:focus,
-.social__link--youtube:active {
-    background-color: #fc0d1b;
-}
+
 .social__link--linkedin {
-    background: url(../img/linkedin-ico-3.svg) no-repeat center;
-    background-size: 30px auto;
-}
-.social__link--linkedin:hover,
-.social__link--linkedin:focus,
-.social__link--linkedin:active {
-    background-color: #1178b3;
+    background-image: url(../img/linkedin-ico-3.svg);
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #1178b3;
+    }
 }
 
 
