@@ -46,3 +46,12 @@ $('.count').each(function(){
         }
     });
 });
+
+// Slick-slider lc
+$(document).ready(function () {
+    $('.tech-lc__cards').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+});

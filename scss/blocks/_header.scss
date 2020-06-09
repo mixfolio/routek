@@ -1,28 +1,24 @@
 // Header 26/05/2020
-.container {
-    max-width: 1292px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 .header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 50;
+    background-color: #000000;
 }
 
-.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000000;
-    z-index: 2;
-}
+// .header::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     background-color: #000000;
+//     background-color: transparent;
+//     z-index: 2;
+// }
 
 .header__body {
     //position: relative;
@@ -31,12 +27,9 @@
     height: 71px;
     align-items: center;
 }
-.header__menu {
-    flex: 1 1 auto;
-}
 
 .header__logo {
-    position: relative;
+    //position: relative;
     z-index: 3;
     margin-right: 50px;
 }
@@ -49,22 +42,34 @@
     display: none;
 }
 
-.header__list {
-    position: relative;
-    z-index: 2;
+.header__menu {
+    flex: 1 1 auto;
+}
+.menu__list {
+    //position: relative;
+    //z-index: 2;
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
+
+}
+.menu__item {
+    position: relative;
+    display: table-cell;
+    
 }
 
-.header__list a {
+.menu__link {
+    top: 0;
+    left: 0;
     text-decoration: none;
     @include regular;
     font-size: 14px;
     line-height: 17px;
     color: #ffffff;
+    background-color: gold;
     cursor: pointer;
     &:hover,
     &:focus
@@ -72,33 +77,32 @@
         color: $hero-text;
     }
 }
-.main-nav__item>a {
-    display: block;
-    width: auto;
+// .main-nav__item>a {
+//     display: block;
+//     width: auto;
     
-}
+// }
 
-.main-nav__item {
-    position: relative;
-}
-.main-nav__sub-list {
+
+.menu__sub-list {
     display: none;
     
     width: 240px;
     position: absolute;
-    top: 44px;
+    top: 66px;
     left: 0;
     list-style: none;
     margin: 0;
     padding: 0;
-    a {
-        display: block;
-        padding: 10px 20px;
-        background-color: #1e1e1e;
-        border-bottom: 1px solid #2f2f2f;
-        
-    }
 }
+.menu__sub-link {
+    display: block;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #2f2f2f;
+        
+}
+
 
  .drop-btn::after {
      content: url(../img/arrow-down-ico.svg);
@@ -126,7 +130,7 @@
 
 @media (max-width: 1180px) {
     .header {
-        position: absolute;
+       position: absolute;
     }
     .header__body {
         height: 60px;
@@ -167,14 +171,15 @@
         padding: 70px 12px 100px 12px;
         display: none;
         
+        
     }
-    .header__list {
+    .menu__list {
         display: block;
     }
-    .header__list li {
+    .menu__list li {
         margin: 0 0 0 0;
     }
-    .header__list a {
+    .menu__list a {
         @include light;
         font-size: 18px;
         display: block;
@@ -182,13 +187,13 @@
         //background: #000000;
         border-bottom: 1px solid #151515;
     }
-    .main-nav__sub-list {
+    .menu__sub-list {
         width: auto;
         position: static;
         
     }
 
-    .main-nav__sub-list a {
+    .menu__sub-list a {
         background-color: #000000;
         padding-left: 30px;
     }

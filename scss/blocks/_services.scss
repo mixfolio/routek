@@ -7,6 +7,7 @@
 .services--two {
   padding-top: 0;
 }
+
 .services__title {
   @include regular;
   font-size: 35px;
@@ -17,23 +18,24 @@
 }
   
 .services__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -11px;
   list-style: none;
-  margin: 0;
   padding: 0;
   
 }
 .services__item {
+  width: calc(100% / 12 * 4 - 22px);
+  margin: 0 11px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 405px;
   min-height: 695px;
   background-color: #ffffff;
   box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
+  overflow: hidden;
 }
 
 .services__item-title {
@@ -85,12 +87,16 @@
 @media (max-width: 960px) {
   .services__list {
     display: block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0;
   }
   .services__item {
+    width: auto;
+    max-width: 404px;
     min-height: 100%;
+    margin: 0 auto 16px auto;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 }
 

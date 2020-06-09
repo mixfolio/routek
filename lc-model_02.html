@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Выберите свой вариант</title>
+   <link rel="stylesheet" href="css/lc-model.css">
+</head>
+<body>
+   <div class="win">
+      <div class="lc__body">
+         <div class="win__content">
+            <h2 class="popup__title">Загрузите модели и введите параметры заказа</h2>
+            <div class="win__box">
+               <div class="win__item">
+                  <div>
+                     <label for="uploads">Загруженные модели</label>
+                     <input type="text" id="uploads" placeholder="Нет файлов">
+                     <input id="file-input" type="file" name="file" multiple>
+                  </div>
+                  <div class="upload__area">
+                     <button class="lc-button" type="button">Перетащите файлы</button>
+                  </div>
+                  
+
+               </div>
+               <div class="win__item">
+                  <div>
+                     <label for="tech">Технология</label>
+                     <select name="name" id="tech">
+                        <option value="PolyJet">PolyJet</option>
+                        <option value="PolyJet">PolyJet 2</option>
+                        <option value="PolyJet">PolyJet 3</option>
+                        <option value="PolyJet">PolyJet 4</option>
+                        <option value="PolyJet">PolyJet 5</option>
+                     </select>
+                  </div>
+                  <div>
+                     <label for="material">Материал</label>
+                     <select name="name" id="material">
+                        <option value="AGV">AGV</option>
+                        <option value="ABC">ABC</option>
+                        <option value="CDE">CDE</option>
+                        <option value="XYZ">XYZ</option>
+                     </select>
+                  </div>
+                  <div class="wrap-2col">
+                     <div class="item-2col">
+                        <label for="color">Цвет</label>
+                        <select name="name" id="color">
+                           <option value="Черный">Черный</option>
+                           <option value="Белый">Белый</option>
+                           <option value="Голубой">Голубой</option>
+                           <option value="Розовый">Розовый</option>
+                        </select>
+                     </div>
+                     <div class="item-2col">
+                        <label for="quantity">Количество</label>
+                        <input type="number" id="quantity" min="1" value="0">
+                     </div>
+                     <div class="item-2col">
+                        <label for="full">Заполнение</label>
+                        <select name="name" id="full">
+                           <option value="100%">100%</option>
+                           <option value="75%">75%</option>
+                           <option value="50%">50%</option>
+                           <option value="25%">25%</option>
+                        </select>
+                     </div>
+                     <div class="item-2col">
+                        <label for="quality">Качество</label>
+                        <select name="name" id="quality">
+                           <option value="Хорошее">Хорошее</option>
+                           <option value="Плохое">Плохое</option>
+                           <option value="Среднее">Среднее</option>
+                           <option value="Сойдет">Сойдет</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="wrap-4col">
+                     <div class="item-4col">
+                        <label for="size">Габариты</label>
+                        <input type="number" id="size">
+                     </div>
+                     <div class="item-4col item-4col--mod">
+                        <input type="number" id="size">
+                     </div>
+                     <div class="item-4col item-4col--mod">
+                        <input type="number" id="size">
+                     </div>
+                     <div class="item-4col">
+                        <label for="volume">Объем</label>
+                        <input type="number" id="volume">
+                     </div>
+                  </div>
+                  <div>
+                     <label for="comments">Комментарии</label>
+                     <textarea name="" id="comments" placeholder="Введите текст"></textarea>
+                  </div>
+               </div>
+
+            </div>
+            
+            <button class="lc-button" type="button">Сделать заказ</button>
+         </div>
+      </div>
+   </div>
+   
+</body>
+</html>
