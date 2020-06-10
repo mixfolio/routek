@@ -3,16 +3,16 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Выберите свой вариант</title>
+   <title>Загрузите модели и введите параметры заказа</title>
    <link rel="stylesheet" href="css/lc-model.css">
 </head>
 <body>
-   <div class="win">
-      <div class="lc__body">
-         <div class="win__content">
-            <h2 class="popup__title">Загрузите модели и введите параметры заказа</h2>
-            <div class="win__wrap">
-               <div class="win__item">
+   <div class="lc-order">
+      <div class="lc-order__body">
+         <div class="lc-order__content">
+            <h2 class="lc-order__title popup__title">Загрузите модели и введите параметры заказа</h2>
+            <div class="lc-order__wrap">
+               <div class="lc-order__item">
                   <div>
                      <label>Загруженные модели</label>
                      <input class="files-list" id="upload" type="file" name="file" placeholder="Нет файлов" multiple >
@@ -23,7 +23,7 @@
                   
 
                </div>
-               <div class="win__item">
+               <div class="lc-order__item">
                   <div>
                      <label for="tech">Технология</label>
                      <select name="name" id="tech">
@@ -79,17 +79,17 @@
                   <div class="wrap-4col">
                      <div class="item-4col">
                         <label for="size">Габариты</label>
-                        <input type="number" id="size">
+                        <input type="text" id="size" placeholder="0">
                      </div>
                      <div class="item-4col item-4col--mod">
-                        <input type="number" id="size">
+                        <input type="text" id="size" placeholder="0">
                      </div>
                      <div class="item-4col item-4col--mod">
-                        <input type="number" id="size">
+                        <input type="text" id="size" placeholder="0">
                      </div>
                      <div class="item-4col">
                         <label for="volume">Объем</label>
-                        <input type="number" id="volume">
+                        <input type="text" id="volume" placeholder="0">
                      </div>
                   </div>
                   <div>

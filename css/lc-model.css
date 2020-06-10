@@ -112,28 +112,28 @@ body {
 .popup__link:active {
    color: #1E5DC5;
 }
-
-.lc__body {
+/* lc-order style start */
+.lc-order {
    padding: 22px;
 }
 
-.win__content {
+.lc-order__content {
    width: 100%;
    padding: 40px 22px 30px 22px;
    border-radius: 8px;
    background-color: #fff;
 }
-.win__wrap {
+.lc-order__wrap {
    display: flex;
    flex-wrap: wrap;
    margin: 0 -11px;
 }
 
-.win__item {
+.lc-order__item {
    width: calc(50% - 22px);
    margin: 0 11px;
 }
-.win__wrap label {
+.lc-order__wrap label {
    display: block;
    font-size: 14px;
    font-weight: bold;
@@ -165,7 +165,7 @@ body {
    align-self: flex-end;
 }
 
-.win__wrap input {
+.lc-order__wrap input {
    width: 100%;
    height: 50px;
    border-radius: 4px;
@@ -174,10 +174,10 @@ body {
    margin: 0 0 22px 0;
    background-color: #F4F6FA;
 }
-.win__wrap input::placeholder {
+.lc-order__wrap input::placeholder {
    color: #B8BDC6;
 }
-.win__wrap textarea {
+.lc-order__wrap textarea {
    resize: none;
    width: 100%;
    height: 50px;
@@ -188,7 +188,7 @@ body {
    background-color: #F4F6FA;
 }
 
-.win__wrap select {
+.lc-order__wrap select {
    position: relative;
    width: 100%;
    height: 50px;
@@ -203,17 +203,21 @@ body {
    -ms-appearance: none;
    appearance: none;
 
+   background-image: url(../img/lc/arrow-down-lc-ico.svg);
+   background-position: 98% 50%;
+   background-repeat: no-repeat;
+
    /* -webkit-user-select: none;
    -moz-user-select: -moz-none;
    -ms-user-select: none;
    user-select: none; */
 }
-.win__box select::before {
-   position: absolute;
-   top: 0;
-   left: 0;
-   content: url(../img/lc/arrow-down-lc-ico.svg);
-   
+
+.lc-order__wrap option {
+   background-color: #fff;
+   background-image: url(../img/lc/arrow-down-lc-ico.svg);
+   background-position: 98% 50%;
+   background-repeat: no-repeat;
 }
 
 .upload__area {
