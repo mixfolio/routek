@@ -11,15 +11,14 @@
       <div class="lc__body">
          <div class="win__content">
             <h2 class="popup__title">Загрузите модели и введите параметры заказа</h2>
-            <div class="win__box">
+            <div class="win__wrap">
                <div class="win__item">
                   <div>
-                     <label for="uploads">Загруженные модели</label>
-                     <input type="text" id="uploads" placeholder="Нет файлов">
-                     <input id="file-input" type="file" name="file" multiple>
+                     <label>Загруженные модели</label>
+                     <input class="files-list" id="upload" type="file" name="file" placeholder="Нет файлов" multiple >
                   </div>
                   <div class="upload__area">
-                     <button class="lc-button" type="button">Перетащите файлы</button>
+                     <label class="lc-button" for="upload">Перетащите файлы</label>
                   </div>
                   
 
