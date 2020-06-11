@@ -76,6 +76,13 @@ body {
    padding: 0 23px;
 }
 
+.title-lc {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 23px;
+   color: #000000;
+}
+
 /* Start header */
 .header {
    background-color: #000000;
@@ -109,7 +116,8 @@ body {
    flex: 1 1 auto;
    background-color: #F0F4FA;
    padding: 22px;
-   min-width: 0;
+   /* min-width: 0; Обязательно для slick-slider */
+   min-width: 0;  
 }
 .aside {
    flex: 0 0 auto;
@@ -294,11 +302,53 @@ body {
 .user__link--game:before {
    content: url(../img/lc/game-ico.svg);
 }
-.tech-lc {
-   max-width: 1170px;
-   margin: 0 auto;
-   background-color: gold;
+
+
+
+
+/* info-lc block Блок с аналитикой */
+.info-lc {
+   margin-bottom: 22px;
 }
+
+/* ord-lc block заказы*/
+.ord-lc {
+   margin-bottom: 22px;
+}
+.ord-lc__title {
+   margin-bottom: 18px;
+}
+
+
+.ord-lc__table {
+   width: 100%;
+   border-collapse: collapse;
+   background-color: #ffffff;
+}
+.ord-lc__table th {
+   border: 1px solid black;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 18px;
+   text-align: left;
+   color: #ACB5C1;
+   padding: 16px 16px;
+   background: #EDF1F7;
+   
+}
+.ord-lc__table td {
+   border: 1px solid black;
+   padding: 20px 16px;
+   font-size: 16px;
+   line-height: 21px;
+}
+.ord-lc__table span {
+   color: #1E5DC5;
+}
+
+
+
+
 .tech-lc__title {
    font-weight: 500;
    font-size: 18px;
@@ -309,16 +359,14 @@ body {
    min-width: 0;
 } */
 
-.tech-lc {
-   max-width: 1040px;
-}
+
 .tech-lc__cards {
    position: relative;
 }
 
 .tech-lc__cards .slick-arrow {
    position: absolute;
-   top: -30px;
+   top: -40px;
    z-index: 5;
    font-size: 0;
    width: 20px;
@@ -340,7 +388,6 @@ body {
    text-align: center;
    padding: 36px 24px 36px 24px;
    border-radius: 6px;
-   border: 1px solid red;
    background-color: #ffffff; 
    margin: 0 auto;
    
