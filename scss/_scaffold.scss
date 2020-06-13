@@ -1,23 +1,18 @@
-html {
-    box-sizing: border-box;
-  }
+
   
-  *, *::before, *::after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    min-width: 320px;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 27px;
-    font-family: "Stem-Regular", "Arial", sans-serif;
-    color: #000000;
-    font-style: normal;
-    font-weight: normal;
-    background-color: #ffffff;
-  }
+body {
+
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 27px;
+  font-family: "Stem", "Arial", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  background-color: #ffffff;
+}
 
   .wrapper {
     max-width: 1292px;
@@ -27,38 +22,38 @@ html {
   
   
   
-  img {
-     max-width: 100%;
-     height: auto;
-  }
+img {
+   max-width: 100%;
+   height: auto;
+}
   
-  .visually-hidden:not(:focus):not(:active) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
  
-  .title {
-    position: relative;
-    @include regular;
-    font-size: 45px;
-    line-height: 58px;
-    margin: 0;
+.title {
+  position: relative;
+  @include regular;
+  font-size: 45px;
+  line-height: 58px;
+  margin: 0;
     
-  }
+}
   
 .prime-color {
-    color: $prime-color;
+  color: $prime-color;
 }
 .second-color {
-    color: $second-color;
+  color: $second-color;
 } 
 .dark-bg {
   background-color: $dark-bg;
