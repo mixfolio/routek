@@ -14,6 +14,12 @@ $(document).ready(function () {
             $('.drop-btn').not($(this)).removeClass('active');
             $('.header__sub-list').not($(this).next()).slideUp(300);
         }
+
+        // $(document).on('keyup', function(e){
+        //     if (e.which == 27 ) {
+        //         $('.drop-btn').removeClass('active').next().slideToggle(300);
+        //     }
+        // });
         
         $(this).toggleClass('active').next().slideToggle(300);
     });
