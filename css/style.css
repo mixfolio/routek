@@ -160,17 +160,21 @@ img {
 }
 
 .button {
+  display: inline-block;
   width: 272px;
   height: 64px;
   font-family: "Stem";
   font-weight: 500;
   font-size: 24px;
-  line-height: 31px;
+  line-height: 64px;
+  text-align: center;
   color: #ffffff;
   background-color: #1E5DC5;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .button:hover, .button:focus, .button:active {
@@ -188,6 +192,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 20;
 }
 
 .header__wrapper {
