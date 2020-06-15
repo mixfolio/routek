@@ -128,6 +128,10 @@ body {
    flex-wrap: wrap;
    margin: 0 -11px;
 }
+.lc-order__form--mod {
+   display: block;
+   margin: 0;
+}
 
 .lc-order__item {
    width: calc(50% - 22px);

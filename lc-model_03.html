@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Загрузите модели и введите параметры заказа</title>
+   <link rel="stylesheet" href="css/lc-model.css">
+</head>
+<body>
+   <div class="lc-order">
+      <div class="lc-order__body">
+         <div class="lc-order__content">
+            <h2 class="lc-order__title popup__title">Загрузите модели и введите параметры заказа</h2>
+            <form class="lc-order__form lc-order__form--mod">
+               <div>
+                  <label>Загруженные модели</label>
+                  <input class="files-list" id="upload" type="file" name="file" placeholder="Нет файлов" multiple >
+               </div>
+               
+               <div>
+                  <label for="comments">Подробно опишите заказ</label>
+                  <textarea name="" id="comments" placeholder="Введите подробное описание"></textarea>
+               </div>
+               
+               <button class="lc-button" type="submit">Сделать заказ</button>
+
+            </form>
+            
+            
+         </div>
+      </div>
+   </div>
+   
+</body>
+</html>
