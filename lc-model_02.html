@@ -12,13 +12,14 @@
          <div class="lc-order__content">
             <h2 class="lc-order__title popup__title">Загрузите модели и введите параметры заказа</h2>
             <form class="lc-order__form">
-               <div class="lc-order__item">
+               <div class="lc-order__item lc-order__item--files">
                   <div>
                      <label class="lc-order__label">Загруженные модели</label>
-                     <input class="files-list" id="upload" type="file" name="file" placeholder="Нет файлов" multiple >
+                     <input class="files-list files-list--mod" id="files" type="file" name="file" placeholder="Нет файлов" multiple >
+                     <span class="file-list__placeholder">Нет файлов</span>
                   </div>
                   <div class="upload__area">
-                     <label class="lc-button" for="upload">Перетащите файлы</label>
+                     <label class="lc-button" for="files">Перетащите файлы</label>
                   </div>
                   
 
@@ -106,6 +107,34 @@
          </div>
       </div>
    </div>
+   <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         $('#files').on('change', function () {
+            var arrayFiles = this.files, // массив с выбранными файлами
+               formItem = this.parentNode, // родительский элемент, для того чтобы вставить список с файлами
+               listFiles = document.createElement('ul'), // список с файлами
+               li = ''; // файлы
+
+            // Если список с файлами уже вставлен в ДОМ, то удаляем его
+            if (formItem.querySelector('.list-files')) {
+               formItem.querySelector('.list-files').remove();
+            }
+
+            listFiles.className = 'list-files'; // добавим класс, чтобы было удобнее стилять
+
+            for (var i = 0; i < arrayFiles.length; i++) {
+               li += '<li>' + arrayFiles[i].name + '</li>'; // <li>Имя файла</li>
+            }
+
+            listFiles.innerHTML = li;
+
+            formItem.appendChild(listFiles);
+         });
+
+      });
+      
+   </script>
    
 </body>
 </html>

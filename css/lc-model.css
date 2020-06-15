@@ -129,6 +129,7 @@ body {
 /* lc-order style start */
 .lc-order {
    padding: 22px;
+   background-color: #F0F4FA;
 }
 
 .lc-order__content {
@@ -148,9 +149,13 @@ body {
    position: relative;
 }
 
+
 .lc-order__item {
    width: calc(50% - 22px);
    margin: 0 11px;
+}
+.lc-order__item--files {
+   position: relative;
 }
 .lc-order__label {
    display: block;
@@ -256,6 +261,7 @@ body {
    position: relative;
    clip: rect(0 0 0 0);
    opacity: 0;
+
    
 }
 .file-list__placeholder {
