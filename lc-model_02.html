@@ -14,7 +14,7 @@
             <form class="lc-order__form">
                <div class="lc-order__item">
                   <div>
-                     <label>Загруженные модели</label>
+                     <label class="lc-order__label">Загруженные модели</label>
                      <input class="files-list" id="upload" type="file" name="file" placeholder="Нет файлов" multiple >
                   </div>
                   <div class="upload__area">
@@ -25,7 +25,7 @@
                </div>
                <div class="lc-order__item">
                   <div>
-                     <label for="tech">Технология</label>
+                     <label class="lc-order__label" for="tech">Технология</label>
                      <select name="name" id="tech">
                         <option value="PolyJet">PolyJet</option>
                         <option value="PolyJet">PolyJet 2</option>
@@ -35,7 +35,7 @@
                      </select>
                   </div>
                   <div>
-                     <label for="material">Материал</label>
+                     <label class="lc-order__label" for="material">Материал</label>
                      <select name="name" id="material">
                         <option value="AGV">AGV</option>
                         <option value="ABC">ABC</option>
@@ -45,7 +45,7 @@
                   </div>
                   <div class="wrap-2col">
                      <div class="item-2col">
-                        <label for="color">Цвет</label>
+                        <label class="lc-order__label" for="color">Цвет</label>
                         <select name="name" id="color">
                            <option value="Черный">Черный</option>
                            <option value="Белый">Белый</option>
@@ -54,11 +54,11 @@
                         </select>
                      </div>
                      <div class="item-2col">
-                        <label for="quantity">Количество</label>
+                        <label class="lc-order__label" for="quantity">Количество</label>
                         <input type="number" id="quantity" min="1" value="0">
                      </div>
                      <div class="item-2col">
-                        <label for="full">Заполнение</label>
+                        <label class="lc-order__label" for="full">Заполнение</label>
                         <select name="name" id="full">
                            <option value="100%">100%</option>
                            <option value="75%">75%</option>
@@ -67,7 +67,7 @@
                         </select>
                      </div>
                      <div class="item-2col">
-                        <label for="quality">Качество</label>
+                        <label class="lc-order__label" for="quality">Качество</label>
                         <select name="name" id="quality">
                            <option value="Хорошее">Хорошее</option>
                            <option value="Плохое">Плохое</option>
@@ -78,7 +78,7 @@
                   </div>
                   <div class="wrap-4col">
                      <div class="item-4col">
-                        <label for="size">Габариты</label>
+                        <label class="lc-order__label" for="size">Габариты</label>
                         <input type="text" id="size" placeholder="0">
                      </div>
                      <div class="item-4col item-4col--mod">
@@ -88,12 +88,12 @@
                         <input type="text" id="size" placeholder="0">
                      </div>
                      <div class="item-4col">
-                        <label for="volume">Объем</label>
+                        <label class="lc-order__label" for="volume">Объем</label>
                         <input type="text" id="volume" placeholder="0">
                      </div>
                   </div>
                   <div>
-                     <label for="comments">Комментарии</label>
+                     <label class="lc-order__label" for="comments">Комментарии</label>
                      <textarea name="" id="comments" placeholder="Введите текст"></textarea>
                   </div>
                </div>

@@ -131,13 +131,14 @@ body {
 .lc-order__form--mod {
    display: block;
    margin: 0;
+   position: relative;
 }
 
 .lc-order__item {
    width: calc(50% - 22px);
    margin: 0 11px;
 }
-.lc-order__form label {
+.lc-order__label {
    display: block;
    font-size: 14px;
    font-weight: bold;
@@ -191,7 +192,9 @@ body {
    margin: 0 0 22px 0;
    background-color: #F4F6FA;
 }
-
+.lc-order__form textarea::placeholder {
+   color: #B8BDC6;
+}
 .lc-order__form select {
    position: relative;
    width: 100%;
@@ -235,9 +238,47 @@ body {
    padding: 36px;
 }
 .files-list {
+   overflow: hidden;
+   position: relative;
+   clip: rect(0 0 0 0);
+   opacity: 0;
    
 }
+.file-list__placeholder {
+   position: absolute;
+   top: 26px;
+   left: 0;
+   height: 50px;
+   width: 100%;
+   border-radius: 4px;
+   font-size: 16px;
+   line-height: 50px;
+   padding: 0px 22px;
+   color: #B8BDC6;
+   background-color: #F4F6FA;
+}
+.list-files {
+   /* стили для списка файлов */
+   overflow: hidden;
+   position: absolute;
+   top: 26px;
+   left: 0;
+   list-style: none;
+   padding: 0px 22px;
+   width: 100%;
+   height: 50px;
+   border-radius: 4px;
+   font-size: 16px;
+   line-height: 50px;
+   white-space: nowrap;
+   display: flex;
+   background-color: #F4F6FA;
+   margin: 0;
+}
 
+.list-files li {
+   margin-right: 6px;
+}
 .lc-button {
    display: block;
    padding: 0 40px;
@@ -250,4 +291,12 @@ body {
    border-radius: 4px;
    margin: 0 auto;
    cursor: pointer;
+}
+
+.lc-button--mod {
+   display: inline-block;
+   margin-bottom: 20px;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
 }
