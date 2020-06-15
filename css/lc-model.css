@@ -112,6 +112,20 @@ body {
 .popup__link:active {
    color: #1E5DC5;
 }
+@media (max-width: 680px) {
+   .popup__body {
+      padding: 0;
+   }
+   .popup__content {
+      padding: 40px 20px;
+   }
+  
+}
+
+
+
+
+
 /* lc-order style start */
 .lc-order {
    padding: 22px;
@@ -299,4 +313,18 @@ body {
    position: relative;
    left: 50%;
    transform: translateX(-50%);
+}
+
+@media (max-width: 680px) {
+   .lc-order {
+      padding: 0;
+   }
+   .lc-order__form {
+      display: block;
+      margin: 0;
+   }
+   .lc-order__item {
+      width: 100%;
+      margin: 0;
+   }
 }
