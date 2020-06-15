@@ -1519,8 +1519,8 @@ img {
 
 .knowbase__link-back:hover, .knowbase__link-back:focus, .knowbase__link-back:active {
   padding-left: 20px;
-  -webkit-transition: all 0.3s ease 0;
-  transition: all 0.3s ease 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .knowbase__link-back::before {

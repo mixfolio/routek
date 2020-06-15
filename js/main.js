@@ -14,6 +14,10 @@ $(document).ready(function () {
             $('.drop-btn').not($(this)).removeClass('active');
             $('.header__sub-list').not($(this).next()).slideUp(300);
         }
+        // $(this).on('blur', function (){
+        //     $(this).removeClass('active');
+
+        // });
 
         // $(document).on('keyup', function(e){
         //     if (e.which == 27 ) {
