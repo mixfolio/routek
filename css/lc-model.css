@@ -191,7 +191,7 @@ body {
    height: 50px;
    border-radius: 4px;
    font-size: 16px;
-   padding: 14px 22px;
+   padding: 0 16px;
    margin: 0 0 22px 0;
    background-color: #F4F6FA;
 }
@@ -204,7 +204,8 @@ body {
    height: 50px;
    border-radius: 4px;
    font-size: 16px;
-   padding: 14px 22px;
+   padding: 0 16px;
+   line-height: 50px;
    margin: 0 0 22px 0;
    background-color: #F4F6FA;
 }
@@ -218,7 +219,7 @@ body {
    border-radius: 4px;
    font-size: 16px;
    background-color: #F4F6FA;
-   padding: 0 30px;
+   padding: 0 16px;
    margin: 0 0 22px 0;
 
    -webkit-appearance: none;
@@ -227,7 +228,7 @@ body {
    appearance: none;
 
    background-image: url(../img/lc/arrow-down-lc-ico.svg);
-   background-position: 98% 50%;
+   background-position: calc(100% - 16px) 50%;
    background-repeat: no-repeat;
 
    /* -webkit-user-select: none;
