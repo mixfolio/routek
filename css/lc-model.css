@@ -127,6 +127,7 @@ body {
 .lc-order {
    padding: 22px;
    background-color: #F0F4FA;
+   min-height: 100%;
 }
 
 .lc-order__content {
