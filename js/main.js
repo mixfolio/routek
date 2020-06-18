@@ -55,4 +55,10 @@ $(document).ready(function () {
         }
     });
 
+
 });
+
+
+// Waves button effect
+Waves.attach('.button');
+Waves.init();
