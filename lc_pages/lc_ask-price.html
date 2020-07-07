@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Onboarding</title>
+   <link rel="stylesheet" href="../css/lc_v2.css">
+</head>
+<body>
+   <header class="header">
+      <div class="lc__wrapper">
+         <div class="header__body">
+            <a href="index.html" class="header__logo">
+               <img src="../../img/routek-logo-white.svg" alt="">
+            </a>
+            <nav class="header__nav">
+               <a href="" class="header__link">Уведомления</a>
+               <a href="" class="header__link">Routek Support</a>
+               <a href="" class="header__link">Resources menu</a>
+            </nav>
+         </div>
+      </div>
+   </header>
+   <div class="lc__wrapper">
+      <main class="main-lc">
+         <aside class="aside-sm">
+            <div class="user-profile">
+               <div class="user-profile__box">
+                  <div class="user-profile__pict">
+                     <img src="../../img/lc/user-photo.jpg" alt="Алекперов">
+                  </div>
+               </div>
+               
+            </div>
+            
+            <ul class="user__list">
+               <li><a href="#!" class="user__link user__link--onboard"><span class="user__link-text">Onboarding</span></a></li>
+               <li><a href="#!" class="user__link user__link--price"><span class="user__link-text">Запросы цен</span></a></li>
+               <li><a href="#!" class="user__link user__link--order"><span class="user__link-text">Заказы</span></a></li>
+               <li><a href="#!" class="user__link user__link--library"><span class="user__link-text">Библиотека</span></a></li>
+            </ul>
+         </aside>
+
+         <div class="lc-main-page">
+            <section class="onbrd-adv">
+               <h3 class="asc-price__title">Запросы цен <span>14</span></h3>
+            </section>
+
+            <section class="onbrd-intro">
+         
+               <ul class="onbrd-intro__list">
+                  <li>
+                     <div class="onbrd-intro__item">
+                        <h4 class="onbrd-intro__card-title">Делайте заказы быстро и удобно!</h4>
+                        <p class="onbrd-intro__card-text">Загрузите модель, заполните параметры и отправьте запрос на расчет цены! Оплачивайте понравившееся предложение и получайте детали!</p>
+                        <a href="#" class="card-button-lc">Подробнее</a>
+                     </div>           
+                  </li>
+                 
+               </ul>
+            </section>
+
+
+            <section class="tech-lc">
+               <ul class="ask-price__cards">
+                  <li class="ask-price__card">
+
+                     <div class="ask-price__card-pict">
+                        <img src="../img/lc/detail-order.jpg" alt="деталь" width="135" height="135" class="ask-price__card-img">
+                     </div>
+                     
+                     <div class="ask-price__card-body">
+                        <div class="ask-price__card-row">
+                           <p class="ask-price__card-param"><span>Название</span>B500-1290 (1)</p>
+                           <p class="ask-price__card-param"><span>Технология</span>PolyJet (Струйное нанесение нескольких материалов)</p>
+                           <button class="offers-button">Предложения</button>
+                           <button class="trash-button"></button>
+                           
+                        </div>
+                        <div class="ask-price__card-row">
+                           <p class="ask-price__card-param"><span>Дата подачи</span>May 19, 2020</p>
+                           <p class="ask-price__card-param"><span>Материал</span>ABS</p>
+                           <p class="ask-price__card-param"><span>Качество</span>Высокое</p>
+                           <p class="ask-price__card-param"><span>Заполнение</span>80%</p>
+                           <p class="ask-price__card-param"><span>Цвет</span>Черный</p>
+                           <p class="ask-price__card-param"><span>Габариты (мм)</span>49.6x54.4x24.4</p>
+                        </div>
+
+                     </div>
+                     
+
+
+                  </li>
+                  <li class="ask-price__card">
+                     
+                  </li>
+
+               </ul>
+            </section>
+         </div>
+
+      </main>
+   
+   </div>
+   
+   
+   
+   
+   <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+   <script src="libs/slick-slider/slick.min.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+      // Slick-slider lc
+         $(document).ready(function () {
+            $('.tech-lc__cards').slick({
+               infinite: true,
+               slidesToShow: 3,
+               slidesToScroll: 1,
+            });
+         });
+   </script>
+</body>
+</html>

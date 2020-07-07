@@ -539,3 +539,64 @@ body {
    text-align: center;
    margin: 0 0 36px 0;
 }
+
+/* lc_ask-price */
+
+
+
+.ask-price__card {
+   display: flex;
+   padding: 22px;
+   background-color: #ffffff;
+   border-radius: 6px;
+   border: 1px solid gold;
+}
+.ask-price__card-body {
+
+   width: 100%;
+}
+
+.ask-price__card-pict {
+   margin: 0 22px 0 0;
+}
+
+.ask-price__card-row {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 0 28px 0;
+}
+.ask-price__card-row:last-child {
+   margin-bottom: 0;
+}
+
+.ask-price__card-param {
+   font-weight: 500;
+   font-size: 16px;
+}
+
+.ask-price__card-param span {
+   display: block;
+   margin: 0 0 6px 0;
+   font-weight: 500;
+   font-size: 14px;
+   color: #ACB5C1;
+}
+.offers-button {
+   height: 46px;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 42px;
+   color: #1E5DC5;
+   text-transform: uppercase;
+   padding: 0 30px;
+   background-color: #fff;
+   box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.1);
+   border-radius: 6px;
+}
+.trash-button {
+   width: 42px;
+   height: 46px;
+   border-radius: 6px;
+   box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.1);
+   background: #ffffff url(../img/lc/trash-ico.svg) center no-repeat;
+}
