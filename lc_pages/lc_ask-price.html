@@ -14,9 +14,9 @@
                <img src="../../img/routek-logo-white.svg" alt="">
             </a>
             <nav class="header__nav">
-               <a href="" class="header__link">Уведомления</a>
-               <a href="" class="header__link">Routek Support</a>
-               <a href="" class="header__link">Resources menu</a>
+               <a href="#" class="header__link">Уведомления</a>
+               <a href="#" class="header__link">Routek Support</a>
+               <a href="#" class="header__link">Resources menu</a>
             </nav>
          </div>
       </div>
@@ -41,27 +41,45 @@
             </ul>
          </aside>
 
+
+
+
+         <!-- Main page lc -->
          <div class="lc-main-page">
-            <section class="onbrd-adv">
-               <h3 class="asc-price__title">Запросы цен <span>14</span></h3>
-            </section>
 
-            <section class="onbrd-intro">
-         
-               <ul class="onbrd-intro__list">
-                  <li>
-                     <div class="onbrd-intro__item">
-                        <h4 class="onbrd-intro__card-title">Делайте заказы быстро и удобно!</h4>
-                        <p class="onbrd-intro__card-text">Загрузите модель, заполните параметры и отправьте запрос на расчет цены! Оплачивайте понравившееся предложение и получайте детали!</p>
-                        <a href="#" class="card-button-lc">Подробнее</a>
-                     </div>           
-                  </li>
-                 
-               </ul>
-            </section>
-
-
+            <!-- Ask price tab -->
             <section class="tech-lc">
+               <h3 class="ask-price__title lc-sect-title">Запросы цен <span> 14</span></h3>
+               <div class="ask-price__filter">
+                  <div class="ask-price__filter-button">Архив записей <span>6</span></div>
+                  <div class="ask-price__filter-wrap">
+                     <div class="ask-price__filter-block">
+                        <label class="ask-price__filter-label" for="sort">Тип</label>
+                        <select class="ask-price__filter-select" name="name" id="sort">
+                           <option value="NoSelect">Не выбрано</option>
+                           <option value="Select-1">Выбор 1</option>
+                           <option value="Select-2">Выбор 2</option>
+                           <option value="Select-3">Выбор 3</option>
+                           <option value="Select-4">Выбор 4</option>
+                        </select>
+                     </div>
+   
+                     <div class="ask-price__filter-block">
+                        <label class="ask-price__filter-label" for="status">Статус</label>
+                        <select class="ask-price__filter-select" name="name" id="status">
+                           <option value="NoSelect">Не выбрано</option>
+                           <option value="Select-1">Выбор 1</option>
+                           <option value="Select-2">Выбор 2</option>
+                           <option value="Select-3">Выбор 3</option>
+                           <option value="Select-4">Выбор 4</option>
+                        </select>
+                     </div>
+                     <div class="ask-price__notify-button"></div>
+                  </div>
+                  
+                  
+
+               </div>
                <ul class="ask-price__cards">
                   <li class="ask-price__card">
 
@@ -92,10 +110,129 @@
 
                   </li>
                   <li class="ask-price__card">
+
+                     <div class="ask-price__card-pict">
+                        <img src="../img/lc/detail-order.jpg" alt="деталь" width="135" height="135" class="ask-price__card-img">
+                     </div>
                      
+                     <div class="ask-price__card-body">
+                        <div class="ask-price__card-row">
+                           <p class="ask-price__card-param"><span>Название</span>B500-1290 (1)</p>
+                           <p class="ask-price__card-param"><span>Технология</span>PolyJet (Струйное нанесение нескольких материалов)</p>
+                           <button class="offers-button">Предложения</button>
+                           <button class="trash-button"></button>
+                           
+                        </div>
+                        <div class="ask-price__card-row">
+                           <p class="ask-price__card-param"><span>Дата подачи</span>May 19, 2020</p>
+                           <p class="ask-price__card-param"><span>Материал</span>ABS</p>
+                           <p class="ask-price__card-param"><span>Качество</span>Высокое</p>
+                           <p class="ask-price__card-param"><span>Заполнение</span>80%</p>
+                           <p class="ask-price__card-param"><span>Цвет</span>Черный</p>
+                           <p class="ask-price__card-param"><span>Габариты (мм)</span>49.6x54.4x24.4</p>
+                        </div>
+
+                     </div>
+                     
+
+
+                  </li>
+               </ul>
+            </section>
+
+
+            <!-- User order tab -->
+            <section class="tech-lc">
+               <h3 class="ask-price__title lc-sect-title">Заказы</h3>
+               <div class="ask-price__filter">
+                  <div class="ask-price__filter-button">Всего заказов <span>6</span></div>
+                  <div class="ask-price__filter-wrap">
+                     <div class="ask-price__filter-block">
+                        <label class="ask-price__filter-label" for="sort">Тип</label>
+                        <select class="ask-price__filter-select" name="name" id="sort">
+                           <option value="NoSelect">Не выбрано</option>
+                           <option value="Select-1">Выбор 1</option>
+                           <option value="Select-2">Выбор 2</option>
+                           <option value="Select-3">Выбор 3</option>
+                           <option value="Select-4">Выбор 4</option>
+                        </select>
+                     </div>
+   
+                     <div class="ask-price__filter-block">
+                        <label class="ask-price__filter-label" for="status">Статус</label>
+                        <select class="ask-price__filter-select" name="name" id="status">
+                           <option value="NoSelect">Не выбрано</option>
+                           <option value="Select-1">Выбор 1</option>
+                           <option value="Select-2">Выбор 2</option>
+                           <option value="Select-3">Выбор 3</option>
+                           <option value="Select-4">Выбор 4</option>
+                        </select>
+                     </div>
+                     <div class="ask-price__notify-button"></div>
+                  </div>
+                  
+                  
+
+               </div>
+               <ul class="user-order__cards">
+                  <li class="user-order__card">
+
+                     <div class="user-order__card-pict">
+                        <img src="../img/lc/detail-order.jpg" alt="деталь" width="135" height="135" class="ask-price__card-img">
+                     </div>
+                     
+                     <div class="user-order__card-body">
+                        <div class="user-order__card-row">
+                           <div class="user-order__card-num">1</div>
+                           <p class="user-order__card-param"><span>Заказ</span>489309849</p>
+                           <p class="user-order__card-param"><span>Технология</span>PolyJet (Струйное нанесение нескольких материалов)</p>
+                           <button class="offers-button">Предложения</button>
+                           
+                        </div>
+                     </div>
+
+                  </li>
+                  
+            </section>
+
+
+            <!-- User files tab -->
+
+            <section class="user-files">
+               <h3 class="user-files__title lc-sect-title">Пользовательские файлы</h3>
+               <div class="user-files__header">
+                  <p class="user-files__header-text">№</p>
+                  <p class="user-files__header-text">Номер</p>
+                  <p class="user-files__header-text">Название</p>
+                  <p class="user-files__header-text">Тип</p>
+                  <p class="user-files__header-text">Дата</p>
+               </div>
+               <ul class="user-files__list">
+                  <li class="user-files__item">
+                     <p class="user-files__item-num">1</p>
+                     <p class="user-files__item-name">documenty_vazhno.docx</p>
+                     <p class="user-files__item-text">3D-модель</p>
+                     <p class="user-files__item-text">2020-06-08 07:12:24</p>
+                     <a href="#" class="user-files__item-link">Скачать</a>
                   </li>
 
+                  <li class="user-files__item">
+                     <p class="user-files__item-num">2</p>
+                     <p class="user-files__item-name">documenty_vazhno.docx</p>
+                     <p class="user-files__item-text">3D-модель</p>
+                     <p class="user-files__item-text">2020-06-08 07:12:24</p>
+                     <a href="#" class="user-files__item-link">Скачать</a>
+                  </li>
+
+                  <li class="user-files__item">
+                     <p class="user-files__item-num">3</p>
+                     <p class="user-files__item-name">documenty_vazhno.docx</p>
+                     <p class="user-files__item-text">3D-модель</p>
+                     <p class="user-files__item-text">2020-06-08 07:12:24</p>
+                     <a href="#" class="user-files__item-link">Скачать</a>
+                  </li>
                </ul>
+
             </section>
          </div>
 
