@@ -10,7 +10,7 @@
    <header class="header">
       <div class="lc__wrapper">
          <div class="header__body">
-            <a href="index.html" class="header__logo">
+            <a href="../index.html" class="header__logo">
                <img src="../../img/routek-logo-white.svg" alt="">
             </a>
             <nav class="header__nav">
@@ -34,10 +34,10 @@
             </div>
             
             <ul class="user__list">
-               <li><a href="#!" class="user__link user__link--onboard"><span class="user__link-text">Onboarding</span></a></li>
-               <li><a href="#!" class="user__link user__link--price"><span class="user__link-text">Запросы цен</span></a></li>
-               <li><a href="#!" class="user__link user__link--order"><span class="user__link-text">Заказы</span></a></li>
-               <li><a href="#!" class="user__link user__link--library"><span class="user__link-text">Библиотека</span></a></li>
+               <li><a href="lc_onboard.html" class="user__link user__link--onboard"><span class="user__link-text">Onboarding</span></a></li>
+               <li><a href="#user-price" class="user__link user__link--price"><span class="user__link-text">Запросы цен</span></a></li>
+               <li><a href="#user-order" class="user__link user__link--order"><span class="user__link-text">Заказы</span></a></li>
+               <li><a href="#user-library" class="user__link user__link--library"><span class="user__link-text">Библиотека</span></a></li>
             </ul>
          </aside>
 
@@ -48,7 +48,7 @@
          <div class="lc-main-page">
 
             <!-- Ask price tab -->
-            <section class="tech-lc">
+            <section id="user-price" class="tech-lc">
                <h3 class="ask-price__title lc-sect-title">Запросы цен <span> 14</span></h3>
                <div class="ask-price__filter">
                   <div class="ask-price__filter-button">Архив записей <span>6</span></div>
@@ -142,7 +142,7 @@
 
 
             <!-- User order tab -->
-            <section class="tech-lc">
+            <section id="user-order" class="tech-lc">
                <h3 class="ask-price__title lc-sect-title">Заказы</h3>
                <div class="ask-price__filter">
                   <div class="ask-price__filter-button">Всего заказов <span>6</span></div>
@@ -176,20 +176,24 @@
                </div>
                <ul class="user-order__cards">
                   <li class="user-order__card">
+                     <div class="user-order__card-num">1</div>
 
                      <div class="user-order__card-pict">
                         <img src="../img/lc/detail-order.jpg" alt="деталь" width="135" height="135" class="ask-price__card-img">
                      </div>
-                     
-                     <div class="user-order__card-body">
-                        <div class="user-order__card-row">
-                           <div class="user-order__card-num">1</div>
-                           <p class="user-order__card-param"><span>Заказ</span>489309849</p>
-                           <p class="user-order__card-param"><span>Технология</span>PolyJet (Струйное нанесение нескольких материалов)</p>
-                           <button class="offers-button">Предложения</button>
-                           
-                        </div>
+                     <p class="user-order__card-param"><span>Заказ</span>489309849</p>
+                     <p class="user-order__card-param"><span>Технология</span>FDM/FFF</p>
+                     <p class="user-order__card-param"><span>Статус</span>В работе (56%)</p>
+                     <p class="user-order__card-param"><span>Кол-во деталей</span>134</p>
+                     <p class="user-order__card-param"><span>Оплата</span>22.05.2020</p>
+                     <p class="user-order__card-param"><span>Доставка</span>22.05.2020</p>
+                     <div class="user-order__card-wrap">
+                        <p class="user-order__card-time">Осталось <span>3</span> дня</p>
+                        <div class="user-order__card-timebar"><span></span></div>
                      </div>
+                     
+                     <button class="user-order__button">Повторить</button>
+                     
 
                   </li>
                   
@@ -198,7 +202,7 @@
 
             <!-- User files tab -->
 
-            <section class="user-files">
+            <section id="user-library" class="user-files">
                <h3 class="user-files__title lc-sect-title">Пользовательские файлы</h3>
                <div class="user-files__header">
                   <p class="user-files__header-text">№</p>
