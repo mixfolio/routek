@@ -138,6 +138,10 @@ body {
    flex: 0 0 auto;
    margin-right: 22px;
 }
+.aside-sm {
+   width: 119px;
+   background-color: #1c1c1c;
+}
 
 .user-profile{
    padding-bottom: 12px;
@@ -164,6 +168,22 @@ body {
    background-color: cadetblue;
    margin-right: 12px;
 }
+.user-profile__pict-sm {
+   border-radius: 6px;
+   overflow: hidden;
+   margin: 36px;
+}
+
+.user-profile__pict img {
+   max-width: 100%;
+   height: auto;
+}
+
+.user-profile__pict-sm img {
+   max-width: 100%;
+   height: auto;
+}
+
 .user-profile__username {
    font-weight: 500;
    font-size: 16px;
@@ -199,6 +219,10 @@ body {
    overflow: hidden;
    background-color: red;
    margin-right: 12px;
+}
+.user-profile__company-logo img{
+   max-width: 100%;
+   height: auto;
 }
 
 .user-profile__company-name {
@@ -272,6 +296,12 @@ body {
    border-radius: 6px;
    padding: 30px;
 }
+.user__list-sm {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   border-top: 1px solid #292929;
+}
 .user__link {
    position: relative;
    display: block;
@@ -283,9 +313,6 @@ body {
    padding-left: 26px;
 }
 
-.user__link--game {
-   margin-bottom: 0;
-}
 
 .user__link:before {
    content: url(../img/lc/tech-ico.svg);
@@ -306,6 +333,27 @@ body {
    content: url(../img/lc/lib-lc-ico.svg);
 }
 
+.user__link-sm {
+   display: block;
+   font-size: 0;
+   height: 60px;
+   border: 1px solid red;
+   margin-left: 36px;
+}
+
+.user__link--onboard-sm {
+   background: url(../img/lc/onboard-ico.svg) center no-repeat;
+}
+
+.user__link--price-sm {
+   background: url(../img/lc/price-req-ico.svg) center no-repeat;
+}
+.user__link--order-sm {
+   background: url(../img/lc/order-lc-ico.svg) center no-repeat;
+}
+.user__link--library-sm {
+   background: url(../img/lc/lib-lc-ico.svg) center no-repeat;
+}
 
 
 
