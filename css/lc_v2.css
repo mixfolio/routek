@@ -141,6 +141,7 @@ body {
 .aside-sm {
    width: 119px;
    background-color: #1c1c1c;
+   min-height: 100%;
 }
 
 .user-profile{
@@ -337,8 +338,8 @@ body {
    display: block;
    font-size: 0;
    height: 60px;
-   border: 1px solid red;
    margin-left: 36px;
+   border-radius: 8px 0 0 8px;
 }
 
 .user__link--onboard-sm {
@@ -998,14 +999,45 @@ body {
 
 
 /* Tabs */
+#user-price {
+   
+}
+
 #user-price,
 #user-order,
 #user-library {
    display: none;
+   position: relative;
 }
 
 #user-price:target,
 #user-order:target,
 #user-library:target{
    display: block;
+}
+
+#user-price::before,
+#user-order::before,
+#user-library::before {
+   content: '';
+   position: absolute;
+   left: -106px;
+   width: 84px;
+   height: 60px;
+   border-radius: 8px 0 0 8px;
+}
+
+#user-price::before {
+   top: 160px;
+   background: #F0F4FA url(../img/lc/price-req-ico.svg) center no-repeat;
+}
+
+#user-order::before {
+   top: 220px;
+   background: #F0F4FA url(../img/lc/order-lc-ico.svg) center no-repeat;
+}
+
+#user-library::before {
+   top: 280px;
+   background: #F0F4FA url(../img/lc/order-lc-ico.svg) center no-repeat;
 }
