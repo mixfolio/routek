@@ -4,7 +4,10 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Onboarding</title>
+   <link rel="stylesheet" href="../libs/owlcarousel2/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="../libs/owlcarousel2/assets/owl.theme.default.min.css">
    <link rel="stylesheet" href="../css/lc_v2.css">
+   
 </head>
 <body>
    <header class="lc-header">
@@ -13,13 +16,15 @@
             <a href="../index.html" class="lc-header__logo">
                <img src="../img/routek-logo-white.svg" alt="Логотип Роутек">
             </a>
-            <nav class="lc-header__nav">
+            <div class="lc-header__nav">
                <a href="#" class="lc-header__link">Уведомления</a>
                <a href="#" class="lc-header__link">Routek Support</a>
                <a href="#" class="lc-header__link">Resources menu</a>
+            </div>
+            <div class="lc-header__nav">
                <a href="#" class="lc-header__link lc-header__link--lang">RU</a>
-               <a href="#" class="lc-header__link lc-header__link--exit">Выход</a>
-            </nav>
+               <a href="../index.html" class="lc-header__link lc-header__link--exit">Выход</a>
+            </div>
          </div>
       </div>
    </header>
@@ -52,7 +57,7 @@
       
             </div> -->
             <ul class="user__list">
-               <li><a  class="user__link user__link--onboard">Onboarding</a></li>
+               <li><a  class="user__link user__link--onboard user__link--active">Onboarding</a></li>
                <li><a href="lc_ask-price.html#user-price" class="user__link user__link--price ">Запросы цен</a></li>
                <li><a href="lc_ask-price.html#user-order" class="user__link user__link--order ">Заказы</a></li>
                <li><a href="lc_ask-price.html#user-library" class="user__link user__link--library">Библиотека</a></li>
@@ -82,16 +87,39 @@
 
                </ul>
             </section>
-
+            <!-- Carousel -->
             <section class="onbrd-intro">
          
-               <ul class="onbrd-intro__list">
+               <ul class="onbrd-intro__list owl-carousel owl-theme" id="carousel-onbrd-01">
+                  <li>
+                     <div class="onbrd-intro__item onbrd-intro__item--01">
+                        <div class="onbrd-intro__desc">
+                           <h4 class="onbrd-intro__card-title">Делайте заказы быстро и удобно!</h4>
+                           <p class="onbrd-intro__card-text">Загрузите модель, заполните параметры и отправьте запрос на расчет цены! Оплачивайте понравившееся предложение и получайте детали!</p>
+                        </div>
+                        
+                        <a href="#" class="card-button-lc">Сделать заказ</a>
+                     </div>           
+                  </li>
                   <li>
                      <div class="onbrd-intro__item">
-                        <h4 class="onbrd-intro__card-title">Делайте заказы быстро и удобно!</h4>
-                        <p class="onbrd-intro__card-text">Загрузите модель, заполните параметры и отправьте запрос на расчет цены! Оплачивайте понравившееся предложение и получайте детали!</p>
-                        <a href="#" class="card-button-lc">Подробнее</a>
-                     </div>           
+                        <div class="onbrd-intro__desc">
+                           <h4 class="onbrd-intro__card-title">Удобное управление текущими заказами.</h4>
+                           <p class="onbrd-intro__card-text">Отслеживайте все этапы исполнения заказа на платформе или в удобном мобильном
+                              приложении. Оставьте рутину нам, а сами займитесь воплощением своих идей! </p>
+                        </div>
+                        <a href="#" class="card-button-lc">Сделать заказ</a>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="onbrd-intro__item">
+                        <div class="onbrd-intro__desc">
+                           <h4 class="onbrd-intro__card-title">Полезная аналитика по выполненным заказам.</h4>
+                           <p class="onbrd-intro__card-text">Платформа хранит всю историю ваших заказов. Вы можете быстро и легко
+                              сформировать отчет по заданным критериям или рассчитать ROI от использования вами платформы Routek!</p>
+                        </div>
+                        <a href="#" class="card-button-lc">Сделать заказ</a>
+                     </div>
                   </li>
                  
                </ul>
@@ -101,7 +129,7 @@
             <section class="tech-lc">
                <div class="onbrd-container">
                   <div class="onbrd-order">
-                     <h2 class="onbrd-order__title">Технологии</h2>
+                     <h2 class="onbrd-order__title">Заказы</h2>
                      <div class="onbrd-order__card">
                         <h4 class="onbrd-order__card-title">У вас пока нет заказов</h4>
                         <p class="onbrd-order__card-text">Сделайте первый заказ и получите скидку 10%!</p>
@@ -110,8 +138,8 @@
                   </div>
 
                   <div class="onbrd-order">
-                     <h2 class="onbrd-order__title">Технологии</h2>
-                     <div class="onbrd-order__card">
+                     <h2 class="onbrd-order__title">Планы</h2>
+                     <div class="onbrd-order__card onbrd-plane__card">
                         <h4 class="onbrd-order__card-title">У вас пока нет планов</h4>
                         <p class="onbrd-order__card-text">Планируйте свои события и мы напомним вам о них!</p>
                         <a href="#" class="card-button-lc">Создать</a>
@@ -151,18 +179,21 @@
    
    
    
-   <script src="libs/jquery/jquery-3.5.1.min.js"></script>
-   <script src="libs/slick-slider/slick.min.js"></script>
-   <script src="js/main.js"></script>
+   <script src="../libs/jquery/jquery-3.5.1.min.js"></script>
+   <script src="../libs/owlcarousel2/owl.carousel.min.js"></script>
+   <script src="../js/main.js"></script>
    <script>
-      // Slick-slider lc
          $(document).ready(function () {
-            $('.tech-lc__cards').slick({
-               infinite: true,
-               slidesToShow: 3,
-               slidesToScroll: 1,
+            $("#carousel-onbrd-01").owlCarousel({
+               items: 1,
+               margin:22,
+               loop: true,
+               autoplay:false,
+               autoplayTimeout:3000,
+               autoplayHoverPause:true
             });
          });
+     
    </script>
 </body>
 </html>

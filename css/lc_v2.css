@@ -121,16 +121,14 @@ body {
 
 .lc-header__body {
    display: flex;
-   flex-wrap: nowrap;
    justify-content: space-between;
    align-items: center;
    height: 71px;
 }
 .lc-header__nav {
-   width: 100%;
-   text-align: right;
-   border: 1px solid gold;
+   display: flex;
 }
+
 .lc-header__link {
    font-size: 14px;
    line-height: 17px;
@@ -188,8 +186,8 @@ body {
 /* Start aside */
 
 .aside {
-   flex: 0 0 auto;
-   margin-right: 22px;
+   flex: 0 1 auto;
+   margin: 0 22px;
 }
 .aside-sm {
    width: 119px;
@@ -198,10 +196,10 @@ body {
 }
 
 .user-profile{
+   flex: 0 1 auto;
    padding-bottom: 12px;
    margin-top: 22px;
    margin-bottom: 22px;
-   max-width: 310px;
    border-radius: 6px;
    color: #F0F4FA;
    background-color: #1c1c1c;
@@ -238,7 +236,9 @@ body {
    max-width: 100%;
    height: auto;
 }
-
+.user-profile__desc {
+   margin-right: 20px;
+}
 .user-profile__username {
    font-weight: 500;
    font-size: 16px;
@@ -349,7 +349,10 @@ body {
    max-width: 310px;
    background-color: #1c1c1c;
    border-radius: 6px;
-   padding: 30px;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   overflow: hidden;
 }
 .user__list-sm {
    margin: 0;
@@ -360,20 +363,34 @@ body {
 .user__link {
    position: relative;
    display: block;
+   height: 60px;
    font-size: 16px;
-   line-height: 20px;
+   line-height: 60px;
    font-weight: 500;
    color: #828282;
-   margin-bottom: 38px;
-   padding-left: 26px;
+   padding-left: 60px;
+   border-bottom: 1px solid gray;
+}
+
+.user__link--active {
+   background-color: #F0F4FA;
+   color: #000000;
+   cursor: default;
+}
+.user__link:last-child {
+   border-bottom: none;
+}
+
+.user__link[href]:hover {
+   color: #2780eb;
 }
 
 
 .user__link:before {
    content: url(../img/lc/tech-ico.svg);
    position: absolute;
-   top: -10px;
-   left: -20px;
+   top: 12px;
+   left: 12px;
 }
 .user__link--onboard:before {
    content: url(../img/lc/onboard-ico.svg);
@@ -386,6 +403,13 @@ body {
 }
 .user__link--library:before {
    content: url(../img/lc/lib-lc-ico.svg);
+}
+
+.user__link--order:after {
+   content: url(../img/lc/plus-ico.svg);
+   position: absolute;
+   top: 4px;
+   left: 142px;
 }
 
 .user__link-sm {
@@ -594,6 +618,7 @@ body {
    text-align: center;
    margin: 0 0 24px 0;
 }
+
 .onbrd-adv__card-text {
    font-family: Stem;
    font-size: 14px;
@@ -603,11 +628,43 @@ body {
    margin: 0 0 200px 0;
 }
 
+.onbrd-intro__list {
+   position: relative;
+   list-style-type: none;
+   padding: 0;
+   margin: 0 0 22px 0;
+
+}
 
 .onbrd-intro__item {
    border-radius: 8px;
-   background-color: #C3DAFF;
+   background: #C3DAFF;
    padding: 48px;
+   height: 266px;
+}
+
+.onbrd-intro__item--01 {
+   background: #C3DAFF url(../img/lc/intro-slide-01.png) 22px center no-repeat;
+}
+
+.owl-dots {
+   position: absolute;
+   top: 220px;
+   left: 50%;
+   transform: translate(-50%, 0);
+   
+}
+
+.owl-dot span {
+   background: #ffffff;
+}
+
+.owl-dots.active span{
+   background: #2780eb;
+}
+
+.onbrd-intro__desc {
+   margin-left: 300px;
 }
 
 .onbrd-intro__card-title {
@@ -619,25 +676,33 @@ body {
 .onbrd-intro__card-text {
    font-size: 16px;
    line-height: 24px;
-   margin: 0 0 12px 0;
+   margin: 0 0 24px 0;
    
 }
-
-
 
 .onbrd-container {
    display: flex;
    margin: 0 -12px;
 }
+
 .onbrd-order {
    width: calc(50% - 24px);
    margin: 0 12px;
+}
+
+.onbrd-order__title {
+   font-weight: 500;
+   font-size: 18px; 
+   margin: 0 0 16px 0;
 }
 
 .onbrd-order__card {
    border-radius: 8px;
    background: #fff url(../img/lc/order-lc.svg) no-repeat center 40px;
    padding: 176px 40px 40px 40px;
+}
+.onbrd-plane__card {
+   background: #fff url(../img/lc/plane-lc.svg) no-repeat center 40px;
 }
 
 .onbrd-order__card-title {
@@ -808,6 +873,7 @@ body {
    align-items: center;
    background: #ffffff;
    padding: 20px 30px 20px 10px;
+   margin: 0 0 22px 0;
 }
 
 .user-order__card-num {
