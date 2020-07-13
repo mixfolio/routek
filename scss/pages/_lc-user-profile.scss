@@ -1,0 +1,147 @@
+.user-profile__wallpaper {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 300px;
+   width: 100%;
+   background: #212121 url(../img/lc/user-wallpaper-lc.jpg) center top no-repeat;
+   z-index: 1;
+} 
+
+.user-profile__wallpaper-over {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(180.18deg, rgba(0, 0, 0, 0) 46.25%, rgba(0, 0, 0, 0.63) 99.34%);
+}
+
+.user-profile__top {
+   padding-top: 210px;
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+   margin-bottom: 22px;
+   z-index: 2;
+
+}
+
+.user-profile__top-thumb {
+   width: 128px;
+   height: 128px;
+   border-radius: 6px;
+   overflow: hidden;
+   margin-right: 16px;
+}
+
+.user-profile__top-thumb img {
+   max-width: 100%;
+   height: auto;
+}
+
+.user-profile__name {
+   font-size: 32px;
+   font-weight: 500;
+   color: #ffffff;
+   margin: 0 0 32px 0;
+}
+
+.user-profile__tab {
+   display: inline-block;
+}
+
+.user-info__button {
+   height: 42px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 42px;
+   padding: 0 16px;
+   border-radius: 6px;
+   color: #ACB5C1;
+   background: #DCE4EE;
+}
+
+.user-profile__tab--active {
+   color: #ffffff;
+   background-color: #1E5DC5;
+}
+
+.user-info {
+   padding: 22px 22px 56px 22px;
+   background-color: #ffffff;
+   margin-bottom: 22px;
+   border-radius: 8px;
+}
+
+.user-info__photo {
+   display: flex;
+   align-items: center;
+   margin-bottom: 16px;
+}
+
+.user-info__photo--company {
+   justify-content: space-between;
+}
+
+.user-info__flex-block {
+   display: flex;
+   align-items: center;
+}
+
+.user-info__thumb {
+   width: 80px;
+   height: 80px;
+   border-radius: 6px;
+   overflow: hidden;
+   margin-right: 16px;
+}
+
+.user-info__thumb img {
+   max-width: 100%;
+   height: auto;
+}
+.user-info__field {
+   max-width: 100%;
+   border: 1px solid red;
+}
+.user-info__wrap {
+   display: flex;
+   margin: 0 -11px 48px -11px;
+}
+
+.user-info__item {
+   width: calc(50% - 22px);
+   margin: 0 11px;
+}
+
+.user-info__label {
+   display: block;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 14px;
+   margin-bottom: 12px; 
+}
+
+.user-info__input {
+   height: 48px;
+   font-size: 16px;
+   width: 100%;
+   background: #F4F6FA;
+   border-radius: 4px;
+   padding: 0 30px;
+   margin-bottom: 16px;
+}
+
+
+.user-info__title {
+   font-size: 22px;
+   font-weight: normal;
+   margin: 0 0 42px 0;
+}
+.user-adress-info {
+   padding: 40px 22px 22px 22px;
+   margin-bottom: 22px;
+   border-radius: 8px;
+   background: #ffffff;
+}

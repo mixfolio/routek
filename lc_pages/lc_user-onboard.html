@@ -6,7 +6,7 @@
    <title>Onboarding</title>
    <link rel="stylesheet" href="../libs/owlcarousel2/assets/owl.carousel.min.css">
    <link rel="stylesheet" href="../libs/owlcarousel2/assets/owl.theme.default.min.css">
-   <link rel="stylesheet" href="../css/lc_v2.css">
+   <link rel="stylesheet" href="../css/style.css">
    
 </head>
 <body>
@@ -29,38 +29,37 @@
       </div>
    </header>
    <div class="lc__wrapper">
-      <main class="main-lc">
-         <aside class="aside">
-            <div class="user-profile">
-               <div class="user-profile__box">
-                  <a href="lc_user-profile.html" class="user-profile__pict">
-                     <img src="../img/lc/lc-user.jpg" alt="Алекперов">
-                  </a>
-                  <div class="user-profile__desc">
-                     <p class="user-profile__username">В. Ю. Алекперов</p>
-                     <p class="user-profile__email">alekperov@mail.ru</p>
+      <main class="lc-main">
+         <aside class="lc-aside">
+            <ul class="lc-aside__nav-list">
+               <li><a href="../lc_pages/lc_user-profile.html" class="lc-aside__link-prof-user">
+                  <div class="lc-aside__company-inner">
+                     <div class="lc-aside__user-thumb">
+                        <img src="../img/lc/lc-user.jpg" alt="Алекперов">
+                     </div>
+                     <div class="lc-aside__company-desc">
+                        <p class="lc-aside__user-name">В. Ю. Алекперов</p>
+                        <p class="lc-aside__user-mail">alekperov@mail.ru</p>
+                     </div>
                   </div>
-               </div>
-               <p class="user-profile__text">компания</p>
-               <div class="user-profile__company">
-                  <div class="user-profile__company-logo">
-                     <img src="../img/lc/luk-oil-logo.jpg" alt="Лукойл">
+
+               </a></li>
+               <li><a href="../lc_pages/lc_user-profile.html" class="lc-aside__link-prof-user">
+                  <p class="lc-aside__company-title">Компания</p>
+                  <div class="lc-aside__company-inner">
+                     <div class="lc-aside__company-logo-sm">
+                        <img src="../img/lc/luk-oil-logo.jpg" alt="Лукойл">
+                     </div>
+                     <p class="lc-aside__user-company">Лукойл</p>
                   </div>
-                  <p class="user-profile__company-name">Лукойл</p>
-               </div>
-               
-            </div>
-            <!-- <div class="profile-stat">
-               <p class="profile-stat__status">Профиль заполнен на <span>45&#37;</span></p>
-               <div class="profile-stat__bar"></div>
-               <a href="#!" class="profile-stat__link">Заполнить профиль</a>
-      
-            </div> -->
-            <ul class="user__list">
-               <li><a  class="user__link user__link--onboard user__link--active">Onboarding</a></li>
-               <li><a href="lc_ask-price.html#user-price" class="user__link user__link--price ">Запросы цен</a></li>
-               <li><a href="lc_ask-price.html#user-order" class="user__link user__link--order ">Заказы</a></li>
-               <li><a href="lc_ask-price.html#user-library" class="user__link user__link--library">Библиотека</a></li>
+               </a></li>   
+            </ul>
+           
+            <ul class="lc-aside__nav-list">
+               <li><a  class="lc-aside__link lc-aside__link--onboard lc-aside__link--active">Onboarding</a></li>
+               <li><a href="lc_user-data.html#user-price" class="lc-aside__link lc-aside__link--price ">Запросы цен</a></li>
+               <li><a href="lc_user-data.html#user-order" class="lc-aside__link lc-aside__link--order ">Заказы</a></li>
+               <li><a href="lc_user-data.html#user-library" class="lc-aside__link lc-aside__link--library">Библиотека</a></li>
             </ul>
          </aside>
 
@@ -183,16 +182,16 @@
    <script src="../libs/owlcarousel2/owl.carousel.min.js"></script>
    <script src="../js/main.js"></script>
    <script>
-         $(document).ready(function () {
-            $("#carousel-onbrd-01").owlCarousel({
-               items: 1,
-               margin:22,
-               loop: true,
-               autoplay:false,
-               autoplayTimeout:3000,
-               autoplayHoverPause:true
-            });
-         });
+         // $(document).ready(function () {
+         //    $("#carousel-onbrd-01").owlCarousel({
+         //       items: 1,
+         //       margin:22,
+         //       loop: true,
+         //       autoplay:false,
+         //       autoplayTimeout:3000,
+         //       autoplayHoverPause:true
+         //    });
+         // });
      
    </script>
 </body>

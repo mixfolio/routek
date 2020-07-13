@@ -38,7 +38,7 @@
          <aside class="lc-aside">
 
             <ul class="lc-aside__nav-list">
-               <li><a href="#" class="lc-aside__link-prof-company">
+               <li><a class="lc-aside__link-prof-company">
                   <div class="lc-aside__company-inner">
                      <div class="lc-aside__company-logo">
                         <img src="../img/lc/luk-oil-logo.jpg" alt="Лукойл">
@@ -50,7 +50,7 @@
                   </div>
 
                </a></li>
-               <li><a href="#" class="lc-aside__link lc-aside__link--prof-org">Профиль организации</a></li>
+               <li><a href="lc_company-profile.html" class="lc-aside__link lc-aside__link--prof-org">Профиль организации</a></li>
                <li><a href="#" class="lc-aside__link lc-aside__link--machine">Парк машин</a></li>
                <li><a href="#" class="lc-aside__link lc-aside__link--example ">Примеры продукции</a></li>
                <li><a href="#" class="lc-aside__link lc-aside__link--certificate">Сертификаты</a></li>
@@ -102,7 +102,7 @@
                         <a href="#" class="card-button-lc">Сделать заказ</a>
                      </div>           
                   </li>
-                  <li>
+                  <!-- <li>
                      <div class="onbrd-intro__item">
                         <div class="onbrd-intro__desc">
                            <h4 class="onbrd-intro__card-title">Удобное управление текущими заказами.</h4>
@@ -112,6 +112,7 @@
                         <a href="#" class="card-button-lc">Сделать заказ</a>
                      </div>
                   </li>
+
                   <li>
                      <div class="onbrd-intro__item">
                         <div class="onbrd-intro__desc">
@@ -121,7 +122,7 @@
                         </div>
                         <a href="#" class="card-button-lc">Сделать заказ</a>
                      </div>
-                  </li>
+                  </li> -->
                  
                </ul>
             </section>
@@ -170,7 +171,7 @@
             $("#carousel-onbrd-01").owlCarousel({
                items: 1,
                margin:22,
-               loop: true,
+               loop: false,
                autoplay:false,
                autoplayTimeout:3000,
                autoplayHoverPause:true
@@ -178,5 +179,13 @@
          });
      
    </script> -->
+   <script>
+      $(document).ready(function () {
+         $("#carousel-onbrd-01").owlCarousel({
+            items: 1
+         });
+      });
+  
+</script>
 </body>
 </html>

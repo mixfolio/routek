@@ -16,6 +16,12 @@
    width: 200px;
 }
 
+.lc-button--center {
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
 .card-button-lc {
    display: block;
    height: 48px;
