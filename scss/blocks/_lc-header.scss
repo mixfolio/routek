@@ -1,0 +1,61 @@
+/* Start lc-header */
+
+.lc-header {
+   background-color: #000000;
+}
+
+.lc-header__wrapper {
+   padding: 0 22px;
+}
+
+.lc-header__body {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 71px;
+}
+
+.lc-header__logo {
+   flex: 0 0 191px;
+}
+
+.lc-header__nav {
+   display: flex;
+}
+
+.lc-header__link {
+   font-size: 14px;
+   line-height: 17px;
+   font-weight: 300;
+   color: #ffffff;
+   margin-left: 32px;
+}
+
+.lc-header__link--lang {
+   position: relative;
+   padding-left: 26px;
+}
+
+.lc-header__link--lang::before {
+   content: url(../img/lc/flag_ru-lc-ico.svg);
+   top: 1;
+   left: 0;
+   position: absolute;
+}
+
+.lc-header__link--exit {
+   position: relative;
+   padding-left: 26px;
+}
+.lc-header__link--exit::before {
+   content: url(../img/lc/exit-lc-ico.svg);
+   top: 1;
+   left: 0;
+   position: absolute;
+}
+
+.lc-header__link:hover {
+   color: $hero-text;
+}
+
+/* End lc-header */

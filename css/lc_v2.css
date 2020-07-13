@@ -186,7 +186,7 @@ body {
 /* Start aside */
 
 .aside {
-   flex: 0 1 auto;
+   /* flex: 0 1 auto; */
    margin: 0 22px;
 }
 .aside-sm {
@@ -196,7 +196,7 @@ body {
 }
 
 .user-profile{
-   flex: 0 1 auto;
+   flex: 0 0 330px;
    padding-bottom: 12px;
    margin-top: 22px;
    margin-bottom: 22px;

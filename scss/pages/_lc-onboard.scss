@@ -1,0 +1,144 @@
+.onbrd-adv {
+   margin: 0 0 24px 0;
+}
+
+.onbrd-adv__cards {
+
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -12px;
+}
+
+.onbrd-adv__card {
+   /* display: flex;
+   flex-direction: column; */
+   width: calc(33.333% - 24px);
+   background-color: #ffffff;
+   border-radius: 8px;
+   margin: 0 12px;
+   padding: 40px 24px;
+   background-repeat: no-repeat;
+   background-position: center calc(100% - 112px);
+}
+.onbrd-adv__card-01 {
+   background-image: url(../img/lc/advise-lc-01.png);
+}
+
+.onbrd-adv__card-02 {
+   background-image: url(../img/lc/advise-lc-02.png);
+}
+
+.onbrd-adv__card-03 {
+   background-image: url(../img/lc/advise-lc-03.png);
+}
+
+.onbrd-adv__card-title {
+   font-family: Stem;
+   font-size: 22px;
+   font-weight: 500;
+   line-height: 26px;
+   text-align: center;
+   margin: 0 0 24px 0;
+}
+
+.onbrd-adv__card-text {
+   font-family: Stem;
+   font-size: 14px;
+   line-height: 22px;
+   text-align: center;
+   color: #828793;
+   margin: 0 0 200px 0;
+}
+
+.onbrd-intro__list {
+   position: relative;
+   list-style-type: none;
+   padding: 0;
+   margin: 0 0 22px 0;
+
+}
+
+.onbrd-intro__item {
+   border-radius: 8px;
+   background: #C3DAFF;
+   padding: 48px;
+   height: 266px;
+}
+
+.onbrd-intro__item--01 {
+   background: #C3DAFF url(../img/lc/intro-slide-01.png) 22px center no-repeat;
+}
+
+.owl-dots {
+   position: absolute;
+   top: 220px;
+   left: 50%;
+   transform: translate(-50%, 0);
+   
+}
+
+.owl-dot span {
+   background: #ffffff;
+}
+
+.owl-dots.active span{
+   background: #2780eb;
+}
+
+.onbrd-intro__desc {
+   margin-left: 300px;
+}
+
+.onbrd-intro__card-title {
+   font-weight: 500;
+   font-size: 22px;
+   margin: 0 0 22px 0;
+}
+
+.onbrd-intro__card-text {
+   font-size: 16px;
+   line-height: 24px;
+   margin: 0 0 24px 0;
+   
+}
+
+.onbrd-container {
+   display: flex;
+   margin: 0 -12px;
+}
+
+.onbrd-order {
+   width: calc(50% - 24px);
+   margin: 0 12px;
+}
+
+.onbrd-order__title {
+   font-weight: 500;
+   font-size: 18px; 
+   margin: 0 0 16px 0;
+}
+
+.onbrd-order__card {
+   border-radius: 8px;
+   background: #fff url(../img/lc/order-lc.svg) no-repeat center 40px;
+   padding: 176px 40px 40px 40px;
+}
+.onbrd-plane__card {
+   background: #fff url(../img/lc/plane-lc.svg) no-repeat center 40px;
+}
+
+.onbrd-order__card-title {
+   
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 26px;
+   text-align: center;
+   margin: 0 0 12px 0;
+}
+
+.onbrd-order__card-text {
+   font-size: 16px;
+   line-height: 26px;
+   text-align: center;
+   margin: 0 0 36px 0;
+}

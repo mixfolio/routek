@@ -1,0 +1,134 @@
+.lc-aside {
+   flex: 1 0 298px;
+   padding: 22px;
+   background-color: #111111;
+}
+
+
+.lc-aside__nav-list {
+   //flex: 0 0 310px;
+   //position: relative;
+   background-color: #2c2c2c;
+   border-radius: 6px;
+   margin: 0 0 22px 0;
+   padding: 0;
+   list-style: none;
+   overflow: hidden;
+   
+}
+
+.lc-aside__link-prof-company {
+   display: block;
+   padding: 12px;
+   border-bottom: 1px solid #111111;
+}
+.lc-aside__link-prof-company:hover,
+.lc-aside__link-prof-company:focus {
+   background-color: #3c3c3c;
+   
+}
+
+.lc-aside__company-inner {
+   display: flex;
+   align-items: center;
+}
+
+.lc-aside__company-logo {
+   width: 36px;
+   height: 36px;
+   border-radius: 4px;
+   overflow: hidden;
+}
+
+.lc-aside__company-desc {
+   color: #ffffff;
+   margin-left: 16px;
+}
+
+.lc-aside__company-name {
+   font-size: 16px;
+   font-weight: bold;
+   margin: 0 0 8px 0;
+}
+
+.lc-aside__company-owner {
+   font-size: 16px;
+   font-weight: normal;
+}
+
+.lc-aside__link {
+   position: relative;
+   display: block;
+   height: 60px;
+   font-size: 16px;
+   line-height: 60px;
+   font-weight: 500;
+   color: #ffffff;
+   padding-left: 60px;
+   //border-bottom: 1px solid gray;
+}
+
+.lc-aside__link--active {
+   background-color: #F0F4FA;
+   color: #000000;
+   cursor: default;
+}
+
+.lc-aside__link--disabled {
+   color: #828282;
+   cursor: default;
+}
+
+.lc-aside__link[href]:hover,
+.lc-aside__link[href]:focus {
+   background-color: #3c3c3c;
+}
+
+
+.lc-aside__link:before {
+   content: url(../img/lc/tech-ico.svg);
+   position: absolute;
+   top: 12px;
+   left: 12px;
+}
+
+.lc-aside__link--prof-org:before {
+   content: url(../img/lc/prof-org-lc-ico.svg);
+}
+
+.lc-aside__link--machine:before {
+   content: url(../img/lc/machine-lc-ico.svg);
+}
+
+.lc-aside__link--example:before {
+   content: url(../img/lc/example-lc-ico.svg);
+}
+
+.lc-aside__link--certificate:before {
+   content: url(../img/lc/certificate-lc-ico.svg);
+}
+
+.lc-aside__link--gallery:before {
+   content: url(../img/lc/gallery-lc-ico.svg);
+}
+
+
+.lc-aside__link--onboard:before {
+   content: url(../img/lc/onboard-ico.svg);
+}
+.lc-aside__link--price:before {
+   content: url(../img/lc/price-req-ico.svg);
+}
+.lc-aside__link--order:before {
+   content: url(../img/lc/order-lc-ico.svg);
+}
+.lc-aside__link--library:before {
+   content: url(../img/lc/lib-lc-ico.svg);
+}
+
+.lc-aside__link--order:after {
+   content: url(../img/lc/plus-ico.svg);
+   position: absolute;
+   top: 4px;
+   left: 142px;
+}
