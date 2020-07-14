@@ -179,8 +179,6 @@ body {
    flex: 1 1 auto;
    background-color: #F0F4FA;
    padding: 22px;
-   /* min-width: 0; Обязательно для slick-slider */
-   min-width: 0;  
 }
 
 /* Start aside */

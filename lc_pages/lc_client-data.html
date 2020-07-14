@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Onboarding</title>
-   <link rel="stylesheet" href="../css/lc_v2.css">
+   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
    <header class="lc-header">
@@ -26,14 +26,25 @@
       </div>
    </header>
    <div class="lc__wrapper">
-      <main class="main-lc">
-         <aside class="aside-sm">
+      <main class="lc-main">
+         <aside class="lc-aside-sm">
+            <div class="lc-aside__pict-sm">
+               <img src="../img/lc/lc-user.jpg" alt="Алекперов">
+            </div>
+            <ul class="lc-aside__nav-list-sm">
+               <li><a href="lc_client-onboard.html" class="lc-aside__link-sm lc-aside__link--onboard-sm">Onboarding</a></li>
+               <li><a href="#user-price" class="lc-aside__link-sm lc-aside__link--price-sm">Запросы цен</a></li>
+               <li><a href="#user-order" class="lc-aside__link-sm lc-aside__link--order-sm">Заказы</a></li>
+               <li><a href="#user-library" class="lc-aside__link-sm lc-aside__link--library-sm">Библиотека</a></li>
+            </ul>
+         </aside>
+         <!-- <aside class="aside-sm">
             <div class="user-menu-sm">
-               <a href="lc_user-profile.html" class="user-profile__pict-sm">
+               <a href="lc_client-profile.html" class="user-profile__pict-sm">
                   <img src="../img/lc/lc-user.jpg" alt="Алекперов">
                </a>
                <ul class="user__list-sm">
-                  <li><a href="lc_user-onboard.html" class="user__link-sm user__link--onboard-sm"><span
+                  <li><a href="lc_client-onboard.html" class="user__link-sm user__link--onboard-sm"><span
                            class="user__link-text">Onboarding</span></a></li>
                   <li><a href="#user-price" class="user__link-sm user__link--price-sm"><span class="user__link-text">Запросы
                            цен</span></a></li>
@@ -43,7 +54,7 @@
                            class="user__link-text">Библиотека</span></a></li>
                </ul>
             </div>
-         </aside>
+         </aside> -->
 
 
 
@@ -351,21 +362,8 @@
    
    </div>
    
-   
-   
-   
-   <script src="libs/jquery/jquery-3.5.1.min.js"></script>
-   <script src="libs/slick-slider/slick.min.js"></script>
-   <script src="js/main.js"></script>
-   <script>
-      // Slick-slider lc
-         $(document).ready(function () {
-            $('.tech-lc__cards').slick({
-               infinite: true,
-               slidesToShow: 3,
-               slidesToScroll: 1,
-            });
-         });
-   </script>
+   <script src="../libs/jquery/jquery-3.5.1.min.js"></script>
+   <script src="../js/main.js"></script>
+   <script></script>
 </body>
 </html>
