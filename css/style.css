@@ -4954,6 +4954,25 @@ img {
   border-radius: 8px 0 0 8px;
 }
 
+.lc-aside__link-sm span {
+  font-size: 16px;
+  line-height: 60px;
+  position: absolute;
+  color: floralwhite;
+  top: 0;
+  left: 52px;
+  height: 60px;
+  width: 0px;
+  border-radius: 0px 8px 8px 0px;
+  background-color: #1c1c1c;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.lc-aside__link-sm span.link-sm-active {
+  display: block;
+}
+
 .lc-aside__link--prof-org-sm {
   background: url(../img/lc/prof-org-lc-ico.svg) 5px center no-repeat;
 }
