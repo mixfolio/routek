@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Onboarding</title>
    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
    <header class="lc-header">
       <div class="lc-header__wrapper">
@@ -32,10 +34,14 @@
                <img src="../img/lc/lc-user.jpg" alt="Алекперов">
             </div>
             <ul class="lc-aside__nav-list-sm">
-               <li><a href="lc_client-onboard.html" class="lc-aside__link-sm lc-aside__link--onboard-sm">Onboarding</a></li>
-               <li><a href="lc_client-data.html#user-price" class="lc-aside__link-sm lc-aside__link--price-sm">Запросы цен</a></li>
-               <li><a href="lc_client-data.html#user-order" class="lc-aside__link-sm lc-aside__link--order-sm">Заказы</a></li>
-               <li><a href="lc_client-data.html#user-library" class="lc-aside__link-sm lc-aside__link--library-sm">Библиотека</a></li>
+               <li><a href="lc_client-onboard.html" class="lc-aside__link-sm lc-aside__link--onboard-sm">Onboarding</a>
+               </li>
+               <li><a href="lc_client-data.html#user-price" class="lc-aside__link-sm lc-aside__link--price-sm">Запросы
+                     цен</a></li>
+               <li><a href="lc_client-data.html#user-order"
+                     class="lc-aside__link-sm lc-aside__link--order-sm">Заказы</a></li>
+               <li><a href="lc_client-data.html#user-library"
+                     class="lc-aside__link-sm lc-aside__link--library-sm">Библиотека</a></li>
             </ul>
          </aside>
 
@@ -58,140 +64,182 @@
                      <a href="#" class="user-profile__tab user-info__button">Учетная запись</a>
                   </div>
                </div>
-               
+
             </section>
 
-            <!-- User info tab -->
-            <section class="user-info">
-              
-                  <form action="#" class="user-info__form">
-                     <div class="user-info__photo">
-                        <div class="user-info__thumb">
-                           <img src="../img/lc/lc-user.jpg" alt="Алекперов">
+            <!--    Start 2 columns    -->
+            <div class="lc-main-page__wrapper">
+
+               <!-- Colunn 1 -->
+               <div class="lc-main-page__main-block">
+                  <!-- User info tab -->
+                  <section class="user-info">
+
+                     <form action="#" class="user-info__form">
+                        <div class="user-info__photo">
+                           <div class="user-info__thumb">
+                              <img src="../img/lc/lc-user.jpg" alt="Алекперов">
+                           </div>
+                           <button class="user-info__button">Новое фото</button>
                         </div>
-                        <button class="user-info__button">Новое фото</button>
-                     </div>
-                     <div class="user-info__wrap">
-   
-                        <div class="user-info__item">
-                           <label class="user-info__label" for="">ФИО</label>
+                        <div class="user-info__wrap">
+
+                           <div class="user-info__item">
+                              <label class="user-info__label" for="">ФИО</label>
                               <input class="user-info__input" type="text" placeholder="ФИО">
                               <label class="user-info__label" for="">E-mail</label>
                               <input class="user-info__input" type="text" placeholder="E-mail">
                               <label class="user-info__label" for="">Телефон</label>
                               <input class="user-info__input" type="text" placeholder="+7(495)123-45-67">
+                           </div>
+
+                           <div class="user-info__item">
+                              <label class="user-info__label" for="">Форма</label>
+                              <input class="user-info__input" type="text">
+                              <label class="user-info__label" for="">О себе</label>
+                              <input class="user-info__input" type="text">
+                           </div>
                         </div>
-   
-                        <div class="user-info__item">
-                           <label class="user-info__label" for="">Форма</label>
-                           <input class="user-info__input" type="text">
-                           <label class="user-info__label" for="">О себе</label>
-                           <input class="user-info__input" type="text">         
+                        <button type="submit" class="lc-button lc-button--center">Обновить</button>
+                     </form>
+
+                  </section>
+
+                  <!-- User adress tab -->
+                  <section class="user-info">
+                     <h2 class="user-info__title">Адресная информация</h2>
+
+                     <form action="#" class="user-info__form">
+                        <div class="user-info__wrap">
+
+                           <div class="user-info__item">
+                              <label class="user-info__label" for="">Индекс</label>
+                              <input class="user-info__input" type="text" placeholder="Индекс">
+                              <label class="user-info__label" for="">Регион/Область</label>
+                              <input class="user-info__input" type="text" placeholder="Регион/Область">
+                              <label class="user-info__label" for="">Город</label>
+                              <input class="user-info__input" type="text" placeholder="Город">
+                           </div>
+
+                           <div class="user-info__item">
+                              <label class="user-info__label" for="">Улица</label>
+                              <input class="user-info__input" type="text" placeholder="Улица">
+                              <label class="user-info__label" for="">Дом</label>
+                              <input class="user-info__input" type="text" placeholder="Дом">
+                              <label class="user-info__label" for="">Офис</label>
+                              <input class="user-info__input" type="text" placeholder="Офис">
+                           </div>
                         </div>
-                     </div>
-                     <button type="submit" class="lc-button lc-button--center">Обновить</button>
-                  </form>
-   
-            </section>
+                        <button type="submit" class="lc-button lc-button--center">Обновить</button>
+                     </form>
 
-            <!-- User adress tab -->
-            <section class="user-info">
-               <h2 class="user-info__title">Адресная информация</h2>
-            
-               <form action="#" class="user-info__form">
-                  <div class="user-info__wrap">
-            
-                     <div class="user-info__item">
-                        <label class="user-info__label" for="">Индекс</label>
-                        <input class="user-info__input" type="text" placeholder="Индекс">
-                        <label class="user-info__label" for="">Регион/Область</label>
-                        <input class="user-info__input" type="text" placeholder="Регион/Область">
-                        <label class="user-info__label" for="">Город</label>
-                        <input class="user-info__input" type="text" placeholder="Город">
-                     </div>
-            
-                     <div class="user-info__item">
-                        <label class="user-info__label" for="">Улица</label>
-                        <input class="user-info__input" type="text" placeholder="Улица">
-                        <label class="user-info__label" for="">Дом</label>
-                        <input class="user-info__input" type="text" placeholder="Дом">
-                        <label class="user-info__label" for="">Офис</label>
-                        <input class="user-info__input" type="text" placeholder="Офис">
-                     </div>
-                  </div>
-                  <button type="submit" class="lc-button lc-button--center">Обновить</button>
-               </form>
-            
-            </section>
+                  </section>
 
-            <!-- User requisites tab -->
-            <section class="user-info">
-               <h2 class="user-info__title">Реквизиты</h2>
-            
-               <form action="#" class="user-info__form">
-                  <div class="user-info__wrap">
-            
-                     <div class="user-info__item">
-                        <label class="user-info__label" for="">ИНН</label>
-                        <input class="user-info__input" type="text" placeholder="ИНН">
-                        <label class="user-info__label" for="">КПП</label>
-                        <input class="user-info__input" type="text" placeholder="КПП">
-                        <label class="user-info__label" for="">БИК</label>
-                        <input class="user-info__input" type="text" placeholder="БИК">
-                     </div>
-            
-                     <div class="user-info__item">
-                        <label class="user-info__label" for="">Счет</label>
-                        <input class="user-info__input" type="text" placeholder="Счет">
-                        <label class="user-info__label" for="">Кор. счет</label>
-                        <input class="user-info__input" type="text" placeholder="Кор. счет">
-                        
-                     </div>
-                  </div>
-                  <button type="submit" class="lc-button lc-button--center">Обновить</button>
-               </form>
-            
-            </section>
+                  <!-- User requisites tab -->
+                  <section class="user-info">
+                     <h2 class="user-info__title">Реквизиты</h2>
 
-            <!-- User accoutn tab -->
-            <section class="user-info">
-               <h2 class="user-info__title">Сменить пароль</h2>
-            
-               <form action="#" class="user-info__form">
-                  <div class="user-info__wrap">
-            
-                     <div class="user-info__item">
-                        <label class="user-info__label" for="">Пароль</label>
-                        <input class="user-info__input" type="text" placeholder="Пароль">
-                     </div>
-            
-                     <div class="user-info__item">
-                        <label class="user-info__label" for="">Подтверждение</label>
-                        <input class="user-info__input" type="text" placeholder="Подтверждение">
-                     </div>
+                     <form action="#" class="user-info__form">
+                        <div class="user-info__wrap">
+
+                           <div class="user-info__item">
+                              <label class="user-info__label" for="">ИНН</label>
+                              <input class="user-info__input" type="text" placeholder="ИНН">
+                              <label class="user-info__label" for="">КПП</label>
+                              <input class="user-info__input" type="text" placeholder="КПП">
+                              <label class="user-info__label" for="">БИК</label>
+                              <input class="user-info__input" type="text" placeholder="БИК">
+                           </div>
+
+                           <div class="user-info__item">
+                              <label class="user-info__label" for="">Счет</label>
+                              <input class="user-info__input" type="text" placeholder="Счет">
+                              <label class="user-info__label" for="">Кор. счет</label>
+                              <input class="user-info__input" type="text" placeholder="Кор. счет">
+
+                           </div>
+                        </div>
+                        <button type="submit" class="lc-button lc-button--center">Обновить</button>
+                     </form>
+
+                  </section>
+
+                  <!-- User accoutn tab -->
+                  <section class="user-info">
+                     <h2 class="user-info__title">Сменить пароль</h2>
+
+                     <form action="#" class="user-info__form">
+                        <div class="user-info__wrap">
+
+                           <div class="user-info__item">
+                              <label class="user-info__label" for="">Пароль</label>
+                              <input class="user-info__input" type="text" placeholder="Пароль">
+                           </div>
+
+                           <div class="user-info__item">
+                              <label class="user-info__label" for="">Подтверждение</label>
+                              <input class="user-info__input" type="text" placeholder="Подтверждение">
+                           </div>
+                        </div>
+                        <button type="submit" class="lc-button lc-button--center">Обновить</button>
+                     </form>
+
+                  </section>
+
+               </div>
+
+               <!-- Colunn 2 -->
+               <div class="lc-main-page__right-block">
+                  <div class="lc-notify__card">
+                     <h4 class="lc__card-title">Уведомления</h4>
+                     <p class="lc-notify__card-text lc-notify__card-text--active">1 уведомление<br> по процессу 001</p>
+                     <p class="lc-notify__card-text">1 уведомление<br> по процессу 002</p>
                   </div>
-                  <button type="submit" class="lc-button lc-button--center">Обновить</button>
-               </form>
-            
-            </section>
+
+                  <div class="lc-analytics__card">
+                     <h4 class="lc__card-title">Анализ выполненных заказов</h4>
+                     <div class="lc-analytics__card-pict">
+                        <img src="../img/lc/analytics-01.jpg" alt="Заказы">
+                     </div>
+                     <p class="lc-analytics__card-text">ROI проектов показывает экономию ресурсов.</p>
+                  </div>
+
+                  <div class="lc-analytics__card">
+                     <h4 class="lc__card-title">Анализ выполненных запросов</h4>
+                     <div class="lc-analytics__card-pict">
+                        <img src="../img/lc/analytics-02.jpg" alt="Запросы">
+                     </div>
+                     <p class="lc-analytics__card-text">Новая модель организационной деятельности</p>
+                  </div>
+
+               </div>
+
+            </div>
+
+
          </div>
 
       </main>
-   
+
    </div>
-   
+
    <script src="../libs/jquery/jquery-3.5.1.min.js"></script>
    <script src="../js/main.js"></script>
    <script>
-      $(document).ready(function() {
+      $(document).ready(function () {
 
          // Tabs on page lc-profile
          $('.user-info').not(':first').hide();
-         $('.user-profile__nav .user-profile__tab').on('click', function (){
+         $('.user-profile__nav .user-profile__tab').on('click', function () {
             $('.user-profile__nav .user-profile__tab').removeClass('user-profile__tab--active').eq($(this).index()).addClass('user-profile__tab--active');
             $('.user-info').hide().eq($(this).index()).fadeIn()
-         }).eq(0).addClass('user-profile__tab--active')
+         }).eq(0).addClass('user-profile__tab--active');
+
+
+         $('')
+
       });
    </script>
 </body>
+
 </html>

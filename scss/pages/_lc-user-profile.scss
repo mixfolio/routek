@@ -60,11 +60,33 @@
    border-radius: 6px;
    color: #ACB5C1;
    background: #DCE4EE;
+   margin-right: 10px;
 }
 
 .user-profile__tab--active {
    color: #ffffff;
    background-color: #1E5DC5;
+}
+
+
+.lc-main-page__wrapper {
+   display: flex;
+   margin: 0 -11px;
+}
+
+
+.lc-main-page__main-block {
+   //width: calc(80% - 22px);
+   flex: 1 1 1018px;
+   margin: 0 11px;
+}
+
+.lc-main-page__right-block {
+
+  // width: calc(20% - 22px);
+  flex: 0 0 192px;
+   margin: 0 11px;
+   
 }
 
 .user-info {
@@ -144,4 +166,66 @@
    margin-bottom: 22px;
    border-radius: 8px;
    background: #ffffff;
+}
+
+
+.lc-notify__card {
+   padding: 22px 16px;
+   border-radius: 6px;
+   background-color: #ffffff;
+   margin-bottom: 22px;
+
+}
+
+.lc__card-title {
+   font-size: 16px;
+   font-weight: 500;
+   text-align: center;
+   margin: 0 0 22px 0;
+}
+
+.lc-notify__card-text {
+   position: relative;
+   font-size: 14px;
+   font-weight: normal;
+   padding: 8px 12px;
+   border: 1px solid #E4EBF5;;
+   border-radius: 6px;
+   margin-bottom: 16px;
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+
+.lc-notify__card-text::before {
+   content: url(../img/lc/bell-disabled-ico.svg);
+   position: absolute;
+   top: -10px;
+   left: 2px;
+   width: 18px;
+   height: 18px;
+}
+
+.lc-notify__card-text--active {
+   border: 1px solid #FF4B55;
+}
+
+.lc-notify__card-text--active::before {
+   content: url(../img/lc/bell-active-ico.svg);
+}
+
+.lc-analytics__card {
+   padding: 24px;
+   border-radius: 6px;
+   background-color: #ffffff;
+   margin-bottom: 22px;
+}
+
+.lc-analytics__card-text {
+   font-size: 14px;
+   line-height: 18px;
+   color: #818181;
+}
+.lc-analytics__card-pict {
+   margin-bottom: 8px;
 }
