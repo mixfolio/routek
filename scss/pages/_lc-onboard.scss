@@ -159,3 +159,53 @@
 .slick-track {
    display: flex;
 }
+
+#onbrd-slider {
+   position: relative;
+}
+
+#onbrd-slider .slick-arrow {
+   position: absolute;
+   top: calc( 50% - 24px);
+   font-size: 0;
+   z-index: 6;
+   width: 48px;
+   height: 48px;
+   
+}
+
+#onbrd-slider .slick-arrow.slick-prev {
+   left: 0px;
+   background: url(../img/lc/arrow-prev-ico.svg) center no-repeat;
+}
+
+#onbrd-slider .slick-arrow.slick-next {
+   right: 0px;
+   background: url(../img/lc/arrow-next-ico.svg) center  no-repeat;
+}
+
+#onbrd-slider .slick-dots {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#onbrd-slider .slick-dots li{
+   list-style: none;  
+}
+
+#onbrd-slider .slick-dots button{
+   font-size: 0;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   margin: 0 8px;
+   background-color: #d3d3d3;
+}
+#onbrd-slider .slick-dots button:hover {
+   background-color: #2780eb;
+}
+
+#onbrd-slider .slick-dots li.slick-active button{
+   background-color: #2780eb;
+}

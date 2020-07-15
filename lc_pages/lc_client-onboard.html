@@ -89,7 +89,7 @@
             <!-- Carousel -->
             <section class="onbrd-intro">
          
-               <ul class="onbrd-intro__list" id="slider-1">
+               <ul class="onbrd-intro__list" id="onbrd-slider">
                   <li>
                      <div class="onbrd-intro__item onbrd-intro__item--01">
                         <div class="onbrd-intro__desc">
@@ -97,7 +97,7 @@
                            <p class="onbrd-intro__card-text">Загрузите модель, заполните параметры и отправьте запрос на расчет цены! Оплачивайте понравившееся предложение и получайте детали!</p>
                         </div>
                         
-                        <a href="#" class="card-button-lc">Сделать заказ</a>
+                        <a href="../lc-model.html" class="card-button-lc">Сделать заказ</a>
                      </div>           
                   </li>
                   <li>
@@ -107,7 +107,7 @@
                            <p class="onbrd-intro__card-text">Отслеживайте все этапы исполнения заказа на платформе или в удобном мобильном
                               приложении. Оставьте рутину нам, а сами займитесь воплощением своих идей! </p>
                         </div>
-                        <a href="#" class="card-button-lc">Сделать заказ</a>
+                        <a href="../lc-model.html" class="card-button-lc">Сделать заказ</a>
                      </div>
                   </li>
                   <li>
@@ -117,7 +117,7 @@
                            <p class="onbrd-intro__card-text">Платформа хранит всю историю ваших заказов. Вы можете быстро и легко
                               сформировать отчет по заданным критериям или рассчитать ROI от использования вами платформы Routek!</p>
                         </div>
-                        <a href="#" class="card-button-lc">Сделать заказ</a>
+                        <a href="../lc-model.html" class="card-button-lc">Сделать заказ</a>
                      </div>
                   </li>
                  
@@ -196,7 +196,10 @@
    </script> -->
    <script>
       $(document).ready(function () {
-         $('#slider-1').slick();
+         $('#onbrd-slider').slick({
+            arrows: true, //default true
+            dots: true, //default false
+         });
         
       });
   
