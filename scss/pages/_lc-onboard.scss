@@ -10,8 +10,8 @@
 }
 
 .onbrd-adv__card {
-   /* display: flex;
-   flex-direction: column; */
+   display: flex;
+   flex-direction: column;
    width: calc(33.333% - 24px);
    background-color: #ffffff;
    border-radius: 8px;
@@ -42,12 +42,21 @@
 }
 
 .onbrd-adv__card-text {
+   flex: 1 1 auto;
    font-family: Stem;
    font-size: 14px;
    line-height: 22px;
    text-align: center;
    color: #828793;
    margin: 0 0 200px 0;
+
+}
+
+.onbrd-adv__card-btn {
+   margin: 0;
+   width: 200px;
+   align-self: center;
+   
 }
 
 .onbrd-intro {
@@ -82,6 +91,7 @@
    font-weight: 500;
    font-size: 22px;
    margin: 0 0 22px 0;
+   
 }
 
 .onbrd-intro__card-text {
