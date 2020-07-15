@@ -245,6 +245,8 @@
 
 /* user-files */
 .user-files__title {
+   font-weight: 500;
+   font-size: 22px;
    margin: 0 0 30px 0;
 }
 
@@ -317,9 +319,6 @@
 
 
 /* Tabs */
-#user-price {
-   
-}
 
 #user-price,
 #user-order,
@@ -358,4 +357,59 @@
 #user-library::before {
    top: 280px;
    background: #F0F4FA url(../img/lc/lib-lc-ico.svg) 12px center no-repeat;
+}
+
+.lc-table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.lc-table-th {
+   text-align: left;
+   padding-left: 16px;
+}
+.table-head {
+   font-size: 14px;
+   color: #ACB5C1;
+   padding-bottom: 8px;
+   font-weight: 500;
+}
+
+.lc-table__num {
+   background: #ACB5C1;
+   color: #F0F4FA;;
+   border-bottom: 8px solid #F0F4FA;
+   padding: 0 8px;
+}
+.lc-table__row {
+   height: 48px;
+   border-radius: 8px;
+   background-color: #fff;
+}
+.lc-table__row td {
+   padding-left: 16px;
+   font-size: 16px;
+   border-bottom: 8px solid #F0F4FA;
+}
+.lc-table__doc {
+   position: relative;
+   padding-left: 30px;
+   &::before {
+      content: url(../img/lc/doc-lc-ico.svg);
+      position: absolute;
+      top: 0px;
+      left: 0;
+   }
+}
+
+.lc-table__download {
+   position: relative;
+   color: #1E5DC5;
+   padding-left: 30px;
+   &::before {
+      content: url(../img/lc/download-lc-ico.svg); 
+      position: absolute;
+      top: 0px;
+      left: 0;
+   }
 }
