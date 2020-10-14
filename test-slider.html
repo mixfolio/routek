@@ -138,23 +138,27 @@
          hideSlides();
          slides[0].style.display = '';
 
-         next[0].addEventListener('click', () =>{
+         next[0].addEventListener('click', (e) =>{
+            e.preventDefault();
             hideSlides();
             slides[1].style.display = '';
          });
 
-         next[1].addEventListener('click', () =>{
+         next[1].addEventListener('click', (e) =>{
+            e.preventDefault();
             hideSlides();
             slides[2].style.display = '';
 
          });
 
-         prev[0].addEventListener('click', () =>{
+         prev[0].addEventListener('click', (e) =>{
+            e.preventDefault();
             hideSlides();
             slides[0].style.display = '';
          });
 
-         prev[1].addEventListener('click', () =>{
+         prev[1].addEventListener('click', (e) =>{
+            e.preventDefault();
             hideSlides();
             slides[1].style.display = '';
          });
