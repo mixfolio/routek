@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Routek Загрузка 3D модели</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
    <link rel="stylesheet" href="css/test-slider.css">
 </head>
+
 <body style="background: #fafafa;">
-   <main class="pt-3" >
-      <div class="container" >
+   <main class="py-3">
+      <div class="container">
          <h2 class="text-center mb-4">Тестовая страница выбора заказа</h2>
          <div class="row">
             <div class="col-md-8">
@@ -24,219 +27,251 @@
                            <h6 class="mb-3">STEP | STP | SLDPRT | STL | DXF | IPT | 3DXML | PRT | SAT
                            </h6>
                            <a href="#" class="btn btn-outline-secondary mr-3">Недавние загрузки</a>
+                           <!-- <input class="btn btn-primary" type="files"> -->
                            <a href="#" class="btn btn-primary">Загрузить 3D модели</a>
                            <p>Максимальный размер файла 100 Мб</p>
                         </div>
                         <ul id="stepProgressBar">
                            <li class="step">
-                             <div class="bullet">1</div>
-                             <p class="step-subtext">загрузка файла</p>
+                              <div class="bullet">1</div>
+                              <p class="step-subtext">загрузка файла</p>
                            </li>
                            <li class="step">
-                             <div id="bullet" class="bullet">2</div>
-                             <p class="step-subtext">выбор процесса</p>
+                              <div id="bullet" class="bullet">2</div>
+                              <p class="step-subtext">выбор процесса</p>
                            </li>
-                         </ul>
+                        </ul>
                         <div class="card-body text-right">
                            <a href="#" class="btn btn-primary btn-next">Далее</a>
                         </div>
                      </div>
-                     
+
                      <!-- Слайд с загруженным файлом -->
                      <div class="card model-slide">
                         <div class="card-body text-center">
                            <h5 class="card-title mb-3">Выбранные модели</h5>
-                          <form action="#">
-                             <textarea class="form-control" name="file-upload" id="fileUpload" rows="3" placeholder="model-01.stl model-02.stl model-03.stl"></textarea>
-                          </form>
+                           <textarea class="form-control mb-3" name="file-upload" id="fileUpload" rows="2"
+                              placeholder="model-01.stl model-02.stl model-03.stl"></textarea>
+                           <a href="#" class="btn btn-primary">Загрузить 3D модели</a>
                            <p>Максимальный размер файла 100 Мб</p>
                         </div>
                         <ul id="stepProgressBar">
                            <li class="step">
-                             <div class="bullet">1</div>
-                             <p class="step-subtext">загрузка файла</p>
+                              <div class="bullet">1</div>
+                              <p class="step-subtext">загрузка файла</p>
                            </li>
                            <li class="step">
-                             <div id="bullet" class="bullet">2</div>
-                             <p class="step-subtext">выбор процесса</p>
+                              <div id="bullet" class="bullet">2</div>
+                              <p class="step-subtext">выбор процесса</p>
                            </li>
-                         </ul>
+                        </ul>
                         <div class="card-body d-flex justify-content-between">
                            <a href="#" class="btn btn-secondary btn-prev">Назад</a>
-      
+
                            <a href="#" class="btn btn-primary btn-next">Далее</a>
                         </div>
                      </div>
-                     
+
                      <!-- Слайд с выбором технологии -->
-                     <div class="card model-slide">
+                     <form class="card model-slide">
                         <div class="card-body text-center">
                            <h5 class="card-title mb-3">Выбор технологии ЗD печати</h5>
 
                            <div class="row justify-content-center mb-3">
                               <div class="col-3">
-                                 <a href="#" class="btn btn-outline-secondary d-block">SLS</a>
+                                 <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off"
+                                    checked>
+                                 <label class="btn btn-outline-secondary d-block" for="option1">SLS</label>
                               </div>
                               <div class="col-3">
-                                 <a href="#" class="btn btn-outline-secondary d-block">SLS</a>
+                                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                                 <label class="btn btn-outline-secondary d-block" for="option2">MJF</label>
                               </div>
                               <div class="col-3">
-                                 <a href="#" class="btn btn-outline-secondary d-block">FDM</a>
-                              </div> 
+                                 <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                                 <label class="btn btn-outline-secondary d-block" for="option3">FDM</label>
+                              </div>
                            </div>
 
                            <div class="row justify-content-center mb-3">
                               <div class="col-3">
-                                 <a href="#" class="btn btn-outline-secondary d-block">Polyjet</a>
+                                 <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                                 <label class="btn btn-outline-secondary d-block" for="option4">Polyjet</label>
                               </div>
                               <div class="col-3">
-                                 <a href="#" class="btn btn-outline-secondary d-block">DMLS</a>
+                                 <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                                 <label class="btn btn-outline-secondary d-block" for="option5">DMLS</label>
                               </div>
                               <div class="col-3">
-                                 <a href="#" class="btn btn-outline-secondary d-block">SLA</a>
-                              </div> 
+                                 <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
+                                 <label class="btn btn-outline-secondary d-block" for="option6">SLA</label>
+                              </div>
                            </div>
 
                            <div class="row justify-content-center mb-3">
                               <div class="col-3">
-                                 <a href="#" class="btn btn-outline-secondary d-block">SLS</a>
+                                 <input type="radio" class="btn-check" name="options" id="option7" autocomplete="off">
+                                 <label class="btn btn-outline-secondary d-block" for="option7">DMLS</label>
                               </div>
                               <div class="col-3">
-                                 <a href="#" class="btn btn-outline-secondary d-block">SLS</a>
+                                 <input type="radio" class="btn-check" name="options" id="option8" autocomplete="off">
+                                 <label class="btn btn-outline-secondary d-block" for="option8">SLS</label>
                               </div>
                               <div class="col-3">
-                                 <a href="#" class="btn btn-outline-secondary d-block">SLS</a>
-                              </div> 
+                                 <input type="radio" class="btn-check" name="options" id="option9" autocomplete="off">
+                                 <label class="btn btn-outline-secondary d-block" for="option9">SLS</label>
+                              </div>
                            </div>
-                        
+
                         </div>
                         <ul id="stepProgressBar">
                            <li class="step">
-                             <div class="bullet completed">1</div>
-                             <p class="step-subtext">загрузка файла</p>
+                              <div class="bullet completed">1</div>
+                              <p class="step-subtext">загрузка файла</p>
                            </li>
                            <li class="step">
-                             <div id="bullet" class="bullet">2</div>
-                             <p class="step-subtext">выбор процесса</p>
+                              <div id="bullet" class="bullet">2</div>
+                              <p class="step-subtext">выбор процесса</p>
                            </li>
-                         </ul>
+                        </ul>
                         <div class="card-body d-flex justify-content-between">
                            <a href="#" class="btn btn-secondary btn-prev">Назад</a>
-                           <a href="#" class="btn btn-primary">Получить быстрый расчет</a>
+                           <button type="button" class="btn btn-primary" data-toggle="modal"
+                              data-target="#instantQuote">Получить быстрый расчет</button>
+                        </div>
+                     </form>
+                     <!-- Слайд с выбором технологии -->
+
+                  </div>
+
+                  <div class="col-md-6">
+                     <div class="card">
+                        <div class="card-body">
+                           <h5 class="card-title mb-3"><a href="#" data-toggle="modal" data-target="#detailInfo">Заказ №
+                                 QWE-2201</a></h5>
+                           <div class="d-flex mb-3">
+                              <img class="mr-3" src="img/lc/detail-order.jpg" alt="order" width="96" height="96">
+                              <div>
+                                 <h5 class="text-secondary">2500 Р</h5>
+                                 <p class="card-text font-weight-normal m-0">Срок изготовления: <span
+                                       class="font-weight-light">3 рабочих дня</span></p>
+                                 <p class="card-text font-weight-normal m-0">Скорость изготовления: <span
+                                       class="font-weight-light">обычная</span></p>
+                                 <p class="card-text font-weight-normal m-0">Последнее обновление: <span
+                                       class="font-weight-light">14.10.2020</span></p>
+                              </div>
+                           </div>
+                           <a href="#" class="btn btn-outline-secondary d-block" data-toggle="modal"
+                              data-target="#detailInfo">Посмотреть заказ</a>
                         </div>
                      </div>
-      
                   </div>
 
                   <div class="col-md-6">
                      <div class="card">
                         <div class="card-body">
-                           <h5 class="card-title mb-3"><a href="">Заказ № QWE-2201</a></h5>
-                           <div class="d-flex mb-3">      
+                           <h5 class="card-title mb-3"><a href="#" data-toggle="modal" data-target="#detailInfo">Заказ №
+                                 QWE-2202</a></h5>
+                           <div class="d-flex mb-3">
                               <img class="mr-3" src="img/lc/detail-order.jpg" alt="order" width="96" height="96">
                               <div>
                                  <h5 class="text-secondary">2500 Р</h5>
-                                 <p class="card-text font-weight-normal m-0">Срок изготовления: <span class="font-weight-light">3 рабочих дня</span></p>
-                                 <p class="card-text font-weight-normal m-0">Скорость изготовления: <span class="font-weight-light">обычная</span></p>
-                                 <p class="card-text font-weight-normal m-0">Последнее обновление: <span class="font-weight-light">14.10.2020</span></p>
+                                 <p class="card-text font-weight-normal m-0">Срок изготовления: <span
+                                       class="font-weight-light">3 рабочих дня</span></p>
+                                 <p class="card-text font-weight-normal m-0">Скорость изготовления: <span
+                                       class="font-weight-light">обычная</span></p>
+                                 <p class="card-text font-weight-normal m-0">Последнее обновление: <span
+                                       class="font-weight-light">14.10.2020</span></p>
                               </div>
-                           </div> 
-                          <a href="#" class="btn btn-outline-secondary d-block">Посмотреть заказ</a>
+                           </div>
+                           <a href="#" class="btn btn-outline-secondary d-block" data-toggle="modal"
+                              data-target="#detailInfo">Посмотреть заказ</a>
                         </div>
-                      </div>
-                  </div>
-
-                  <div class="col-md-6">
-                     <div class="card">
-                        <div class="card-body">
-                           <h5 class="card-title mb-3"><a href="">Заказ № QWE-2202</a></h5>
-                           <div class="d-flex mb-3">      
-                              <img class="mr-3" src="img/lc/detail-order.jpg" alt="order" width="96" height="96">
-                              <div>
-                                 <h5 class="text-secondary">2500 Р</h5>
-                                 <p class="card-text font-weight-normal m-0">Срок изготовления: <span class="font-weight-light">3 рабочих дня</span></p>
-                                 <p class="card-text font-weight-normal m-0">Скорость изготовления: <span class="font-weight-light">обычная</span></p>
-                                 <p class="card-text font-weight-normal m-0">Последнее обновление: <span class="font-weight-light">14.10.2020</span></p>
-                              </div>
-                           </div> 
-                          <a href="#" class="btn btn-outline-secondary d-block">Посмотреть заказ</a>
-                        </div>
-                      </div>
+                     </div>
                   </div>
 
                   <div class="col-md-6">
                      <div class="card">
                         <div class="card-body">
                            <h5 class="card-title mb-3"><a href="">Заказ № QWE-2202</a></h5>
-                           <div class="d-flex mb-3">      
+                           <div class="d-flex mb-3">
                               <img class="mr-3" src="img/lc/detail-order.jpg" alt="order" width="96" height="96">
                               <div>
                                  <h5 class="text-secondary">2500 Р</h5>
-                                 <p class="card-text font-weight-normal m-0">Срок изготовления: <span class="font-weight-light">3 рабочих дня</span></p>
-                                 <p class="card-text font-weight-normal m-0">Скорость изготовления: <span class="font-weight-light">обычная</span></p>
-                                 <p class="card-text font-weight-normal m-0">Последнее обновление: <span class="font-weight-light">14.10.2020</span></p>
+                                 <p class="card-text font-weight-normal m-0">Срок изготовления: <span
+                                       class="font-weight-light">3 рабочих дня</span></p>
+                                 <p class="card-text font-weight-normal m-0">Скорость изготовления: <span
+                                       class="font-weight-light">обычная</span></p>
+                                 <p class="card-text font-weight-normal m-0">Последнее обновление: <span
+                                       class="font-weight-light">14.10.2020</span></p>
                               </div>
-                           </div> 
-                          <a href="#" class="btn btn-outline-secondary d-block">Посмотреть заказ</a>
+                           </div>
+                           <a href="#" class="btn btn-outline-secondary d-block">Посмотреть заказ</a>
                         </div>
-                      </div>
+                     </div>
                   </div>
 
                   <div class="col-md-6">
                      <div class="card">
                         <div class="card-body">
                            <h5 class="card-title mb-3"><a href="">Заказ № QWE-2202</a></h5>
-                           <div class="d-flex mb-3">      
+                           <div class="d-flex mb-3">
                               <img class="mr-3" src="img/lc/detail-order.jpg" alt="order" width="96" height="96">
                               <div>
                                  <h5 class="text-secondary">2500 Р</h5>
-                                 <p class="card-text font-weight-normal m-0">Срок изготовления: <span class="font-weight-light">3 рабочих дня</span></p>
-                                 <p class="card-text font-weight-normal m-0">Скорость изготовления: <span class="font-weight-light">обычная</span></p>
-                                 <p class="card-text font-weight-normal m-0">Последнее обновление: <span class="font-weight-light">14.10.2020</span></p>
+                                 <p class="card-text font-weight-normal m-0">Срок изготовления: <span
+                                       class="font-weight-light">3 рабочих дня</span></p>
+                                 <p class="card-text font-weight-normal m-0">Скорость изготовления: <span
+                                       class="font-weight-light">обычная</span></p>
+                                 <p class="card-text font-weight-normal m-0">Последнее обновление: <span
+                                       class="font-weight-light">14.10.2020</span></p>
                               </div>
-                           </div> 
-                          <a href="#" class="btn btn-outline-secondary d-block">Посмотреть заказ</a>
+                           </div>
+                           <a href="#" class="btn btn-outline-secondary d-block">Посмотреть заказ</a>
                         </div>
-                      </div>
+                     </div>
                   </div>
 
                   <div class="col-md-12">
                      <div class="card">
                         <div class="card-header">
-                          Featured
+                           Featured
                         </div>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                           <h5 class="card-title">Special title treatment</h5>
+                           <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                           </p>
+                           <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
-                      </div>
+                     </div>
                   </div>
 
                   <div class="col-md-12">
                      <div class="card">
                         <div class="card-header">
-                          Featured
+                           Featured
                         </div>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                           <h5 class="card-title">Special title treatment</h5>
+                           <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                           </p>
+                           <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
-                      </div>
+                     </div>
                   </div>
 
                   <div class="col-md-12">
                      <div class="card">
                         <div class="card-header">
-                          Featured
+                           Featured
                         </div>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                           <h5 class="card-title">Special title treatment</h5>
+                           <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                           </p>
+                           <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
-                      </div>
+                     </div>
                   </div>
 
                </div>
@@ -248,43 +283,103 @@
                      <div class="card">
                         <img class="card-img-top" src="img/services-img-01.jpg" alt="SLS">
                         <div class="card-body">
-                          <h5 class="card-title">Выборочное лазерное спекание (SLS)</h5>
-                          <p class="card-text">SLS используется как для изготовления прототипов, так и для мелкосерийного производства функциональных пластиковых деталей с высокими механическими свойствами.</p>
-                          <a href="#" class="btn btn-outline-secondary">Рассчитать заказ</a>
+                           <h5 class="card-title">Выборочное лазерное спекание (SLS)</h5>
+                           <p class="card-text">SLS используется как для изготовления прототипов, так и для
+                              мелкосерийного производства функциональных пластиковых деталей с высокими механическими
+                              свойствами.</p>
+                           <a href="#" class="btn btn-outline-secondary">Рассчитать заказ</a>
                         </div>
-                      </div> 
+                     </div>
                   </div>
 
                   <div class="col-md-12">
                      <div class="card">
                         <img class="card-img-top" src="img/services-img-02.jpg" alt="MJF">
                         <div class="card-body">
-                          <h5 class="card-title">Многоструйное моделирование (MJF)</h5>
-                          <p class="card-text">Многоструйное моделирование (MJF) от HP можно использовать как для создания прототипов, так и для производства мелкосерийных функциональных пластиковых деталей.</p>
-                          <a href="#" class="btn btn-outline-secondary">Рассчитать заказ</a>
+                           <h5 class="card-title">Многоструйное моделирование (MJF)</h5>
+                           <p class="card-text">Многоструйное моделирование (MJF) от HP можно использовать как для
+                              создания прототипов, так и для производства мелкосерийных функциональных пластиковых
+                              деталей.</p>
+                           <a href="#" class="btn btn-outline-secondary">Рассчитать заказ</a>
                         </div>
-                      </div> 
+                     </div>
                   </div>
 
                   <div class="col-md-12">
                      <div class="card">
                         <img class="card-img-top" src="img/services-img-03.jpg" alt="DMLS">
                         <div class="card-body">
-                          <h5 class="card-title">Прямое лазерное спекание металла (DMLS)</h5>
-                          <p class="card-text">Метод DMLS позволяет производить высококачественные детали из металла для применения в аэрокосмической, автомобильной и медицинской промышленности</p>
-                          <a href="#" class="btn btn-outline-secondary">Рассчитать заказ</a>
+                           <h5 class="card-title">Прямое лазерное спекание металла (DMLS)</h5>
+                           <p class="card-text">Метод DMLS позволяет производить высококачественные детали из металла
+                              для применения в аэрокосмической, автомобильной и медицинской промышленности</p>
+                           <a href="#" class="btn btn-outline-secondary">Рассчитать заказ</a>
                         </div>
-                      </div> 
+                     </div>
                   </div>
-                  
+
                </div>
             </div>
          </div>
 
       </div>
-         
+
    </main>
-   
+   <!-- Modal -->
+   <div class="modal fade" id="instantQuote" tabindex="-1" aria-labelledby="instantQuote" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="instantQuote">Быстрый расчет файла</h5>
+               <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <p>Технология SLS</p>
+               <p>Срок изготовления: 5 рабочих дней</p>
+
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+               <button type="button" class="btn btn-primary">Сохранить изменения</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="modal fade" id="detailInfo" tabindex="-1" aria-labelledby="detailInfo" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="instantQuote">Редактировать деталь</h5>
+               <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <h5 class="card-title mb-3"><a href="">Заказ № QWE-2202</a></h5>
+               <div class="d-flex mb-3">
+                  <img class="mr-3" src="img/lc/detail-order.jpg" alt="order" width="96" height="96">
+                  <div>
+                     <h5 class="text-secondary">2500 Р</h5>
+                     <p class="card-text font-weight-normal m-0">Срок изготовления: <span class="font-weight-light">3
+                           рабочих дня</span></p>
+                     <p class="card-text font-weight-normal m-0">Скорость изготовления: <span
+                           class="font-weight-light">обычная</span></p>
+                     <p class="card-text font-weight-normal m-0">Последнее обновление: <span
+                           class="font-weight-light">14.10.2020</span></p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+               <button type="button" class="btn btn-primary">Сохранить изменения</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+      integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+      crossorigin="anonymous"></script>
    <script>
       window.addEventListener('DOMContentLoaded', () => {
          const slides = document.querySelectorAll('.model-slide');
@@ -299,26 +394,26 @@
          hideSlides();
          slides[0].style.display = '';
 
-         next[0].addEventListener('click', (e) =>{
+         next[0].addEventListener('click', (e) => {
             e.preventDefault();
             hideSlides();
             slides[1].style.display = '';
          });
 
-         next[1].addEventListener('click', (e) =>{
+         next[1].addEventListener('click', (e) => {
             e.preventDefault();
             hideSlides();
             slides[2].style.display = '';
 
          });
 
-         prev[0].addEventListener('click', (e) =>{
+         prev[0].addEventListener('click', (e) => {
             e.preventDefault();
             hideSlides();
             slides[0].style.display = '';
          });
 
-         prev[1].addEventListener('click', (e) =>{
+         prev[1].addEventListener('click', (e) => {
             e.preventDefault();
             hideSlides();
             slides[1].style.display = '';
@@ -327,4 +422,5 @@
       });
    </script>
 </body>
+
 </html>
