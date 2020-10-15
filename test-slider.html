@@ -27,8 +27,9 @@
                            <h6 class="mb-3">STEP | STP | SLDPRT | STL | DXF | IPT | 3DXML | PRT | SAT
                            </h6>
                            <a href="#" class="btn btn-outline-secondary mr-3">Недавние загрузки</a>
-                           <!-- <input class="btn btn-primary" type="files"> -->
-                           <a href="#" class="btn btn-primary">Загрузить 3D модели</a>
+                           <!-- <input id="filesSelect" multiple type="file" accept=".dxf, .sat, .prt, .catpart, .3dxml, .ipt, .x_b, .x_t, .stl, .sldprt, .stp, .step," style="display: none;"> -->
+                           <input id="filesSelect" multiple type="file" accept="" style="display: none;">
+                           <label for="filesSelect" class="btn btn-primary">Загрузить 3D модели</label>
                            <p>Максимальный размер файла 100 Мб</p>
                         </div>
                         <ul id="stepProgressBar">
@@ -42,7 +43,7 @@
                            </li>
                         </ul>
                         <div class="card-body text-right">
-                           <a href="#" class="btn btn-primary btn-next">Далее</a>
+                           <a href="#" class="btn btn-primary btn-next" style="display: none;">Далее</a>
                         </div>
                      </div>
 
@@ -50,9 +51,16 @@
                      <div class="card model-slide">
                         <div class="card-body text-center">
                            <h5 class="card-title mb-3">Выбранные модели</h5>
-                           <textarea class="form-control mb-3" name="file-upload" id="fileUpload" rows="2"
+                           <div class="form-file">
+                              <input type="file" class="form-file-input" id="customFile">
+                              <label class="form-file-label" for="customFile">
+                                <span class="form-file-text">model.stl, model-2.stl</span>
+                                <span class="form-file-button">Загрузить 3D модели</span>
+                              </label>
+                            </div>
+                           <!-- <textarea class="form-control mb-3" name="file-upload" id="fileUpload" rows="2"
                               placeholder="model-01.stl model-02.stl model-03.stl"></textarea>
-                           <a href="#" class="btn btn-primary">Загрузить 3D модели</a>
+                           <a href="#" class="btn btn-primary">Загрузить 3D модели</a> -->
                            <p>Максимальный размер файла 100 Мб</p>
                         </div>
                         <ul id="stepProgressBar">
@@ -373,11 +381,11 @@
          hideSlides();
          slides[0].style.display = '';
 
-         next[0].addEventListener('click', (e) => {
-            e.preventDefault();
-            hideSlides();
-            slides[1].style.display = '';
-         });
+         // next[0].addEventListener('click', (e) => {
+         //    e.preventDefault();
+         //    hideSlides();
+         //    slides[1].style.display = '';
+         // });
 
          next[1].addEventListener('click', (e) => {
             e.preventDefault();
@@ -396,6 +404,17 @@
             e.preventDefault();
             hideSlides();
             slides[1].style.display = '';
+         });
+
+         // Files select
+
+         document.querySelector('#filesSelect').addEventListener('change', function () {
+            if (this.value) {
+               hideSlides();
+               slides[1].style.display = '';   
+            } else { 
+               alert("Файл не выбран");
+            }
          });
 
       });
