@@ -42,9 +42,7 @@
                               <p class="step-subtext">выбор процесса</p>
                            </li>
                         </ul>
-                        <div class="card-body text-right">
-                           <a href="#" class="btn btn-primary btn-next" style="display: none;">Далее</a>
-                        </div>
+
                      </div>
 
                      <!-- Слайд с загруженным файлом -->
@@ -54,10 +52,10 @@
                            <div class="form-file">
                               <input type="file" class="form-file-input" id="customFile">
                               <label class="form-file-label" for="customFile">
-                                <span class="form-file-text">model.stl, model-2.stl</span>
-                                <span class="form-file-button">Загрузить 3D модели</span>
+                                 <span class="form-file-text">model.stl, model-2.stl</span>
+                                 <span class="form-file-button">Загрузить 3D модели</span>
                               </label>
-                            </div>
+                           </div>
                            <!-- <textarea class="form-control mb-3" name="file-upload" id="fileUpload" rows="2"
                               placeholder="model-01.stl model-02.stl model-03.stl"></textarea>
                            <a href="#" class="btn btn-primary">Загрузить 3D модели</a> -->
@@ -144,10 +142,100 @@
                         </ul>
                         <div class="card-body d-flex justify-content-between">
                            <a href="#" class="btn btn-secondary btn-prev">Назад</a>
-                           <a href="test-slider-2.html" class="btn btn-primary">Получить быстрый расчет</a>
+                           <a href="#" class="btn btn-primary btn-next">Получить быстрый расчет</a>
                         </div>
                      </form>
                      <!-- Слайд с выбором технологии -->
+
+                     <!-- Слайд 4 -->
+                     <div class="card model-slide">
+                        <div class="card-body text-center">
+                           <h5 class="card-title mb-3">Выбранные модели</h5>
+                           <div class="d-flex flex-wrap px-3 py-1 justify-content-between">
+                              <div class="my-2"><img src="img/lc/detail-order.jpg" height="96" alt="Изображение заказа">
+                              </div>
+                              <div class="my-2">
+                                 <p class="mb-0 ">Название</p>
+                                 <h6 class="font-weight-bold">B500-1290 (1)</h6>
+                                 <p class="mb-0">Цвет</p>
+                                 <h6 class="font-weight-bold">Черный</h6>
+                              </div>
+
+                              <div class="my-2">
+                                 <p class="mb-0">Технология</p>
+                                 <h6 class="font-weight-bold">PolyJet</h6>
+                                 <p class="mb-0">Материал</p>
+                                 <h6 class="font-weight-bold">ABS</h6>
+                              </div>
+
+                              <div class="my-2">
+                                 <p class="mb-0">Качество</p>
+                                 <h6 class="font-weight-bold">Высокое</h6>
+                                 <p class="mb-0">Заполнение</p>
+                                 <h6 class="font-weight-bold">80%</h6>
+                              </div>
+
+                              <div class="my-2">
+                                 <p class="mb-0">Дата подачи</p>
+                                 <h6 class="font-weight-bold">22.05.2020</h6>
+                                 <p class="mb-0">Габариты</p>
+                                 <h6 class="font-weight-bold">49.6x54.4x24.4</h6>
+                              </div>
+
+
+
+                              <div class="my-2">
+                                 <h6 class="font-weight-bold my-0">Стоимость заказа</h6>
+                                 <table>
+                                    <tbody>
+                                       <tr>
+                                          <td>Срок изготовления:</td>
+                                          <td class="text-right font-weight-bold px-2">6</td>
+                                          <td class="text-left">рабочих дней</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Стоимость изготовления:</td>
+                                          <td class="text-right font-weight-bold px-2">5000</td>
+                                          <td class="text-left">рублей</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Стоимость доставки:</td>
+                                          <td class=" text-right font-weight-bold px-2">500</td>
+                                          <td class="text-left">рублей</td>
+                                       </tr>
+
+                                       <tr class="border-top">
+                                          <td class="font-weight-bold">Полная стоимость:</td>
+                                          <td class="font-weight-bold text-right px-2">5500</td>
+                                          <td class="font-weight-bold">рублей</td>
+                                       </tr>
+
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class=" text-center my-auto">
+                                 <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="modal"
+                                    data-target="#detailEdit">Модифицировать</button>
+                              </div>
+                           </div>
+
+                        </div>
+                        <!-- <ul id="stepProgressBar">
+                           <li class="step">
+                              <div class="bullet">1</div>
+                              <p class="step-subtext">загрузка файла</p>
+                           </li>
+                           <li class="step">
+                              <div id="bullet" class="bullet">2</div>
+                              <p class="step-subtext">выбор процесса</p>
+                           </li>
+                        </ul> -->
+                        <div class="card-body d-flex justify-content-between">
+                           <a href="#" class="btn btn-secondary btn-prev">Назад</a>
+
+                           <a href="#" class="btn btn-primary btn-next">Далее</a>
+                        </div>
+                     </div>
 
                   </div>
 
@@ -331,6 +419,95 @@
       </div>
 
    </main>
+
+   <!-- Modal -->
+   <div class="modal fade" id="detailEdit" tabindex="-1" aria-labelledby="detailEdit" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title">Редактировать деталь</h4>
+               <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="container">
+
+                  <form class="row bg-white mb-3 p-3 rounded-lg">
+
+                     <div class="col-lg-6">
+                        <div class="row">
+                           <div class="col-lg-12 mb-3">
+                              <label class="form-label h6" for="detail-input1">Загруженные модели</label>
+                              <input class="form-control" id="detail-input1" type="text">
+                           </div>
+
+                           <div class="col-12 mb-3">
+                              <img style="width: 100%;" class="" src="img/lc/detail.jpg" alt="detail-plhr">
+                           </div>
+                        </div>
+
+                     </div>
+
+                     <div class="col-lg-6">
+                        <div class="row">
+                           <div class="col-12 mb-3">
+                              <label class="form-label h6" for="detail-input3">Технология</label>
+                              <input class="form-control" id="detail-input3" type="text">
+                           </div>
+                           <div class="col-12 mb-3">
+                              <label class="form-label h6" for="detail-input4">Материал</label>
+                              <input class="form-control" id="detail-input4" type="text">
+                           </div>
+                           <div class="col-sm-6 mb-3">
+                              <label class="form-label h6" for="detail-input5">Цвет</label>
+                              <input class="form-control" id="detail-input5" type="text">
+                           </div>
+                           <div class="col-sm-6 mb-3">
+                              <label class="form-label h6" for="detail-input6">Количество</label>
+                              <input class="form-control" id="detail-input6" type="text">
+                           </div>
+                           <div class="col-sm-6 mb-3">
+                              <label class="form-label h6" for="detail-input7">Заполнение</label>
+                              <input class="form-control" id="detail-input7" type="text">
+                           </div>
+                           <div class="col-sm-6 mb-3">
+                              <label class="form-label h6" for="detail-input8">Качество</label>
+                              <input class="form-control" id="detail-input8" type="text">
+                           </div>
+                           <div class="col-4 mb-3">
+                              <label class="form-label h6" for="detail-input9">Габариты (мм)</label>
+                              <input class="form-control" id="detail-input9" type="text">
+                           </div>
+                           <div class="col-4 mb-3">
+                              <label class="form-label h6 invisible" for="detail-input10">Габариты (мм)</label>
+                              <input class="form-control" id="detail-input10" type="text">
+                           </div>
+                           <div class="col-4 mb-3">
+                              <label class="form-label h6 invisible" for="detail-input11">Габариты (мм)</label>
+                              <input class="form-control" id="detail-input11" type="text">
+                           </div>
+                           <div class="col-md-12 mb-3">
+                              <label class="form-label h6" for="detail-input12">Объем (мм3)</label>
+                              <input class="form-control" id="detail-input12" type="text">
+                           </div>
+                           <div class="col-lg-12 mb-5">
+                              <label class="form-label h6" for="inputDetComment">Комментарии</label>
+                              <textarea class="form-control" id="inputDetComment" type="text" rows="4"></textarea>
+                           </div>
+
+                           <div class="text-right">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                              <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                           </div>
+                        </div>
+                     </div>
+
+                  </form>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
    <!-- Modal -->
    <div class="modal fade" id="detailInfo" tabindex="-1" aria-labelledby="detailInfo" aria-hidden="true">
       <div class="modal-dialog">
@@ -381,16 +558,16 @@
          hideSlides();
          slides[0].style.display = '';
 
-         // next[0].addEventListener('click', (e) => {
-         //    e.preventDefault();
-         //    hideSlides();
-         //    slides[1].style.display = '';
-         // });
+         next[0].addEventListener('click', (e) => {
+            e.preventDefault();
+            hideSlides();
+            slides[2].style.display = '';
+         });
 
          next[1].addEventListener('click', (e) => {
             e.preventDefault();
             hideSlides();
-            slides[2].style.display = '';
+            slides[3].style.display = '';
 
          });
 
@@ -406,13 +583,19 @@
             slides[1].style.display = '';
          });
 
+         prev[2].addEventListener('click', (e) => {
+            e.preventDefault();
+            hideSlides();
+            slides[2].style.display = '';
+         });
+
          // Files select
 
          document.querySelector('#filesSelect').addEventListener('change', function () {
             if (this.value) {
                hideSlides();
-               slides[1].style.display = '';   
-            } else { 
+               slides[1].style.display = '';
+            } else {
                alert("Файл не выбран");
             }
          });
