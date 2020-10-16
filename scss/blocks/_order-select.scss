@@ -8,6 +8,7 @@
    left: 0;
    background-color: rgba(0,0,0, 0.5);
    z-index: 10000; 
+   transition: All 0.8s ease 0s;
 
 }
 .order-select__body {
@@ -19,11 +20,25 @@
 }
 
 .order-select__content {
+   position: relative;
    max-width: 686px;
    padding: 58px 60px;
    border-radius: 8px;
-   background-color: #fff;
+   background: #F0F4FA url(../img/rocket_launch_.svg) no-repeat center right; 
 }
+
+.order-select__close {
+   position: absolute;
+   top: 16px;
+   right: 16px;
+   cursor: pointer;
+   transition: transform 0.5s ease 0s;
+}
+
+.order-select__close:hover {
+   transform: scale(1.2);
+}
+
 .order-select__title {
    font-size: 22px;
    font-weight: 500;
@@ -39,6 +54,7 @@
    font-size: 18px;
    font-weight: normal;
    color: #000000;
+   transition: all 0.3s ease 0s;
 }
 .order-select__link:hover,
 .order-select__link:focus,

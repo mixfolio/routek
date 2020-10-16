@@ -224,7 +224,7 @@
                         <h3 class="services__item-title">Выборочное лазерное спекание (SLS)</h3>
                         <h4 class="services__item-subtitle">&asymp; 6 дней</h4>
                         <p class="services__item-desc">SLS используется как для изготовления прототипов, так и для мелкосерийного производства функциональных пластиковых деталей с высокими механическими свойствами.</p>
-                        <a href="https://platform.routek.tech/new_order" class="services__button button">Рассчитать заказ</a>
+                        <a data-modal class="services__button button">Рассчитать заказ</a>
                         <a href="pbf.html" class="services__item-link">Подробнее</a>
                     </li>
 
@@ -238,7 +238,7 @@
                         <p class="services__item-desc">Многоструйное моделирование (MJF) от HP можно использовать
                             как для создания прототипов, так и для производства мелкосерийных функциональных
                             пластиковых деталей.</p>
-                            <a href="https://platform.routek.tech/new_order" class="services__button button">Рассчитать заказ</a>
+                            <a data-modal  class="services__button button">Рассчитать заказ</a>
                         <a href="pbf.html" class="services__item-link">Подробнее</a>
                     </li>
 
@@ -249,7 +249,7 @@
                         <h3 class="services__item-title">Прямое лазерное спекание металла (DMLS)</h3>
                         <h4 class="services__item-subtitle">&asymp; 10 дней</h4>
                         <p class="services__item-desc">Метод DMLS позволяет производить высококачественные детали из металла для применения в аэрокосмической, автомобильной и медицинской промышленности</p>
-                        <a href="https://platform.routek.tech/new_order" class="services__button button">Рассчитать заказ</a>
+                        <a data-modal class="services__button button">Рассчитать заказ</a>
                         <a href="pbf.html" class="services__item-link">Подробнее</a>
                     </li>
                 </ul>
@@ -271,7 +271,7 @@
                         <h3 class="services__item-title">Моделирование методом наплавления (FDM)</h3>
                         <h4 class="services__item-subtitle">&asymp; 4 дня</h4>
                         <p class="services__item-desc">FDM - это наиболее широко доступный процесс 3D-печати, в основном используемый для создания недорогих прототипов и тестирования дизайна в очень короткие сроки.</p>
-                        <a href="https://platform.routek.tech/new_order" class="services__button button">Рассчитать заказ</a>
+                        <a data-modal  class="services__button button">Рассчитать заказ</a>
                         <a href="me.html" class="services__item-link">Подробнее</a>
                     </li>
 
@@ -283,7 +283,7 @@
                         <h3 class="services__item-title">Стереолитография (SLA)</h3>
                         <h4 class="services__item-subtitle">&asymp; 4 дня</h4>
                         <p class="services__item-desc">SLA наиболее подходит для визуальных применений, где требуются литьевые формы, гладкая поверхность и высокий уровень детализации деталей.</p>
-                        <a href="https://platform.routek.tech/new_order" class="services__button button">Рассчитать заказ</a>
+                        <a data-modal  class="services__button button">Рассчитать заказ</a>
                          <a href="vp.html" class="services__item-link">Подробнее</a>
         
                     </li>
@@ -296,7 +296,7 @@
                         <h3 class="services__item-title">Струйное нанесение нескольких материалов (Polyjet)</h3>
                         <h4 class="services__item-subtitle">&asymp; 9 дней</h4>
                         <p class="services__item-desc">Polyjet производит детали высочайшей точности размеров с очень гладкой поверхностью, используемые для визуальных прототипов. </p>
-                        <a href="https://platform.routek.tech/new_order" class="services__button button">Рассчитать заказ</a>
+                        <a data-modal  class="services__button button">Рассчитать заказ</a>
                         <a href="mj.html" class="services__item-link">Подробнее</a>
                     </li>
                 </ul>
@@ -463,6 +463,12 @@
         <div class="order-select__body">
             
             <div class="order-select__content">
+                <svg class="order-select__close" data-close width="36" height="36" viewBox="0 0 24 24" fill="#2780eb" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.435 18.4353C18.0445 18.8258 17.4113 18.8258 17.0208 18.4353L5.70712 7.12161C5.31659 6.73109 5.31659 6.09792 5.70712 5.7074C6.09764 5.31687 6.73081 5.31687 7.12133 5.7074L18.435 17.0211C18.8256 17.4116 18.8256 18.0448 18.435 18.4353Z" />
+                    <path
+                        d="M5.70711 18.4351C5.31658 18.0446 5.31658 17.4114 5.70711 17.0209L17.0208 5.7072C17.4113 5.31668 18.0445 5.31668 18.435 5.7072C18.8256 6.09772 18.8256 6.73089 18.435 7.12141L7.12132 18.4351C6.7308 18.8256 6.09763 18.8256 5.70711 18.4351Z" />
+                </svg>
                 
                 <h2 class="order-select__title">Выберите свой вариант</h2>
                 <ul class="order-select__list">
@@ -479,7 +485,6 @@
                             его необходимо конвертировать в STL</a>
                     </li>
                 </ul>
-                <button style="margin-top: 36px;" class="button" data-close>Отмена</button>
 
             </div>
         </div>
@@ -491,16 +496,30 @@
 
     <script>
         //Modal
-        const modalTrigger = document.querySelector('[data-modal]');
+        const modalTrigger = document.querySelectorAll('[data-modal]');
         const modal = document.querySelector('.order-select');
         const closeModal = document.querySelector('[data-close]');
 
-        modalTrigger.addEventListener('click', () => {
-            modal.style.display = "block";
+        modalTrigger.forEach(btn => {
+            btn.addEventListener('click', () => {
+                modal.style.display = "block";
+                document.body.style.overflow = 'hidden';
+            });
         });
 
         closeModal.addEventListener('click', () => {
             modal.style.display = "";
+            document.body.style.overflow = '';
+        });
+
+        modal.addEventListener('click', (e) => {
+            
+            if (e.target === modal) {
+                alert('hello');
+                modal.style.display = "";
+                document.body.style.overflow = '';
+            };
+            
         });
 
     </script>
