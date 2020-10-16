@@ -96,7 +96,7 @@
                     <h2 class="hero__title"><span class="hero__title-color">Все возможности</span><br>3D печати в один клик<span class="hero__title-color">.</span></h2>
                     <p class="hero__subtitle">Наша технология гарантирует безопасность и<br>конфиденциальность загруженных документов</p>
                     <div class="hero__buttons">
-                        <a href="lc-model.html" class="hero__button button">Рассчитать заказ</a>
+                        <a data-modal class="hero__button button">Рассчитать заказ</a>
                         <a href="https://platform.routek.tech/auth/company_register" class="button button--two">Стать партнером</a>
                     </div>
                 </div>
@@ -459,9 +459,51 @@
     <!-- End footer block -->
 
 
+    <div class=" order-select  modal">
+        <div class="order-select__body">
+            
+            <div class="order-select__content">
+                
+                <h2 class="order-select__title">Выберите свой вариант</h2>
+                <ul class="order-select__list">
+                    <li>
+                        <a href="select-model.html" class="order-select__link">У меня есть STL-файл модели для
+                            печати</a>
+                    </li>
+                    <li>
+                        <a href="lc-model_03.html" class="order-select__link">Нет файла модели, хочу заказать создание
+                            модели</a>
+                    </li>
+                    <li>
+                        <a href="https://3d-convert.com/en/imprint.html" class="order-select__link">Есть файл модели, но
+                            его необходимо конвертировать в STL</a>
+                    </li>
+                </ul>
+                <button style="margin-top: 36px;" class="button" data-close>Отмена</button>
+
+            </div>
+        </div>
+    </div>
+
     <script src="libs/jquery/jquery-3.5.1.min.js"></script>
     <script src="js/waves.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        //Modal
+        const modalTrigger = document.querySelector('[data-modal]');
+        const modal = document.querySelector('.order-select');
+        const closeModal = document.querySelector('[data-close]');
+
+        modalTrigger.addEventListener('click', () => {
+            modal.style.display = "block";
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = "";
+        });
+
+    </script>
 
 </body>
 
