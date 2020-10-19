@@ -102,9 +102,9 @@ a {
 
 
 
-/* main {
+main {
    background-color: #F0F4FA;
-} */
+}
 
 #stepProgressBar {
    display: flex;
@@ -155,4 +155,11 @@ a {
 
 #bullet:after {
    content: none;
+}
+
+.header__list {
+   margin-bottom: 0;
+}
+.header__sub-list {
+   padding-left: 0;
 }
