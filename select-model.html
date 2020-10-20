@@ -106,7 +106,7 @@
                            <h5 class="card-title mb-3">Выберите новый заказ</h5>
                            <h6 class="mb-3 text-secondary">STEP | STP | SLDPRT | STL | DXF | IPT | 3DXML | PRT | SAT
                            </h6>
-                           <a href="#" class="btn btn-success mr-3">Недавние загрузки</a>
+                           <button class="btn btn-success mr-3" data-toggle="modal" data-target="#recentAddModal">Недавние загрузки</button>
                            <!-- <input id="filesSelect" multiple type="file" accept=".dxf, .sat, .prt, .catpart, .3dxml, .ipt, .x_b, .x_t, .stl, .sldprt, .stp, .step," style="display: none;"> -->
                            <input id="filesSelect" multiple type="file" accept="" style="display: none;">
                            <label for="filesSelect" class="btn btn-primary">Загрузить 3D модели</label>
@@ -451,7 +451,6 @@
                         </div>
                      </div>
                   </div>
-
                   <div class="col-md-12">
                      <div class="card">
                         <!-- <img class="card-img-top" src="img/services-img-03.jpg" alt="DMLS"> -->
@@ -709,6 +708,136 @@
       </div>
    </div>
    <!-- Modal 2-->
+
+
+   <!-- Modal 3 -->
+<div class="modal fade" id="recentAddModal" tabindex="-1" aria-labelledby="recentAddModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-xl modal-dialog-scrollable">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="recentAddModalLabel">Добавить детали</h5>
+         <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <div class="detail-item item-selected">
+            <div>
+               <input class="form-check-input mr-3" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+            </div>
+            
+            <div class="detail-pic mr-3">
+               <img src="img/lc/detail-order.jpg" alt="order" width="96" height="96">
+            </div>
+            <div class="my-2 mr-3">
+               <p class="mb-0 ">Название</p>
+               <h6>B500-1290 (1)</h6>
+               <p class="mb-0">Цвет</p>
+               <h6>Черный</h6>
+            </div>
+
+            <div class="my-2 mr-3">
+               <p class="mb-0">Технология</p>
+               <h6>PolyJet</h6>
+               <p class="mb-0">Материал</p>
+               <h6>ABS</h6>
+            </div>
+
+            <div class="my-2 mr-3">
+               <p class="mb-0">Качество</p>
+               <h6>Высокое</h6>
+               <p class="mb-0">Заполнение</p>
+               <h6>80%</h6>
+            </div>
+
+            <div class="my-2 mr-3">
+               <p class="mb-0">Дата подачи</p>
+               <h6>22.05.2020</h6>
+               <p class="mb-0">Габариты</p>
+               <h6>49.6x54.4x24.4</h6>
+            </div>
+         </div>
+
+         <div class="detail-item">
+            <div>
+               <input class="form-check-input mr-3" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+            </div>
+            
+            <div class="detail-pic mr-3">
+               <img src="img/lc/detail-order.jpg" alt="order" width="96" height="96">
+            </div>
+            <div class="my-2 mr-3">
+               <p class="mb-0 ">Название</p>
+               <h6>B500-1290 (1)</h6>
+               <p class="mb-0">Цвет</p>
+               <h6>Черный</h6>
+            </div>
+
+            <div class="my-2 mr-3">
+               <p class="mb-0">Технология</p>
+               <h6>PolyJet</h6>
+               <p class="mb-0">Материал</p>
+               <h6>ABS</h6>
+            </div>
+
+            <div class="my-2 mr-3">
+               <p class="mb-0">Качество</p>
+               <h6>Высокое</h6>
+               <p class="mb-0">Заполнение</p>
+               <h6>80%</h6>
+            </div>
+
+            <div class="my-2 mr-3">
+               <p class="mb-0">Дата подачи</p>
+               <h6>22.05.2020</h6>
+               <p class="mb-0">Габариты</p>
+               <h6>49.6x54.4x24.4</h6>
+            </div>
+         </div>
+
+         <div class="detail-item">
+            <div>
+               <input class="form-check-input mr-3" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+            </div>
+            
+            <div class="detail-pic mr-3">
+               <img class=" mr-3" src="img/lc/detail-order.jpg" alt="order" width="96" height="96">
+            </div>
+            <div class="my-2 mr-3">
+               <p class="mb-0 ">Название</p>
+               <h6>B500-1290 (1)</h6>
+               <p class="mb-0">Цвет</p>
+               <h6>Черный</h6>
+            </div>
+
+            <div class="my-2 mr-3">
+               <p class="mb-0">Технология</p>
+               <h6>PolyJet</h6>
+               <p class="mb-0">Материал</p>
+               <h6>ABS</h6>
+            </div>
+
+            <div class="my-2 mr-3">
+               <p class="mb-0">Качество</p>
+               <h6>Высокое</h6>
+               <p class="mb-0">Заполнение</p>
+               <h6>80%</h6>
+            </div>
+
+            <div class="my-2 mr-3">
+               <p class="mb-0">Дата подачи</p>
+               <h6>22.05.2020</h6>
+               <p class="mb-0">Габариты</p>
+               <h6>49.6x54.4x24.4</h6>
+            </div>
+         </div>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-primary">Добавить файлы</button>
+       </div>
+     </div>
+   </div>
+ </div>
+   <!-- Modal 3 -->
+
 
    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
    <script src="js/waves.min.js"></script>

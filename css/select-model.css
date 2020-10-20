@@ -96,10 +96,23 @@ a {
    -webkit-transition: all 0.3s ease 0s;
    transition: all 0.3s ease 0s;
 }
+.detail-item {
+   display: flex;
+   align-items: center;
+   margin-bottom: 1rem;
+   padding: 1rem;
+   cursor: pointer;
+}
+.item-selected {
+   background-color: #2780eb;
+   color: #fff;
 
+}
 
-
-
+.detail-pic {
+   flex: 0 0 96px;
+   height: 96px;
+}
 
 
 main {
