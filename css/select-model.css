@@ -176,3 +176,16 @@ main {
 .header__sub-list {
    padding-left: 0;
 }
+
+.form-file {
+   min-height: 160px;
+   background-color: #b3d4fe;
+   border: 1px solid #2780eb;
+   cursor: pointer;
+   padding: 24px;
+}
+
+.label-download {
+   cursor: pointer;
+   margin: 16px;
+}

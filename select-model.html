@@ -129,15 +129,19 @@
                      <div class="card model-slide">
                         <div class="card-body text-center">
                            <h5 class="card-title mb-3">Выбранные модели</h5>
-                           <div class="form-file">
-                              <input type="file" class="form-file-input" id="customFile">
-                              <label class="form-file-label" for="customFile">
-                                 <span class="form-file-text">model.stl, model-2.stl</span>
-                                 <span class="form-file-button">Загрузить 3D модели</span>
-                              </label>
+                           <div class=" form-file d-flex flex-column">
+                              <!-- <input type="file" class="form-file-input" id="customFile"> -->
+                              
+                              
+                              <input class="form-control" type="text" placeholder="model.stl, model-2.stl">
+                              <input id="fileLoad" class="d-none" type="file">
+
+                              <label class="label-download text-primary" for="fileLoad"><a >Нажмите, чтобы загрузить файл</a></label>
+                              
+                              <p>Максимальный размер файла 100 Мб</p>
                            </div>
 
-                           <p>Максимальный размер файла 100 Мб</p>
+                           
                         </div>
                         <ul id="stepProgressBar">
                            <li class="step">
@@ -719,9 +723,9 @@
          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
        </div>
        <div class="modal-body">
-         <div class="detail-item item-selected">
+         <div class="detail-item">
             <div>
-               <input class="form-check-input mr-3" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+               <input class="form-check-input mr-3" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." checked>
             </div>
             
             <div class="detail-pic mr-3">
@@ -900,6 +904,29 @@
                alert("Файл не выбран");
             }
          });
+
+
+         // Modal add Files
+
+         const detailItem = document.querySelectorAll('.detail-item');
+         //const checkInput = detailItem.querySelectorAll('.form-check-input');
+         console.log(detailItem);
+         detailItem.forEach(item => {
+            item.addEventListener('click', () => {
+               item.classList.toggle('item-selected');
+               
+               if (item.classList.contains('item-selected')) {
+                  item.firstElementChild.firstElementChild.checked = 'true';
+               }
+               if (!item.classList.contains('item-selected')) {
+                  item.firstElementChild.firstElementChild.removeAttribute('checked');
+               }
+
+               
+            });
+
+         });
+            
 
       });
    </script>
