@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/helper.css">
-   <title>Анимация SVG</title>
+   <title>Routek | Интеллектуальный помощник</title>
 </head>
 <body style="padding-top: 48px;">
    <section class="helper">
@@ -14,16 +14,27 @@
       <div class="helper__window">
          <div class="helper__logo-box">
             <img src="img/Logo-helper.svg" alt="helper" width="48" height="48">
-            <h4 class="helper__logo-text">интеллектуальный</br> помощник Routek</h4>
+            <h4 class="helper__logo-text">интеллектуальный</br> помощник</h4>
 
             
          </div>
          <h2 class="helper__title ">Цель использования изделия</h2>
          <div class="helper__radio-box">
-            <a href="#" class="helper__btn-md mb-2">Декор и посуда</a>
-            <a href="#" class="helper__btn-md helper__btn-md--muted mb-2">Запчасти и инструменты</a>
-            <a href="#" class="helper__btn-md helper__btn-md--muted mb-2">Медицина</a>
-            <a href="#" class="helper__btn-md helper__btn-md--muted">Другое</a>
+
+            <input type="radio" class="helper-btn-check" name="options" id="option1" autocomplete="off" checked>
+            <label class="helper__btn-md helper__btn-md--muted mb-2" for="option1">Декор и посуда</label>
+
+            <input type="radio" class="helper-btn-check" name="options" id="option2" autocomplete="off">
+            <label class="helper__btn-md helper__btn-md--muted mb-2" for="option2">Запчасти и инструменты</label>
+
+            <input type="radio" class="helper-btn-check" name="options" id="option3" autocomplete="off">
+            <label class="helper__btn-md helper__btn-md--muted mb-2" for="option3">Медицина</label>
+
+            <input type="radio" class="helper-btn-check" name="options" id="option4" autocomplete="off">
+            <label class="helper__btn-md helper__btn-md--muted mb-2" for="option4">Другое</label>
+   
+   
+          
          </div>
          
          <div class="helper__btn-box">
