@@ -114,6 +114,8 @@ body {
 
 }
 
+
+
 .helper__btn-md--grey {
    background-color: #a8a8a8;
    border-color: #a8a8a8;
@@ -143,6 +145,20 @@ body {
 .helper__btn-box {
    display: flex;
    justify-content: space-between;
+}
+
+.helper__text {
+   font-size: 14px;
+   color: #a8a8a8;
+   
+}
+.helper__text:not(:last-child) {
+   margin-bottom: 1.5rem;
+}
+
+.helper-btn-check:checked+.helper__btn-md--muted + p {
+   color: white;
+   /* color: #00D2A0; */
 }
 
 .mb-2 {
