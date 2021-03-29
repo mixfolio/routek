@@ -4,7 +4,7 @@ $(document).ready(function () {
     // Burger menu
     $('.header__burger').on('click', function () {
         $('.header__burger,.header__nav').toggleClass('active');
-        $('.body').toggleClass('lock');
+        $('body').toggleClass('lock');
     });
 
     // Header sub-menu spoiler
